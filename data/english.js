@@ -747,9 +747,11 @@ var ENGLISH_DATA = {
           tagColor: `#ef4444`,
           content: `<div class="reading-passage">
 <h3>📖 The Invention of Paper</h3>
-<p>Paper is one of the most important inventions in Chinese history. It was invented by Cai Lun about 2,000 years ago. Before paper was invented, people wrote on bamboo slips, silk, or animal bones. These materials were either too heavy or too expensive.</p>
+<p>Paper is one of the most important inventions in Chinese history. It was invented by Cai Lun about 2,000 years ago. Before paper was invented, people wrote on bamboo slips, silk, or animal bones.</p>
+<p>These materials were either too heavy or too expensive.</p>
 <p>Cai Lun found a way to make paper from tree bark, old cloth, and fishing nets. These materials were cheap and easy to find. The new paper was light, thin, and could be used for writing. This invention changed the world.</p>
-<p>Today, paper is used everywhere — in books, newspapers, notebooks, and even in money! Although computers and phones are widely used now, paper is still very important in our daily life. Trees are cut down to make paper, so we should save paper and protect the environment.</p>
+<p>Today, paper is used everywhere — in books, newspapers, notebooks, and even in money! Although computers and phones are widely used now, paper is still very important in our daily life.</p>
+<p>Trees are cut down to make paper, so we should save paper and protect the environment.</p>
 </div>
 <p><b>📝 注意文中被动语态的用法（was invented, were used, is used, are cut down...）</b></p>`,
           problems: [
@@ -1670,7 +1672,8 @@ var ENGLISH_DATA = {
           tagColor: `#ef4444`,
           content: `<div class="reading-passage">
 <h3>📖 A Trip to the Zoo</h3>
-<p>Last Saturday, Mr. Wang took his students to the city zoo. They arrived at 9 o'clock in the morning. The first animal they saw was a huge elephant. "Look at its long nose!" shouted Xiao Ming. The elephant was eating bananas. Some students fed it with the zookeeper's help.</p>
+<p>Last Saturday, Mr. Wang took his students to the city zoo. They arrived at 9 o'clock in the morning. The first animal they saw was a huge elephant. "Look at its long nose!" shouted Xiao Ming.</p>
+<p>The elephant was eating bananas. Some students fed it with the zookeeper's help.</p>
 <p>Then they went to see the monkeys. The monkeys were jumping up and down in their cage. One little monkey took a cap from a boy and put it on its own head. Everyone laughed. It was so funny!</p>
 <p>After lunch, they visited the panda house. Pandas are China's national treasure. They are black and white and look very cute. The pandas were eating bamboo. Mr. Wang told them that pandas eat about 12 hours a day.</p>
 <p>At 3 p.m., they left the zoo. All the students were tired but very happy. "This was the best trip ever!" said Li Hong. She took many photos and planned to show them to her parents.</p>
@@ -3057,7 +3060,8 @@ var ENGLISH_DATA = {
 <p><b>📖 范文：</b></p>
 <div class="reading-passage">
 <p>My favorite place is the city library. It is located near my home, so I can walk there in ten minutes.</p>
-<p>The library is big and bright. There are thousands of books on the shelves. I like reading in the children's section because it has many interesting storybooks. The chairs are comfortable and the room is very quiet. On weekends, I often spend the whole afternoon there, reading my favorite books.</p>
+<p>The library is big and bright. There are thousands of books on the shelves. I like reading in the children's section because it has many interesting storybooks.</p>
+<p>The chairs are comfortable and the room is very quiet. On weekends, I often spend the whole afternoon there, reading my favorite books.</p>
 <p>I love the library because it is a world of knowledge. Every time I go there, I learn something new. It is truly my favorite place!</p>
 </div>`,
           problems: [
@@ -3438,7 +3442,8 @@ I don't know <b>whether</b> he will come or not. ✓</li>
 <p><b>📖 范文：</b></p>
 <div class="reading-passage">
 <p>My best friend is Li Hua. She is twelve years old and we have been friends since primary school.</p>
-<p>Li Hua is tall and slim with two big bright eyes and long black hair. She always wears a warm smile on her face. She is kind-hearted and helpful. Whenever I have problems with my study, she is always ready to help me. She likes reading and playing the piano. In her free time, she often goes to the library.</p>
+<p>Li Hua is tall and slim with two big bright eyes and long black hair. She always wears a warm smile on her face. She is kind-hearted and helpful.</p>
+<p>Whenever I have problems with my study, she is always ready to help me. She likes reading and playing the piano. In her free time, she often goes to the library.</p>
 <p>I remember once when I failed a math test and felt very sad. Li Hua came to me and said, "Don't worry. I will help you." She spent her whole weekend helping me with math. Thanks to her, I passed the next test with a good score.</p>
 <p>I am really lucky to have such a wonderful friend. I hope our friendship will last forever.</p>
 </div>`,
@@ -4174,7 +4179,8 @@ I don't know <b>whether</b> he will come or not. ✓</li>
 <p><b>📖 范文：</b></p>
 <div class="reading-passage">
 <p>The Internet plays an important role in our daily life. It has changed the way we live, study and communicate.</p>
-<p>With the Internet, we can search for information quickly and easily. Students can take online classes and learn new things at home. The Internet also makes communication much easier. We can chat with friends and family anytime through social media and video calls.</p>
+<p>With the Internet, we can search for information quickly and easily. Students can take online classes and learn new things at home. The Internet also makes communication much easier.</p>
+<p>We can chat with friends and family anytime through social media and video calls.</p>
 <p>However, the Internet also has some problems. Spending too much time online is bad for our eyes and health. Some information on the Internet may not be true. So we need to be careful.</p>
 <p>In my opinion, the Internet is a useful tool if we use it wisely. We should make good use of it but not depend on it too much.</p>
 </div>`,
@@ -4472,7 +4478,8 @@ I don't know <b>whether</b> he will come or not. ✓</li>
           content: `<div class="reading-passage">
 <h3>📖 The Power of Teamwork</h3>
 <p>One day, a father called his three sons together. He gave each of them a stick and asked them to break it. Each son broke the stick easily.</p>
-<p>Then the father took three sticks and tied them together. "Now try to break these," he said. The eldest son tried but failed. The second son used all his strength but couldn't break them. Even the youngest son, who was the strongest, couldn't break the bundle.</p>
+<p>Then the father took three sticks and tied them together. "Now try to break these," he said. The eldest son tried but failed. The second son used all his strength but couldn't break them.</p>
+<p>Even the youngest son, who was the strongest, couldn't break the bundle.</p>
 <p>"Do you understand the lesson?" the father asked. "Individually, you are like a single stick — easy to break. But if you stay united and support each other, you will be as strong as this bundle of sticks. No one can break you."</p>
 <p>The three sons understood their father's message. From that day on, they always worked together and helped each other.</p>
 </div>

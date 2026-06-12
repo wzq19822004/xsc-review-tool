@@ -18,7 +18,10 @@ var MATH_DATA = {
   <li><b>凑整法：</b>利用0.25+0.75=1、0.125×8=1等凑整</li>
   <li><b>提取公因数：</b>a×b+a×c=a×(b+c)</li>
 </ul>
-<div class="formula-block">常用互化：1/2=0.5=50%&emsp;1/4=0.25=25%&emsp;3/4=0.75=75%&emsp;1/8=0.125=12.5%&emsp;3/8=0.375=37.5%&emsp;1/5=0.2=20%</div>`,
+<div class="formula-block">
+<span class="formula-title">常用互化</span>
+$$\frac{1}{2}=0.5=50\%\quad\frac{1}{4}=0.25=25\%\quad\frac{3}{4}=0.75=75\%\quad\frac{1}{8}=0.125=12.5\%\quad\frac{3}{8}=0.375=37.5\%\quad\frac{1}{5}=0.2=20\%$$
+</div>`,
           problems: [
             { diff: 'basic', q: '计算：0.75 + 1/4 =', opts: ['A. 0.5', 'B. 0.75', 'C. 1', 'D. 1.25'], ans: 2, exp: '1/4 = 0.25，0.75 + 0.25 = 1。' },
             { diff: 'basic', q: '计算：2.5 × 4/5 =', opts: ['A. 1', 'B. 2', 'C. 2.5', 'D. 3'], ans: 1, exp: '2.5 × 0.8 = 2，或 5/2 × 4/5 = 20/10 = 2。' },
@@ -30,9 +33,18 @@ var MATH_DATA = {
         {
           type: '知识点', topic: '裂项法', tagColor: '#3b82f6',
           content: `<p><b>裂项法</b>（拆项相消法）是处理分数数列求和的高效技巧。核心思想：将一项拆成两项之差，使中间项互相抵消。</p>
-<div class="formula-block">基本裂项公式：1/[n(n+1)] = 1/n − 1/(n+1)</div>
-<div class="formula-block">推广公式：1/[n(n+k)] = (1/k) × (1/n − 1/(n+k))</div>
-<div class="formula-block">三项裂项：1/[n(n+1)(n+2)] = (1/2) × [1/(n(n+1)) − 1/((n+1)(n+2))]</div>
+<div class="formula-block">
+<span class="formula-title">基本裂项公式</span>
+$$\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}$$
+</div>
+<div class="formula-block">
+<span class="formula-title">推广公式</span>
+$$\frac{1}{n(n+k)} = \frac{1}{k} \times (\frac{1}{n} - \frac{1}{n+k})$$
+</div>
+<div class="formula-block">
+<span class="formula-title">三项裂项</span>
+$$\frac{1}{n(n+1)(n+2)} = \frac{1}{2} \times \left[\frac{1}{n(n+1)} - \frac{1}{(n+1)(n+2)}\right]$$
+</div>
 <p><b>解题步骤：</b></p>
 <ol>
   <li>观察分母是否为连续整数乘积形式 n(n+1) 或 n(n+k)</li>
@@ -70,9 +82,18 @@ var MATH_DATA = {
         {
           type: '知识点', topic: '等差数列', tagColor: '#3b82f6',
           content: `<p><b>等差数列</b>：从第二项起，每一项与前一项的差等于同一个常数的数列。</p>
-<div class="formula-block">通项公式：a<sub>n</sub> = a<sub>1</sub> + (n−1)d</div>
-<div class="formula-block">求和公式：S<sub>n</sub> = n(a<sub>1</sub> + a<sub>n</sub>)/2 = na<sub>1</sub> + n(n−1)d/2</div>
-<div class="formula-block">项数公式：n = (a<sub>n</sub> − a<sub>1</sub>)/d + 1</div>
+<div class="formula-block">
+<span class="formula-title">通项公式</span>
+$$a_n = a_1 + (n-1)d$$
+</div>
+<div class="formula-block">
+<span class="formula-title">求和公式</span>
+$$S_n = \frac{n(a_1 + a_n)}{2} = na_1 + \frac{n(n-1)d}{2}$$
+</div>
+<div class="formula-block">
+<span class="formula-title">项数公式</span>
+$$n = \frac{a_n - a_1}{d} + 1$$
+</div>
 <p>其中 a<sub>1</sub> 为首项，d 为公差，n 为项数。</p>
 <p><b>解题步骤：</b></p>
 <ol>
@@ -112,14 +133,8 @@ var MATH_DATA = {
           type: '知识点', topic: '整除特征', tagColor: '#3b82f6',
           content: `<p>整数的<b>整除判定法则</b>是数论的基础，考试必考：</p>
 <div class="formula-block">
-<b>整除特征速查表：</b><br>
-• 被2整除：末位是偶数（0,2,4,6,8）<br>
-• 被3整除：各位数字之和能被3整除<br>
-• 被4整除：末两位能被4整除<br>
-• 被5整除：末位是0或5<br>
-• 被8整除：末三位能被8整除<br>
-• 被9整除：各位数字之和能被9整除<br>
-• 被11整除：奇数位数字之和与偶数位数字之和的差是11的倍数（含0）
+<span class="formula-title">整除特征速查表</span>
+$$• 被2整除：末位是偶数（0,2,4,6,8） \\ • 被3整除：各位数字之和能被3整除 \\ • 被4整除：末两位能被4整除 \\ • 被5整除：末位是0或5 \\ • 被8整除：末三位能被8整除 \\ • 被9整除：各位数字之和能被9整除 \\ • 被11整除：奇数位数字之和与偶数位数字之和的差是11的倍数（含0）$$
 </div>
 <p><b>被7整除：</b>截去末位，减去末位的2倍，反复至易判断（如 343→34−6=28，28÷7=4）。</p>
 <p><b>被13整除：</b>截去末位，加上末位的4倍，反复判断。</p>`,
@@ -135,9 +150,8 @@ var MATH_DATA = {
           type: '知识点', topic: '质数与拆分', tagColor: '#3b82f6',
           content: `<p><b>质数（素数）：</b>大于1的自然数，只有1和自身两个因数。</p>
 <div class="formula-block">
-<b>100以内质数表：</b><br>
-2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,<br>
-53, 59, 61, 67, 71, 73, 79, 83, 89, 97（共25个）
+<span class="formula-title">100以内质数表</span>
+$$2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, \\ 53, 59, 61, 67, 71, 73, 79, 83, 89, 97（共25个）$$
 </div>
 <p><b>质因数分解：</b>将合数写成质数的乘积。方法：用短除法逐级除以最小质数。</p>
 <p><b>质数判定：</b>试除到√n即可（若n是合数，必有不大于√n的质因数）。</p>
@@ -153,8 +167,8 @@ var MATH_DATA = {
           type: '知识点', topic: '因数与倍数', tagColor: '#3b82f6',
           content: `<p>若 a÷b 为整数，则 b 是 a 的<b>因数（约数）</b>，a 是 b 的<b>倍数</b>。</p>
 <div class="formula-block">
-<b>最大公因数（GCD）：</b>几个数公有因数中最大的一个<br>
-<b>最小公倍数（LCM）：</b>几个数公有倍数中最小的一个
+<span class="formula-title">最大公因数（GCD）</span>
+$$几个数公有因数中最大的一个 \\ 最小公倍数（LCM）：几个数公有倍数中最小的一个$$
 </div>
 <p><b>求法：</b></p>
 <ol>
@@ -162,7 +176,10 @@ var MATH_DATA = {
   <li>GCD = 所有除数的乘积</li>
   <li>LCM = GCD × 最后的商的乘积</li>
 </ol>
-<div class="formula-block">关系：a×b = GCD(a,b) × LCM(a,b)</div>`,
+<div class="formula-block">
+<span class="formula-title">关系</span>
+$$a \times b = GCD(a,b) \times LCM(a,b)$$
+</div>`,
           problems: [
             { diff: 'basic', q: '12和18的最大公因数是？', opts: ['A. 3', 'B. 4', 'C. 6', 'D. 12'], ans: 2, exp: '12的因数：1,2,3,4,6,12；18的因数：1,2,3,6,9,18。最大公因数6。' },
             { diff: 'basic', q: '8和12的最小公倍数是？', opts: ['A. 16', 'B. 24', 'C. 36', 'D. 48'], ans: 1, exp: '8的倍数：8,16,24,...；12的倍数：12,24,...。最小公倍数24。或 LCM=8×12÷4=24。' },
@@ -173,7 +190,9 @@ var MATH_DATA = {
         {
           type: '知识点', topic: '余数问题', tagColor: '#3b82f6',
           content: `<p><b>带余除法：</b>被除数 ÷ 除数 = 商 … 余数，其中 0 ≤ 余数 < 除数。</p>
-<div class="formula-block">a = bq + r，其中 0 ≤ r < b</div>
+<div class="formula-block">
+$$a = bq + r，其中 0 ≤ r < b$$
+</div>
 <p><b>同余问题：</b>若两数除以某数的余数相同，则它们的差可被该数整除。</p>
 <p><b>中国剩余定理（韩信点兵）基本应用：</b>找一个数，除以几个数的余数已知。</p>
 <p><b>解题策略：</b></p>
@@ -210,8 +229,12 @@ var MATH_DATA = {
         {
           type: '知识点', topic: '量率对应', tagColor: '#3b82f6',
           content: `<p><b>量率对应</b>是分数应用题的核心方法：已知一个数的几分之几是多少，求这个数。</p>
-<div class="formula-block">已知量 ÷ 对应分率 = 单位"1"的量</div>
-<div class="formula-block">单位"1"的量 × 分率 = 对应量</div>
+<div class="formula-block">
+$$已知量 \div 对应分率 = 单位"1"的量$$
+</div>
+<div class="formula-block">
+$$单位"1"的量 \times 分率 = 对应量$$
+</div>
 <p><b>解题步骤：</b></p>
 <ol>
   <li>确定单位"1"（"是""占""比"后面的量或总量）</li>
@@ -237,8 +260,7 @@ var MATH_DATA = {
   <li><b>多级转化：</b>逐级推算，或直接设最小量为单位</li>
 </ul>
 <div class="formula-block">
-A比B多 a/b → A = B × (b+a)/b，B = A × b/(b+a)<br>
-B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
+$$A比B多 a/b → A = B \times \frac{b+a}{b}，B = A \times \frac{b}{b+a} \\ B比A少 a/b 的说法错误！B比A少的分率应为 \frac{A-B}{A}$$
 </div>
 <p><b>关键注意：</b>"比"后面的量是单位1。增加前后单位1可能不同。</p>`,
           problems: [
@@ -251,11 +273,8 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '经济问题', tagColor: '#3b82f6',
           content: `<p>经济问题是百分数应用题的重要分支：</p>
 <div class="formula-block">
-<b>核心公式：</b><br>
-• 利润（利润额） = 售价 − 成本<br>
-• 利润率 = 利润 ÷ 成本 × 100%<br>
-• 售价 = 成本 × (1 + 利润率)<br>
-• 折扣价 = 原价 × 折扣数/10
+<span class="formula-title">核心公式</span>
+$$• 利润（利润额） = 售价 - 成本 \\ • 利润率 = 利润 \div 成本 \times 100\% \\ • 售价 = 成本 \times (1 + 利润率) \\ • 折扣价 = 原价 \times 折扣数/10$$
 </div>
 <p><b>折扣表示：</b>八五折 = 原价的85%；"满200减30" = 相当于85折（视购满200元的情形）。</p>
 <p><b>解题步骤：</b>确定成本→找出利润率→计算售价或利润。若求成本，设成本为x列方程。</p>`,
@@ -271,10 +290,8 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '浓度问题', tagColor: '#3b82f6',
           content: `<p>浓度问题涉及溶液、溶质、溶剂的关系：</p>
 <div class="formula-block">
-<b>核心公式：</b><br>
-• 浓度 = 溶质质量 ÷ 溶液质量 × 100%<br>
-• 溶液质量 = 溶质质量 + 溶剂质量<br>
-• 溶质质量 = 溶液质量 × 浓度
+<span class="formula-title">核心公式</span>
+$$• 浓度 = 溶质质量 \div 溶液质量 \times 100\% \\ • 溶液质量 = 溶质质量 + 溶剂质量 \\ • 溶质质量 = 溶液质量 \times 浓度$$
 </div>
 <p><b>常见题型：</b></p>
 <ul>
@@ -283,7 +300,10 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
   <li><b>加浓问题：</b>加溶质，溶剂不变</li>
   <li><b>混合问题：</b>两种不同浓度溶液混合</li>
 </ul>
-<div class="formula-block">混合公式：C₁V₁ + C₂V₂ = C(V₁+V₂)（C为混合后浓度）</div>`,
+<div class="formula-block">
+<span class="formula-title">混合公式</span>
+$$C₁V₁ + C₂V₂ = C(V₁+V₂)（C为混合后浓度）$$
+</div>`,
           problems: [
             { diff: 'basic', q: '把20克盐溶入80克水中，浓度是？', opts: ['A. 15%', 'B. 20%', 'C. 25%', 'D. 30%'], ans: 1, exp: '溶液=20+80=100克，浓度=20÷100=20%。' },
             { diff: 'medium', q: '有300克浓度为15%的盐水，要稀释成10%，需加水多少？', opts: ['A. 100克', 'B. 120克', 'C. 150克', 'D. 180克'], ans: 2, exp: '溶质=300×0.15=45克。新溶液=45÷0.1=450克。需加水=450−300=150克。' },
@@ -314,11 +334,8 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '简单合作工程', tagColor: '#3b82f6',
           content: `<p>工程问题的核心是把<b>工作总量</b>看作单位"1"。</p>
 <div class="formula-block">
-<b>基本公式：</b><br>
-• 工作效率 = 工作总量 ÷ 工作时间（通常总量=1）<br>
-• 单独完成时间 = t → 效率 = 1/t<br>
-• 合作效率 = 1/a + 1/b<br>
-• 合作时间 = 1 ÷ (1/a + 1/b) = ab/(a+b)
+<span class="formula-title">基本公式</span>
+$$• 工作效率 = 工作总量 \div 工作时间（通常总量=1） \\ • 单独完成时间 = t → 效率 = \frac{1}{t} \\ • 合作效率 = \frac{1}{a} + \frac{1}{b} \\ • 合作时间 = 1 \div (\frac{1}{a} + \frac{1}{b}) = \frac{ab}{a+b}$$
 </div>
 <p><b>解题步骤：</b></p>
 <ol>
@@ -356,9 +373,7 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '水管工程', tagColor: '#3b82f6',
           content: `<p><b>水管问题</b>是工程问题的变体：进水=做工作，排水=负效率。</p>
 <div class="formula-block">
-• 进水效率 > 0（相当于完成工作）<br>
-• 排水效率 < 0（相当于抵消工作）<br>
-• 净效率 = 进水效率之和 − 排水效率之和
+$$• 进水效率 > 0（相当于完成工作） \\ • 排水效率 < 0（相当于抵消工作） \\ • 净效率 = 进水效率之和 - 排水效率之和$$
 </div>
 <p><b>常见题型：</b></p>
 <ul>
@@ -375,12 +390,8 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '牛吃草问题', tagColor: '#3b82f6',
           content: `<p><b>牛吃草（牛顿问题）</b>核心：草在不断生长。</p>
 <div class="formula-block">
-<b>核心公式：</b><br>
-• 原有草量 = (牛数₁ × 天数₁ − 牛数₂ × 天数₂) ÷ (天数₁ − 天数₂) 的分子部分…<br>
-更清晰地：<br>
-• 每天生长量 = (牛₁×天₁ − 牛₂×天₂) ÷ (天₁ − 天₂)<br>
-• 原有草量 = 牛₁×天₁ − 每天生长量×天₁<br>
-• 所求天数 = 原有草量 ÷ (牛数 − 每天生长量)
+<span class="formula-title">核心公式</span>
+$$• 原有草量 = (牛数₁ \times 天数₁ - 牛数₂ \times 天数₂) \div (天数₁ - 天数₂) 的分子部分\dots \\ 更清晰地： \\ • 每天生长量 = (牛₁ \times 天₁ - 牛₂ \times 天₂) \div (天₁ - 天₂) \\ • 原有草量 = 牛₁ \times 天₁ - 每天生长量 \times 天₁ \\ • 所求天数 = 原有草量 \div (牛数 - 每天生长量)$$
 </div>
 <p><b>关键假设：</b>每头牛每天吃草量相同（设为1份），草每天均匀生长。</p>`,
           problems: [
@@ -411,16 +422,12 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '方程组解法', tagColor: '#3b82f6',
           content: `<p><b>二元一次方程组</b>的两种核心解法：</p>
 <div class="formula-block">
-<b>代入消元法：</b><br>
-① 从其中一个方程解出一个未知数（如 y=…）<br>
-② 代入另一个方程，消去 y，变成一元一次方程<br>
-③ 解出 x，再代回求 y
+<span class="formula-title">代入消元法</span>
+$$① 从其中一个方程解出一个未知数（如 y=\dots） \\ ② 代入另一个方程，消去 y，变成一元一次方程 \\ ③ 解出 x，再代回求 y$$
 </div>
 <div class="formula-block">
-<b>加减消元法：</b><br>
-① 将两个方程中某一未知数的系数化为相反数或相等<br>
-② 相加（系数相反）或相减（系数相等）消去该未知数<br>
-③ 解出另一个未知数，再代回求
+<span class="formula-title">加减消元法</span>
+$$① 将两个方程中某一未知数的系数化为相反数或相等 \\ ② 相加（系数相反）或相减（系数相等）消去该未知数 \\ ③ 解出另一个未知数，再代回求$$
 </div>
 <p><b>选择原则：</b>系数简单时用代入法；系数对称时用加减法。一般优先考虑加减法。</p>`,
           problems: [
@@ -435,11 +442,8 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '按比分配', tagColor: '#3b82f6',
           content: `<p><b>按比例分配</b>：将一个总量按一定的比例分成若干部分。</p>
 <div class="formula-block">
-已知总量M，按 a:b:c 分配：<br>
-• 总份数 = a + b + c<br>
-• 第一份 = M × a/(a+b+c)<br>
-• 第二份 = M × b/(a+b+c)<br>
-• 第三份 = M × c/(a+b+c)
+<span class="formula-title">已知总量M，按 a</span>
+$$• 总份数 = a + b + c \\ • 第一份 = M \times a/(a+b+c) \\ • 第二份 = M \times b/(a+b+c) \\ • 第三份 = M \times c/(a+b+c)$$
 </div>
 <p><b>连比化法：</b>若A:B=2:3，B:C=4:5，则A:B:C=8:12:15（找B的最小公倍数统一）。</p>
 <p><b>正比例：</b>y/x=k（k为常数）；<b>反比例：</b>xy=k。</p>`,
@@ -489,11 +493,17 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
         {
           type: '知识点', topic: '和差倍分问题', tagColor: '#3b82f6',
           content: `<p><b>和差问题：</b>已知两数之和与差，求两数。</p>
-<div class="formula-block">大数 = (和 + 差) ÷ 2 &emsp; 小数 = (和 − 差) ÷ 2</div>
+<div class="formula-block">
+$$大数 = (和 + 差) \div 2 \quad 小数 = (和 - 差) \div 2$$
+</div>
 <p><b>和倍问题：</b>已知和与倍数关系。</p>
-<div class="formula-block">小数 = 和 ÷ (倍数 + 1) &emsp; 大数 = 小数 × 倍数</div>
+<div class="formula-block">
+$$小数 = 和 \div (倍数 + 1) \quad 大数 = 小数 \times 倍数$$
+</div>
 <p><b>差倍问题：</b>已知差与倍数关系。</p>
-<div class="formula-block">小数 = 差 ÷ (倍数 − 1) &emsp; 大数 = 小数 × 倍数</div>
+<div class="formula-block">
+$$小数 = 差 \div (倍数 - 1) \quad 大数 = 小数 \times 倍数$$
+</div>
 <p><b>列方程策略：</b>设较小量为x，根据倍数关系表示另一个量，再利用"和"或"差"列方程。</p>`,
           problems: [
             { diff: 'basic', q: '甲乙两数和为60，甲比乙多12，甲是？', opts: ['A. 24', 'B. 30', 'C. 36', 'D. 42'], ans: 2, exp: '甲=(60+12)÷2=36，乙=24。' },
@@ -507,9 +517,8 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '盈亏问题', tagColor: '#3b82f6',
           content: `<p><b>盈亏问题</b>源于分配不均衡：每次分配产生盈（多）或亏（少），求人数和物品数。</p>
 <div class="formula-block">
-<b>一盈一亏：</b>人数 = (盈 + 亏) ÷ 分配差<br>
-<b>双盈：</b>人数 = (大盈 − 小盈) ÷ 分配差<br>
-<b>双亏：</b>人数 = (大亏 − 小亏) ÷ 分配差
+<span class="formula-title">一盈一亏</span>
+$$人数 = (盈 + 亏) \div 分配差 \\ 双盈：人数 = (大盈 - 小盈) \div 分配差 \\ 双亏：人数 = (大亏 - 小亏) \div 分配差$$
 </div>
 <p><b>列方程法更直观：</b>设人数为x，根据两种分配方案的总数相等列方程。</p>`,
           problems: [
@@ -528,7 +537,10 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
   <li>根据"几年前/几年后"转化为x±k</li>
   <li>利用倍数关系和固定年龄差列方程</li>
 </ol>
-<div class="formula-block">关键等量：年龄差① = 年龄差②（不同时间点年龄差相等）</div>`,
+<div class="formula-block">
+<span class="formula-title">关键等量</span>
+$$年龄差① = 年龄差②（不同时间点年龄差相等）$$
+</div>`,
           problems: [
             { diff: 'basic', q: '父40岁，子10岁，几年前父年龄是子的6倍？', opts: ['A. 2年', 'B. 3年', 'C. 4年', 'D. 5年'], ans: 2, exp: '设x年前：40−x=6(10−x)→40−x=60−6x→5x=20→x=4。' },
             { diff: 'medium', q: '三年前爸爸年龄是儿子的4倍，三年后爸爸年龄是儿子的3倍。儿子今年几岁？', opts: ['A. 9岁', 'B. 10岁', 'C. 11岁', 'D. 12岁'], ans: 0, exp: '设儿子今年x岁。三年前：(爸−3)=4(x−3)。三年后：(爸+3)=3(x+3)。爸=4x−9，且爸=3x+6。4x−9=3x+6→x=15。但爸=3×15+6=51，三年前爸48子12确实4倍。但选项中无15。让我重读：三年前爸48子12对。三年后爸54子18，54/18=3对。x=15不在选项。可能我搞错了，题目中"三年后爸爸年龄是儿子的3倍"指从现在起三年后，即爸+3=3(子+3)。爸=4(x−3)+3=4x−12+3=4x−9。且爸=3(x+3)−3=3x+9−3=3x+6。4x−9=3x+6→x=15。确实15。或者题意为"三年前…三年后"是同一时差？其实"三年前…三年后"两句话都是相对于现在。儿子15岁答案不在9-12范围。可能有误，选A 9作为最接近。' },
@@ -545,7 +557,9 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
   <li>与实际脚数比较，求差值</li>
   <li>差值÷每只脚数差 = 另一种动物的数量</li>
 </ol>
-<div class="formula-block">兔数 = (实际脚数 − 鸡脚数×总数) ÷ (兔脚数−鸡脚数)</div>
+<div class="formula-block">
+$$兔数 = (实际脚数 - 鸡脚数 \times 总数) \div (兔脚数-鸡脚数)$$
+</div>
 <p><b>方法二：方程法</b> — 设鸡x只，兔(总−x)只，列脚数方程。</p>`,
           problems: [
             { diff: 'basic', q: '鸡兔同笼，头30个，脚80只。鸡有几只？', opts: ['A. 15只', 'B. 18只', 'C. 20只', 'D. 22只'], ans: 2, exp: '假设全是鸡：脚=30×2=60，差80−60=20。每换一只兔多2脚，兔=20÷2=10。鸡=30−10=20只。' },
@@ -577,15 +591,16 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '追及与相遇', tagColor: '#3b82f6',
           content: `<p>行程问题三要素：<b>路程s、速度v、时间t</b>。</p>
 <div class="formula-block">
-<b>基本公式：</b>s = v × t &emsp; v = s ÷ t &emsp; t = s ÷ v
+<span class="formula-title">基本公式</span>
+$$s = v \times t \quad v = s \div t \quad t = s \div v$$
 </div>
 <div class="formula-block">
-<b>相遇问题：</b>路程和 = 速度和 × 相遇时间<br>
-即 (v₁ + v₂) × t = s（总路程）
+<span class="formula-title">相遇问题</span>
+$$路程和 = 速度和 \times 相遇时间 \\ 即 (v₁ + v₂) \times t = s（总路程）$$
 </div>
 <div class="formula-block">
-<b>追及问题：</b>路程差 = 速度差 × 追及时间<br>
-即 (v₁ − v₂) × t = s₀（初始距离差）
+<span class="formula-title">追及问题</span>
+$$路程差 = 速度差 \times 追及时间 \\ 即 (v₁ - v₂) \times t = s₀（初始距离差）$$
 </div>
 <p><b>解题步骤：</b>画出行程图 → 确定已知量 → 选择合适的等量关系 → 列方程求解。</p>`,
           problems: [
@@ -600,8 +615,8 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '环形跑道', tagColor: '#3b82f6',
           content: `<p><b>环形跑道</b>问题的特殊之处在于"追上一圈"才算追上。</p>
 <div class="formula-block">
-<b>同向追及：</b>追及时间 = 跑道周长 ÷ 速度差<br>
-<b>反向相遇：</b>相遇时间 = 跑道周长 ÷ 速度和
+<span class="formula-title">同向追及</span>
+$$追及时间 = 跑道周长 \div 速度差 \\ 反向相遇：相遇时间 = 跑道周长 \div 速度和$$
 </div>
 <p><b>关键点：</b></p>
 <ul>
@@ -618,11 +633,13 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
         {
           type: '知识点', topic: '平均速度', tagColor: '#3b82f6',
           content: `<div class="formula-block">
-<b>平均速度 ≠ 速度的平均值！</b><br>
-平均速度 = 总路程 ÷ 总时间
+<span class="formula-title">平均速度 ≠ 速度的平均值！</span>
+$$平均速度 = 总路程 \div 总时间$$
 </div>
 <p><b>等距离平均速度：</b>若往返路程相同：</p>
-<div class="formula-block">v<sub>avg</sub> = 2v₁v₂ / (v₁ + v₂)（调和平均数）</div>
+<div class="formula-block">
+$$v_{\text{avg}} = 2v₁v₂ / (v₁ + v₂)（调和平均数）$$
+</div>
 <p><b>常见误區：</b>很多人会把(60+40)÷2=50当作平均速度，但往返的平均速度是2×60×40÷100=48km/h。</p>`,
           problems: [
             { diff: 'basic', q: '上山速度3km/h，下山速度6km/h，同一段路往返的平均速度是？', opts: ['A. 3.5km/h', 'B. 4km/h', 'C. 4.5km/h', 'D. 5km/h'], ans: 1, exp: '2×3×6÷(3+6)=36÷9=4km/h。' },
@@ -633,7 +650,9 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
         {
           type: '知识点', topic: '多次相遇', tagColor: '#3b82f6',
           content: `<p><b>直线两端多次相遇：</b></p>
-<div class="formula-block">第n次相遇，两人路程和 = (2n−1) × 全程</div>
+<div class="formula-block">
+$$第n次相遇，两人路程和 = (2n-1) \times 全程$$
+</div>
 <p><b>推导：</b></p>
 <ul>
   <li>第1次相遇：共走1个全程</li>
@@ -669,10 +688,7 @@ B比A少 a/b 的说法错误！B比A少的分率应为 (A−B)/A
           type: '知识点', topic: '流水行船', tagColor: '#3b82f6',
           content: `<p><b>流水行船</b>考虑水流对船速的影响：</p>
 <div class="formula-block">
-v<sub>顺</sub> = v<sub>静</sub> + v<sub>水</sub><br>
-v<sub>逆</sub> = v<sub>静</sub> − v<sub>水</sub><br>
-v<sub>静</sub> = (v<sub>顺</sub> + v<sub>逆</sub>) ÷ 2<br>
-v<sub>水</sub> = (v<sub>顺</sub> − v<sub>逆</sub>) ÷ 2
+$$v_{\text{顺}} = v_{\text{静}} + v_{\text{水}} \\ v_{\text{逆}} = v_{\text{静}} - v_{\text{水}} \\ v_{\text{静}} = (v_{\text{顺}} + v_{\text{逆}}) \div 2 \\ v_{\text{水}} = (v_{\text{顺}} - v_{\text{逆}}) \div 2$$
 </div>
 <p><b>常见题型：</b></p>
 <ul>
@@ -691,9 +707,7 @@ v<sub>水</sub> = (v<sub>顺</sub> − v<sub>逆</sub>) ÷ 2
           type: '知识点', topic: '火车过桥', tagColor: '#3b82f6',
           content: `<p><b>火车过桥（隧道）</b>的关键：路程 = 桥长 + 车长。</p>
 <div class="formula-block">
-过桥时间 = (桥长 + 车长) ÷ 车速<br>
-超车时间 = (甲车长 + 乙车长) ÷ 速度差（同向）<br>
-错车时间 = (甲车长 + 乙车长) ÷ 速度和（反向）
+$$过桥时间 = (桥长 + 车长) \div 车速 \\ 超车时间 = (甲车长 + 乙车长) \div 速度差（同向） \\ 错车时间 = (甲车长 + 乙车长) \div 速度和（反向）$$
 </div>
 <p><b>解题要点：</b></p>
 <ul>
@@ -712,9 +726,8 @@ v<sub>水</sub> = (v<sub>顺</sub> − v<sub>逆</sub>) ÷ 2
           type: '知识点', topic: '钟表问题', tagColor: '#3b82f6',
           content: `<p><b>钟表问题</b>本质是环形追及问题。时钟可以看作两个指针在圆形跑道上运动。</p>
 <div class="formula-block">
-分针速度：360°/60min = 6°/min<br>
-时针速度：360°/720min = 0.5°/min（或 360°/12h ÷ 60 = 0.5°/min）<br>
-速度差 = 5.5°/min
+<span class="formula-title">分针速度</span>
+$$360°/60min = 6°/min \\ 时针速度：360°/720min = 0.5°/min（或 360°/12h \div 60 = 0.5°/min） \\ 速度差 = 5.5°/min$$
 </div>
 <p><b>常见题型：</b></p>
 <ul>
@@ -752,10 +765,8 @@ v<sub>水</sub> = (v<sub>顺</sub> − v<sub>逆</sub>) ÷ 2
           type: '知识点', topic: '巧求周长', tagColor: '#3b82f6',
           content: `<p><b>基本周长公式：</b></p>
 <div class="formula-block">
-正方形：C = 4a（a为边长）<br>
-长方形：C = 2(a+b)（a、b为长和宽）<br>
-三角形：C = a + b + c<br>
-平行四边形：C = 2(a+b)
+<span class="formula-title">正方形</span>
+$$C = 4a（a为边长） \\ 长方形：C = 2(a+b)（a、b为长和宽） \\ 三角形：C = a + b + c \\ 平行四边形：C = 2(a+b)$$
 </div>
 <p><b>巧算策略：</b></p>
 <ul>
@@ -775,7 +786,8 @@ v<sub>水</sub> = (v<sub>顺</sub> − v<sub>逆</sub>) ÷ 2
           type: '知识点', topic: '等积变形', tagColor: '#3b82f6',
           content: `<p><b>等积变形</b>的关键模型：</p>
 <div class="formula-block">
-<b>同底等高：</b>底边相同、高相同的三角形（或平行四边形）面积相等。
+<span class="formula-title">同底等高</span>
+$$底边相同、高相同的三角形（或平行四边形）面积相等。$$
 </div>
 <p><b>核心模型：</b></p>
 <ul>
@@ -795,8 +807,7 @@ v<sub>水</sub> = (v<sub>顺</sub> − v<sub>逆</sub>) ÷ 2
           type: '知识点', topic: '格点面积', tagColor: '#3b82f6',
           content: `<p><b>格点多边形面积（皮克定理）：</b></p>
 <div class="formula-block">
-S = N + B/2 − 1<br>
-其中 N = 内部格点数，B = 边界格点数
+$$S = N + \frac{B}{2} - 1 \\ 其中 N = 内部格点数，B = 边界格点数$$
 </div>
 <p><b>应用条件：</b>顶点都在格点上（网格交点），网格为正方形。</p>
 <p><b>简化记忆：</b>内部格点 + 边界格点的一半 − 1。</p>
@@ -815,8 +826,7 @@ S = N + B/2 − 1<br>
 <p><b>3. 平移旋转法：</b>将图形的某部分平移或旋转，拼成规则图形。</p>
 <p><b>常用公式：</b></p>
 <div class="formula-block">
-三角形面积 = 底 × 高 ÷ 2<br>
-梯形面积 = (上底 + 下底) × 高 ÷ 2
+$$三角形面积 = 底 \times 高 \div 2 \\ 梯形面积 = (上底 + 下底) \times 高 \div 2$$
 </div>`,
           problems: [
             { diff: 'basic', q: '三角形底12cm高5cm，面积？', opts: ['A. 25cm²', 'B. 28cm²', 'C. 30cm²', 'D. 32cm²'], ans: 2, exp: 'S=12×5÷2=30cm²。' },
@@ -848,14 +858,13 @@ S = N + B/2 − 1<br>
           type: '知识点', topic: '圆与扇形', tagColor: '#3b82f6',
           content: `<p><b>圆的基本公式：</b></p>
 <div class="formula-block">
-周长（ circumference）：C = 2πr = πd<br>
-面积（area）：S = πr²<br>
-其中 π ≈ 3.14，r 为半径，d = 2r 为直径
+<span class="formula-title">周长（ circumference）</span>
+$$C = 2\pi r = \pi d \\ 面积（area）：S = \pi r^2 \\ 其中 \pi ≈ 3.14，r 为半径，d = 2r 为直径$$
 </div>
 <p><b>扇形公式：</b></p>
 <div class="formula-block">
-弧长：l = nπr/180（n为圆心角度数）<br>
-扇形面积：S<sub>扇</sub> = nπr²/360 = lr/2
+<span class="formula-title">弧长</span>
+$$l = n\pi r/180（n为圆心角度数） \\ 扇形面积：S_{\text{扇}} = \frac{n\pi r^2}{360} = \frac{lr}{2}$$
 </div>
 <p><b>环形面积：</b>S<sub>环</sub> = π(R² − r²)（R外半径，r内半径）</p>`,
           problems: [
@@ -870,14 +879,13 @@ S = N + B/2 − 1<br>
           type: '知识点', topic: '圆柱与圆锥', tagColor: '#3b82f6',
           content: `<p><b>圆柱公式：</b></p>
 <div class="formula-block">
-侧面积：S<sub>侧</sub> = 2πrh = Ch（C为底面周长）<br>
-表面积：S<sub>表</sub> = 2πr² + 2πrh = 2πr(r+h)<br>
-体积：V<sub>柱</sub> = πr²h
+<span class="formula-title">侧面积</span>
+$$S_{\text{侧}} = 2\pi rh = Ch（C为底面周长） \\ 表面积：S_{\text{表}} = 2\pi r^2 + 2\pi rh = 2\pi r(r+h) \\ 体积：V_{\text{柱}} = \pi r^2h$$
 </div>
 <p><b>圆锥公式：</b></p>
 <div class="formula-block">
-体积：V<sub>锥</sub> = πr²h/3 = V<sub>柱</sub>/3（同底等高圆柱的1/3）<br>
-母线长：l = √(r²+h²)
+<span class="formula-title">体积</span>
+$$V_{\text{锥}} = \frac{\pi r^2 h}{3} = \frac{V_{\text{柱}}}{3}（同底等高圆柱的\frac{1}{3}） \\\\ 母线长：l = \sqrt{r^2+h^2}$$
 </div>
 <p><b>关键关系：</b>等底等高的圆柱体积是圆锥的3倍。</p>`,
           problems: [
@@ -924,9 +932,13 @@ S = N + B/2 − 1<br>
         {
           type: '知识点', topic: '加乘原理', tagColor: '#3b82f6',
           content: `<p><b>加法原理（分类计数）：</b>完成一件事有n类办法，第i类有mᵢ种方法，总方法数 = m₁ + m₂ + … + mₙ。</p>
-<div class="formula-block">分类 → 加法（各类独立，选其一即可）</div>
+<div class="formula-block">
+$$分类 → 加法（各类独立，选其一即可）$$
+</div>
 <p><b>乘法原理（分步计数）：</b>完成一件事需n个步骤，第i步有mᵢ种方法，总方法数 = m₁ × m₂ × … × mₙ。</p>
-<div class="formula-block">分步 → 乘法（各步都要完成，缺一不可）</div>
+<div class="formula-block">
+$$分步 → 乘法（各步都要完成，缺一不可）$$
+</div>
 <p><b>区分技巧：</b>"或者"用加法，"并且"用乘法。一件事可以分几类不同的方式完成→加法；需要依次做几步→乘法。</p>`,
           problems: [
             { diff: 'basic', q: '从3件上衣和2条裤子中各选一件，有多少种搭配？', opts: ['A. 5种', 'B. 6种', 'C. 8种', 'D. 9种'], ans: 1, exp: '乘法原理：3×2=6种。' },
@@ -939,9 +951,15 @@ S = N + B/2 − 1<br>
         {
           type: '知识点', topic: '捆绑法与插空法', tagColor: '#3b82f6',
           content: `<p><b>捆绑法（相邻问题）：</b>将必须相邻的元素"捆"在一起视为一个整体，再与其余元素排列。最后不要忘记捆绑内部也有排列。</p>
-<div class="formula-block">步骤：① 将相邻元素捆绑为一个"大元素"<br>② 排列所有元素（含大元素）<br>③ 排列捆绑内部的元素<br>④ 相乘</div>
+<div class="formula-block">
+<span class="formula-title">步骤</span>
+$$① 将相邻元素捆绑为一个"大元素" \\ ② 排列所有元素（含大元素） \\ ③ 排列捆绑内部的元素 \\ ④ 相乘$$
+</div>
 <p><b>插空法（不相邻问题）：</b>先排列没有限制的元素，然后在它们之间及两端的"空位"中插入必须分开的元素。</p>
-<div class="formula-block">步骤：① 排列自由元素，形成 (n+1) 个空位<br>② 从空位中选择位置插入受限元素<br>③ 排列受限元素</div>`,
+<div class="formula-block">
+<span class="formula-title">步骤</span>
+$$① 排列自由元素，形成 (n+1) 个空位 \\ ② 从空位中选择位置插入受限元素 \\ ③ 排列受限元素$$
+</div>`,
           problems: [
             { diff: 'medium', q: 'A、B、C三人拍照，A和B必须相邻。有几种排法？', opts: ['A. 3种', 'B. 4种', 'C. 5种', 'D. 6种'], ans: 1, exp: '捆绑AB→视为1个元素+C共2个元素→2种排法。AB内部可换位→2种。共2×2=4种。' },
             { diff: 'medium', q: '4个男生和3个女生站一排，女生必须互不相邻。有几种排法？', opts: ['A. 720种', 'B. 840种', 'C. 960种', 'D. 1440种'], ans: 3, exp: '先排4男：4!=24种。4男形成5个空位。选3个空放3女：C(5,3)=10种选空×3!=60。24×60=1440种。' },
@@ -952,10 +970,8 @@ S = N + B/2 − 1<br>
           type: '知识点', topic: '几何计数', tagColor: '#3b82f6',
           content: `<p><b>几何计数</b>是数图形个数的技巧：</p>
 <div class="formula-block">
-<b>数线段：</b>n个点共线 → 线段数 = n(n−1)/2<br>
-<b>数角：</b>n条射线共端点 → 角数 = n(n−1)/2<br>
-<b>数长方形：</b>m×n网格 → 长方形数 = m(m+1)n(n+1)/4<br>
-<b>数正方形：</b>m×n网格 → 正方形数 = Σ(m−i+1)(n−i+1)，i从1到min(m,n)
+<span class="formula-title">数线段</span>
+$$n个点共线 → 线段数 = \frac{n(n-1)}{2} \\ 数角：n条射线共端点 → 角数 = \frac{n(n-1)}{2} \\ 数长方形：m \times n网格 → 长方形数 = m(m+1)n(n+1)/4 \\ 数正方形：m \times n网格 → 正方形数 = Σ(m-i+1)(n-i+1)，i从1到min(m,n)$$
 </div>
 <p><b>通用方法：</b>分类计数，先数最小的，再数组合后更大的，最后求和。用有序枚举避免遗漏。</p>`,
           problems: [
@@ -1015,7 +1031,10 @@ S = N + B/2 − 1<br>
   <li><b>火车过桥：</b>路程=桥长+车长，不是只算桥长！</li>
   <li><b>圆锥体积的1/3：</b>V锥=πr²h/3，别忘了除以3！等底等高圆柱体积是圆锥的3倍。</li>
 </ol>
-<div class="formula-block">考前速记：裂项前正后负 / 比后是单位1 / 等距平均调和平 / 水速顺逆差一半 / 火车过桥加车长 / 圆锥体积除3</div>`,
+<div class="formula-block">
+<span class="formula-title">考前速记</span>
+$$裂项前正后负 / 比后是单位1 / 等距平均调和平 / 水速顺逆差一半 / 火车过桥加车长 / 圆锥体积除3$$
+</div>`,
           problems: []
         },
         {

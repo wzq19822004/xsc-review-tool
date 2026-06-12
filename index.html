@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>小升初分班考 · 12天系统复习工具</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
 <style>
 :root {
   --bg: #0f172a; --bg2: #1e293b; --bg3: #334155; --bg4: #475569;
@@ -276,6 +277,8 @@ main {
   .dash-grid { grid-template-columns: 1fr; }
 }
 </style>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <aside>
@@ -701,6 +704,7 @@ function renderDay() {
 
   $('page-' + curSubj).innerHTML = h;
   updateSidebar();
+  setTimeout(renderKaTeX, 100);
 }
 
 function goDay(i) {
@@ -1085,6 +1089,20 @@ function updateSidebar() {
 // ═══════════════════════════════════════════
 //  INIT
 // ═══════════════════════════════════════════
+// KaTeX rendering helper — called after page content updates
+function renderKaTeX() {
+  if (typeof renderMathInElement === 'undefined') return;
+  try {
+    renderMathInElement(document.querySelector('main'), {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false }
+      ],
+      throwOnError: false
+    });
+  } catch(e) {}
+}
+
 function init() {
   // Wait for data files to load (they define CHINESE_DATA, MATH_DATA, ENGLISH_DATA)
   // If a data file isn't loaded yet, retry
