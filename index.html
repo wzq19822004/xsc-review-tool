@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小升初分班考 · 12天系统复习工具</title>
+<style>
+:root {
+  --bg: #0f172a; --bg2: #1e293b; --bg3: #334155; --bg4: #475569;
+  --text: #e2e8f0; --text2: #94a3b8; --text3: #64748b;
+  --accent: #38bdf8; --green: #22c55e; --red: #ef4444; --orange: #f59e0b;
+  --chinese: #f59e0b; --math: #3b82f6; --english: #22c55e;
+  --sidebar-w: 240px;
+  --font: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", "Cascadia Code", monospace;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+  font-family: var(--font); background: var(--bg); color: var(--text);
+  line-height: 1.85; display: flex; min-height: 100vh;
+}
+/* ═══ Sidebar ═══ */
+aside {
+  width: var(--sidebar-w); background: var(--bg2); padding: 20px 0;
+  display: flex; flex-direction: column; position: fixed;
+  top: 0; left: 0; bottom: 0; z-index: 100; overflow-y: auto;
+  border-right: 1px solid var(--bg3);
+}
+aside .logo {
+  font-size: 20px; font-weight: 700; text-align: center;
+  padding: 0 16px 24px; border-bottom: 1px solid var(--bg3); margin-bottom: 12px;
+}
+aside .logo span { color: var(--accent); }
+aside nav { flex: 1; }
+aside nav a {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 20px; color: var(--text2); text-decoration: none;
+  font-size: 14px; transition: all .15s; border-left: 3px solid transparent;
+  cursor: pointer;
+}
+aside nav a:hover { color: var(--text); background: rgba(255,255,255,.04); }
+aside nav a.active {
+  color: var(--text); background: rgba(56,189,248,.08);
+  border-left-color: var(--accent);
+}
+aside .sb-progress { padding: 16px 20px; border-top: 1px solid var(--bg3); margin-top: auto; }
+aside .sb-label { font-size: 11px; color: var(--text3); }
+aside .sb-bar { height: 5px; background: var(--bg3); border-radius: 3px; margin: 6px 0; overflow: hidden; }
+aside .sb-fill { height: 100%; border-radius: 3px; background: var(--accent); transition: width .4s; }
+/* ═══ Main ═══ */
+main {
+  margin-left: var(--sidebar-w); flex: 1; padding: 28px 36px; max-width: 1100px;
+}
+.page { display: none; }
+.page.active { display: block; }
+/* ═══ Top Bar ═══ */
+.top-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 22px; flex-wrap: wrap; gap: 12px;
+}
+.top-bar h1 { font-size: 24px; font-weight: 700; }
+.top-bar .meta { font-size: 14px; color: var(--text2); }
+/* ═══ Buttons ═══ */
+.btn {
+  padding: 9px 18px; border-radius: 8px; border: none; cursor: pointer;
+  font-size: 14px; font-weight: 600; transition: all .15s; font-family: var(--font);
+}
+.btn-sm { padding: 5px 12px; font-size: 12px; border-radius: 6px; }
+.btn-print { background: var(--bg3); color: var(--text); }
+.btn-print:hover { background: var(--accent); color: #0f172a; }
+.btn-primary { background: var(--accent); color: #0f172a; }
+.btn-primary:hover { opacity: .85; }
+.btn-danger { background: var(--red); color: #fff; }
+.btn-danger:hover { opacity: .85; }
+/* ═══ Day Navigation ═══ */
+.day-nav { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 22px; }
+.day-nav button {
+  width: 44px; height: 44px; border-radius: 8px;
+  border: 1px solid var(--bg3); background: var(--bg2); color: var(--text2);
+  cursor: pointer; font-size: 14px; font-weight: 600; transition: all .15s;
+  position: relative;
+}
+.day-nav button:hover { border-color: var(--accent); color: var(--text); }
+.day-nav button.active { background: var(--accent); color: #0f172a; border-color: var(--accent); }
+.day-nav button.done { border-color: var(--green); }
+.day-nav button.done::after {
+  content: '✓'; position: absolute; top: -6px; right: -6px;
+  font-size: 11px; color: #fff; background: var(--green); border-radius: 50%;
+  width: 18px; height: 18px; display: flex; align-items: center; justify-content: center;
+}
+/* ═══ Cards ═══ */
+.card {
+  background: var(--bg2); border-radius: 12px; padding: 22px 26px;
+  margin-bottom: 18px; border: 1px solid var(--bg3);
+}
+.card h3 { font-size: 18px; margin-bottom: 14px; }
+.card p, .card li { font-size: 15px; line-height: 2.0; margin-bottom: 8px; }
+/* ═══ Section Cards ═══ */
+.section-card {
+  background: var(--bg2); border-radius: 12px; margin-bottom: 16px;
+  border: 1px solid var(--bg3); overflow: hidden;
+}
+.section-card .sec-hdr {
+  padding: 16px 22px; cursor: pointer; display: flex; align-items: center;
+  justify-content: space-between; user-select: none; background: rgba(255,255,255,.01);
+}
+.section-card.open .sec-hdr { border-bottom: 1px solid var(--bg3); }
+.section-card .sec-hdr .s-left { display: flex; align-items: center; gap: 12px; }
+.section-card .sec-hdr .s-tag { font-size: 12px; padding: 4px 10px; border-radius: 5px; font-weight: 700; }
+.section-card .sec-hdr .s-topic { font-size: 17px; font-weight: 700; }
+.section-card .sec-hdr .s-arrow { font-size: 12px; color: var(--text2); transition: transform .2s; }
+.section-card.open .sec-hdr .s-arrow { transform: rotate(180deg); }
+.section-card .sec-body { display: none; padding: 22px; }
+.section-card.open .sec-body { display: block; }
+/* ═══ Content Blocks ═══ */
+.teach-block {
+  background: var(--bg3); padding: 18px 22px; border-radius: 10px;
+  margin-bottom: 16px; font-size: 15px; line-height: 2.1;
+}
+.teach-block b, .teach-block strong { color: #fbbf24; }
+.formula-block {
+  background: rgba(59,130,246,.08); border-left: 4px solid var(--math);
+  padding: 16px 20px; border-radius: 0 10px 10px 0; margin: 14px 0;
+  font-family: var(--font-mono); font-size: 16px; line-height: 2.6;
+}
+.poem-card {
+  background: linear-gradient(135deg, rgba(245,158,11,.06), rgba(168,85,247,.06));
+  border: 1px solid rgba(245,158,11,.15); border-radius: 12px; padding: 26px; margin: 16px 0;
+}
+.poem-card .poem-title { font-size: 20px; font-weight: 700; text-align: center; margin-bottom: 6px; color: var(--chinese); }
+.poem-card .poem-author { text-align: center; font-size: 14px; color: var(--text2); margin-bottom: 18px; }
+.poem-card .poem-text { text-align: center; font-size: 19px; line-height: 2.4; letter-spacing: 2px; margin-bottom: 18px; font-weight: 500; }
+.poem-card .poem-notes { font-size: 14px; color: var(--text2); line-height: 1.9; border-top: 1px dashed var(--bg4); padding-top: 14px; }
+.reading-passage {
+  background: var(--bg); border-left: 3px solid var(--accent);
+  padding: 16px 20px; margin: 12px 0; font-size: 15px; line-height: 2.1;
+  border-radius: 0 8px 8px 0;
+}
+.grammar-table {
+  width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 14px;
+}
+.grammar-table th { background: var(--bg4); padding: 10px 14px; text-align: left; font-weight: 700; }
+.grammar-table td { padding: 9px 14px; border-bottom: 1px solid var(--bg3); }
+/* ═══ Problems ═══ */
+.problem-item {
+  background: var(--bg3); border-radius: 10px; padding: 18px 22px;
+  margin-bottom: 12px; border-left: 4px solid var(--bg4);
+}
+.problem-item.diff-basic { border-left-color: var(--green); }
+.problem-item.diff-medium { border-left-color: var(--orange); }
+.problem-item.diff-hard { border-left-color: var(--red); }
+.problem-item .diff-badge {
+  display: inline-block; font-size: 11px; padding: 2px 8px;
+  border-radius: 4px; font-weight: 700; margin-right: 8px;
+}
+.diff-badge.basic { background: rgba(34,197,94,.15); color: var(--green); }
+.diff-badge.medium { background: rgba(245,158,11,.15); color: var(--orange); }
+.diff-badge.hard { background: rgba(239,68,68,.15); color: var(--red); }
+.problem-item .p-q { font-size: 15px; font-weight: 500; margin: 10px 0; line-height: 1.9; }
+.problem-item .p-opts { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+.problem-item .p-opts label {
+  display: flex; align-items: center; gap: 6px; padding: 7px 16px;
+  background: var(--bg2); border-radius: 8px; cursor: pointer;
+  font-size: 14px; border: 1px solid var(--bg4); transition: all .15s;
+}
+.problem-item .p-opts label:hover { border-color: var(--accent); }
+.problem-item .p-opts input[type=radio] { accent-color: var(--accent); width: 16px; height: 16px; }
+.p-answer { display: none; margin-top: 12px; padding: 14px 18px; border-radius: 8px; font-size: 14px; line-height: 1.9; }
+.p-answer.show { display: block; }
+.p-answer.correct { background: rgba(34,197,94,.08); border: 1px solid rgba(34,197,94,.25); }
+.p-answer.wrong { background: rgba(239,68,68,.08); border: 1px solid rgba(239,68,68,.25); }
+/* ═══ Quiz ═══ */
+.quiz-section {
+  background: var(--bg2); border-radius: 12px; padding: 26px;
+  margin-top: 24px; border: 2px solid var(--accent);
+}
+.quiz-section h3 { font-size: 18px; margin-bottom: 8px; color: var(--accent); }
+.quiz-section .quiz-meta { font-size: 13px; color: var(--text2); margin-bottom: 18px; }
+.quiz-result { display: none; margin-top: 18px; padding: 18px 22px; border-radius: 10px; font-size: 15px; }
+.quiz-result.show { display: block; }
+.quiz-result.good { background: rgba(34,197,94,.08); border: 1px solid rgba(34,197,94,.25); }
+.quiz-result.ok { background: rgba(245,158,11,.08); border: 1px solid rgba(245,158,11,.25); }
+.quiz-result.bad { background: rgba(239,68,68,.08); border: 1px solid rgba(239,68,68,.25); }
+/* ═══ Dashboard ═══ */
+.dash-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 22px; }
+.dash-card {
+  background: var(--bg2); border-radius: 12px; padding: 24px; border: 1px solid var(--bg3);
+}
+.dash-card .d-icon { font-size: 40px; margin-bottom: 8px; }
+.dash-card .d-num { font-size: 40px; font-weight: 800; margin-bottom: 4px; }
+.dash-card .d-label { font-size: 16px; color: var(--text2); }
+.dash-card .d-sub { font-size: 13px; color: var(--text3); margin-top: 4px; }
+.dash-card .d-bar { margin-top: 14px; height: 8px; background: var(--bg3); border-radius: 4px; overflow: hidden; }
+.dash-card .d-fill { height: 100%; border-radius: 4px; transition: width .5s; }
+.dash-chips { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+.chip {
+  font-size: 12px; padding: 3px 10px; border-radius: 12px; background: var(--bg3);
+}
+.chip.done { background: rgba(34,197,94,.15); color: var(--green); }
+.chip.cur { background: rgba(56,189,248,.15); color: var(--accent); }
+/* ═══ Check-in ═══ */
+.check-area {
+  background: var(--bg2); border-radius: 12px; padding: 22px; border: 1px solid var(--bg3); margin-top: 20px;
+}
+.check-area h3 { font-size: 16px; margin-bottom: 14px; }
+.check-list { list-style: none; }
+.check-list li {
+  display: flex; align-items: center; gap: 12px; padding: 11px 0;
+  border-bottom: 1px solid rgba(255,255,255,.03); font-size: 15px; cursor: pointer;
+}
+.check-list li .cb {
+  width: 24px; height: 24px; border: 2px solid var(--bg3); border-radius: 6px;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.check-list li.done .cb { background: var(--green); border-color: var(--green); }
+.check-list li.done .cb::after { content: '✓'; color: #fff; font-size: 14px; font-weight: 700; }
+/* ═══ Error Book ═══ */
+.err-tabs { display: flex; gap: 8px; margin-bottom: 18px; }
+.err-item {
+  background: var(--bg3); border-radius: 10px; padding: 16px 20px; margin-bottom: 12px;
+  border-left: 4px solid var(--red);
+}
+.err-item.resolved { border-left-color: var(--green); }
+/* ═══ Print ═══ */
+@media print {
+  aside, .top-bar, .day-nav, .check-area, .btn, .quiz-section, .err-tabs { display: none !important; }
+  main { margin-left: 0 !important; padding: 0 !important; max-width: 100% !important; }
+  body { background: #fff; color: #000; font-size: 13px; }
+  .card, .section-card, .teach-block, .poem-card, .problem-item { background: #fff; border: 1px solid #ccc; break-inside: avoid; }
+  .sec-body { display: block !important; }
+  .formula-block { background: #f5f8ff; border-left: 3px solid #333; }
+  .poem-card { background: #fffef5; }
+}
+/* ═══ Responsive ═══ */
+@media (max-width: 768px) {
+  aside { width: 60px; }
+  aside .logo { font-size: 14px; padding: 0 8px 16px; }
+  aside nav a { padding: 10px 8px; font-size: 12px; justify-content: center; }
+  aside nav a span.nav-label { display: none; }
+  aside .sb-progress { display: none; }
+  main { margin-left: 60px; padding: 16px 12px; }
+  .dash-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<aside>
+  <div class="logo">📚 <span>分班考复习</span></div>
+  <nav>
+    <a class="active" id="nav-dash" onclick="showPage('dash')">
+      <span>📊</span><span class="nav-label">学习总览</span>
+    </a>
+    <a id="nav-ch" onclick="showPage('chinese')">
+      <span>📖</span><span class="nav-label">语文</span>
+    </a>
+    <a id="nav-ma" onclick="showPage('math')">
+      <span>📐</span><span class="nav-label">数学</span>
+    </a>
+    <a id="nav-en" onclick="showPage('english')">
+      <span>🔤</span><span class="nav-label">英语</span>
+    </a>
+    <a id="nav-err" onclick="showPage('errors')">
+      <span>📝</span><span class="nav-label">错题本</span>
+    </a>
+  </nav>
+  <div class="sb-progress">
+    <div class="sb-label">总进度</div>
+    <div class="sb-bar"><div class="sb-fill" id="sb-bar" style="width:0%"></div></div>
+    <div class="sb-label" id="sb-pct" style="text-align:right">0/36天</div>
+  </div>
+</aside>
+
+<main>
+  <div class="page active" id="page-dash"></div>
+  <div class="page" id="page-chinese"></div>
+  <div class="page" id="page-math"></div>
+  <div class="page" id="page-english"></div>
+  <div class="page" id="page-errors"></div>
+</main>
+
+<!-- Content Data -->
+<script src="data/chinese.js" onerror="console.warn('Chinese data not loaded')"></script>
+<script src="data/math.js" onerror="console.warn('Math data not loaded')"></script>
+<script src="data/english.js" onerror="console.warn('English data not loaded')"></script>
+
+<script>
+// ═══════════════════════════════════════════
+//  STATE MANAGEMENT
+// ═══════════════════════════════════════════
+var SUBJECTS = {}; // populated from data files
+var curSubj = 'chinese';
+var curDay = 0;
+var STATE = { done: {}, scores: {}, errors: [], checks: {}, quizResults: {} };
+
+try {
+  var saved = JSON.parse(localStorage.getItem('xsc_review_v3') || '{}');
+  STATE.done = saved.done || {};
+  STATE.scores = saved.scores || {};
+  STATE.errors = saved.errors || [];
+  STATE.checks = saved.checks || {};
+  STATE.quizResults = saved.quizResults || {};
+} catch(e) {}
+
+function saveState() {
+  localStorage.setItem('xsc_review_v3', JSON.stringify(STATE));
+  updateSidebar();
+}
+
+function $(id) { return document.getElementById(id); }
+
+function getSubjId(s) {
+  return (s === 'chinese') ? 'ch' : (s === 'math' ? 'ma' : 'en');
+}
+
+function isDayDone(s, d) {
+  return !!STATE.done[getSubjId(s) + '-' + d];
+}
+
+function getScore(s, d) {
+  var key = getSubjId(s) + '-' + d;
+  return STATE.scores[key] || (STATE.quizResults[key] ? STATE.quizResults[key].score : null);
+}
+
+// ═══════════════════════════════════════════
+//  NAVIGATION
+// ═══════════════════════════════════════════
+function showPage(page) {
+  var pages = ['dash', 'chinese', 'math', 'english', 'errors'];
+  for (var i = 0; i < pages.length; i++) {
+    $('page-' + pages[i]).classList.remove('active');
+    var n = $('nav-' + pages[i]);
+    if (n) n.classList.remove('active');
+  }
+  $('page-' + page).classList.add('active');
+  var navId = (page === 'errors') ? 'err' : page;
+  var n = $('nav-' + navId);
+  if (n) n.classList.add('active');
+
+  if (page === 'dash') { renderDash(); }
+  else if (page === 'errors') { renderErrors('active'); }
+  else { curSubj = page; curDay = 0; renderDay(); }
+  updateSidebar();
+  window.scrollTo(0, 0);
+}
+
+// ═══════════════════════════════════════════
+//  DASHBOARD
+// ═══════════════════════════════════════════
+function renderDash() {
+  var subs = [
+    { key: 'chinese', id: 'ch', name: '语文', icon: '📖', color: 'var(--chinese)' },
+    { key: 'math', id: 'ma', name: '数学', icon: '📐', color: 'var(--math)' },
+    { key: 'english', id: 'en', name: '英语', icon: '🔤', color: 'var(--english)' }
+  ];
+  var totalDone = 0;
+
+  var h = '<div class="top-bar"><h1>📊 学习总览</h1>';
+  h += '<span class="meta">' + new Date().toLocaleDateString('zh-CN', {year:'numeric',month:'long',day:'numeric',weekday:'long'}) + '</span>';
+  h += '</div><div class="dash-grid">';
+
+  for (var s = 0; s < subs.length; s++) {
+    var sb = subs[s];
+    var dn = 0, totalSc = 0, scCount = 0;
+    for (var d = 1; d <= 12; d++) {
+      if (isDayDone(sb.key, d)) {
+        dn++;
+        var sc = getScore(sb.key, d);
+        if (sc !== null) { totalSc += sc; scCount++; }
+      }
+    }
+    totalDone += dn;
+    var avg = scCount > 0 ? Math.round(totalSc / scCount) : 0;
+    var pct = Math.round(dn / 12 * 100);
+
+    h += '<div class="dash-card">';
+    h += '<div class="d-icon">' + sb.icon + '</div>';
+    h += '<div class="d-num" style="color:' + sb.color + '">' + dn + '<span style="font-size:22px;color:var(--text3)">/12</span></div>';
+    h += '<div class="d-label">' + sb.name + '</div>';
+    h += '<div class="d-sub">' + pct + '%' + (scCount > 0 ? ' · 均分' + avg : '') + '</div>';
+    h += '<div class="d-bar"><div class="d-fill" style="width:' + pct + '%;background:' + sb.color + '"></div></div>';
+    h += '<div class="dash-chips">';
+    for (var d = 0; d < 12; d++) {
+      var isD = isDayDone(sb.key, d+1);
+      var ds = getScore(sb.key, d+1);
+      var cls = isD ? 'done' : (d+1 === (dn+1) && dn < 12 ? 'cur' : '');
+      h += '<span class="chip ' + cls + '" title="' + (isD ? '已完成' + (ds !== null ? ' · ' + ds + '分' : '') : '未完成') + '">D' + (d+1) + (ds !== null ? ' ' + ds + '分' : '') + '</span>';
+    }
+    h += '</div></div>';
+  }
+  h += '</div>';
+
+  var totalPct = Math.round(totalDone / 36 * 100);
+  h += '<div class="card"><h3>📈 总进度</h3>';
+  h += '<div style="display:flex;gap:18px;align-items:center">';
+  h += '<div style="font-size:52px;font-weight:800;color:var(--accent)">' + totalPct + '%</div>';
+  h += '<div style="flex:1">';
+  h += '<div class="d-bar" style="height:12px"><div class="d-fill" style="width:' + totalPct + '%;background:var(--accent)"></div></div>';
+  h += '<div style="margin-top:8px;font-size:14px;color:var(--text2)">' + totalDone + '/36 天已完成</div></div></div>';
+
+  var activeErrs = 0;
+  for (var i = 0; i < STATE.errors.length; i++) {
+    if (!STATE.errors[i].resolved) activeErrs++;
+  }
+  var nextStep = '';
+  if (totalDone < 36) {
+    for (var s = 0; s < subs.length; s++) {
+      var sb2 = subs[s];
+      for (var d = 1; d <= 12; d++) {
+        if (!isDayDone(sb2.key, d)) {
+          nextStep = '👉 建议继续：' + sb2.icon + ' ' + sb2.name + ' Day ' + d;
+          break;
+        }
+      }
+      if (nextStep) break;
+    }
+  } else {
+    nextStep = '🎉 全部完成！建议复习错题本。';
+  }
+  h += '<div style="margin-top:10px;font-size:15px">';
+  h += (activeErrs > 0 ? '📝 <b style="color:var(--red)">' + activeErrs + '</b> 道错题待复习 | ' : '✅ 暂无错题 | ');
+  h += nextStep + '</div>';
+  h += '</div>';
+
+  $('page-dash').innerHTML = h;
+}
+
+// ═══════════════════════════════════════════
+//  DAY RENDER
+// ═══════════════════════════════════════════
+function renderDay() {
+  var course = SUBJECTS[curSubj];
+  if (!course) {
+    $('page-' + curSubj).innerHTML = '<div class="card" style="text-align:center;padding:60px"><p style="font-size:18px;color:var(--text2)">⏳ 数据加载中…</p></div>';
+    return;
+  }
+  var d = course.days[curDay];
+  var pId = getSubjId(curSubj);
+  var qkey = pId + '-' + (curDay + 1);
+  var prevQuiz = STATE.quizResults[qkey];
+
+  var h = '<div class="top-bar"><h1>' + course.icon + ' ' + course.name + ' · Day ' + (curDay + 1) + '</h1>';
+  h += '<span class="meta">' + d.title + ' | ' + d.topics + '</span>';
+  h += '<div><button class="btn btn-print" onclick="window.print()">🖨️ 打印</button></div></div>';
+
+  // Day nav
+  h += '<div class="day-nav">';
+  for (var i = 0; i < 12; i++) {
+    var cls = (i === curDay) ? 'active' : '';
+    if (isDayDone(curSubj, i + 1)) cls += ' done';
+    h += '<button class="' + cls + '" onclick="goDay(' + i + ')">' + (i + 1) + '</button>';
+  }
+  h += '</div>';
+
+  // Day card
+  h += '<div class="card" style="padding:14px 22px"><b>📅 Day ' + (curDay + 1) + '：' + d.title + '</b> | ' + d.topics;
+  if (isDayDone(curSubj, curDay + 1)) {
+    var sc = getScore(curSubj, curDay + 1);
+    h += ' | <span style="color:var(--green)">✅ 已完成' + (sc !== null ? ' · 测验' + sc + '分' : '') + '</span>';
+  }
+  h += '</div>';
+
+  // Sections
+  for (var s = 0; s < d.sections.length; s++) {
+    var sec = d.sections[s];
+    var sId = 'sec-' + pId + '-' + s;
+    h += '<div class="section-card open" id="' + sId + '">';
+    h += '<div class="sec-hdr" onclick="toggleSec(\'' + sId + '\')">';
+    h += '<div class="s-left">';
+    h += '<span class="s-tag" style="background:' + (sec.tagColor || '#64748b') + '18;color:' + (sec.tagColor || '#64748b') + '">' + sec.type + '</span>';
+    h += '<span class="s-topic">' + sec.topic + '</span>';
+    h += '</div><span class="s-arrow">▼</span></div>';
+    h += '<div class="sec-body">';
+
+    // Content (use backtick-delimited content from data)
+    if (sec.content) {
+      h += '<div class="teach-block">' + sec.content + '</div>';
+    }
+
+    // Problems
+    if (sec.problems && sec.problems.length > 0) {
+      h += '<div style="font-size:15px;font-weight:700;margin:14px 0 10px">📝 分层练习</div>';
+      for (var p = 0; p < sec.problems.length; p++) {
+        var prob = sec.problems[p];
+        var dc = prob.diff === 'basic' ? 'diff-basic' : (prob.diff === 'medium' ? 'diff-medium' : 'diff-hard');
+        var dl = prob.diff === 'basic' ? '基础🟢' : (prob.diff === 'medium' ? '中级🟠' : '高级🔴');
+        var db = prob.diff === 'basic' ? 'basic' : (prob.diff === 'medium' ? 'medium' : 'hard');
+        var pid = 'prob-' + pId + '-' + curDay + '-' + s + '-' + p;
+
+        h += '<div class="problem-item ' + dc + '" id="' + pid + '">';
+        h += '<span class="diff-badge ' + db + '">' + dl + '</span>';
+        h += '<div class="p-q">' + (p + 1) + '. ' + prob.q + '</div>';
+        if (prob.opts) {
+          h += '<div class="p-opts">';
+          for (var o = 0; o < prob.opts.length; o++) {
+            h += '<label><input type="radio" name="' + pid + '" value="' + o + '" onchange="checkAnswer(this)"> ' + prob.opts[o] + '</label>';
+          }
+          h += '</div>';
+        }
+        h += '<div class="p-answer" id="ans-' + pid + '"></div>';
+        h += '</div>';
+      }
+    }
+
+    // Videos
+    if (sec.videos && sec.videos.length > 0) {
+      h += '<div style="margin-top:12px;padding:10px 0;border-top:1px solid var(--bg4)">';
+      h += '<span style="font-size:13px;color:var(--text3)">📺 相关视频：</span>';
+      for (var v = 0; v < sec.videos.length; v++) {
+        var vid = sec.videos[v];
+        h += ' <a href="' + vid.u + '" target="_blank" style="color:var(--accent);font-size:13px;text-decoration:none;margin:0 6px">' + vid.p + '：' + vid.t + '</a>';
+      }
+      h += '</div>';
+    }
+
+    h += '</div></div>'; // close sec-body, section-card
+  }
+
+  // Quiz section
+  if (d.quiz && d.quiz.length > 0) {
+    h += '<div class="quiz-section" id="quiz-' + pId + '">';
+    if (prevQuiz) {
+      var qr = prevQuiz;
+      var cls = qr.score >= 80 ? 'good' : (qr.score >= 60 ? 'ok' : 'bad');
+      var emoji = qr.score >= 80 ? '🎉' : (qr.score >= 60 ? '👍' : '💪');
+      h += '<h3>📋 Day ' + (curDay + 1) + ' 测验成绩：' + emoji + ' <span style="color:' + (qr.score >= 80 ? 'var(--green)' : (qr.score >= 60 ? 'var(--orange)' : 'var(--red)')) + '">' + qr.score + '分</span>（' + qr.correct + '/' + qr.total + '）</h3>';
+      h += '<p class="quiz-meta">' + new Date(qr.ts).toLocaleString('zh-CN') + '</p>';
+      h += '<div class="quiz-result show ' + cls + '" style="display:block">';
+      for (var q = 0; q < qr.answers.length; q++) {
+        var ans = qr.answers[q];
+        var qzOrig = d.quiz[q];
+        var isR = ans.isRight;
+        h += '<div class="problem-item ' + (isR ? 'diff-basic' : 'diff-hard') + '" style="margin-bottom:10px">';
+        h += '<span style="font-weight:700;color:' + (isR ? 'var(--green)' : 'var(--red)') + ';font-size:15px">' + (isR ? '✅' : '❌') + ' ' + (q + 1) + '.</span>';
+        h += ' <span style="font-size:11px;color:var(--text3)">[' + (ans.topic || qzOrig.topic) + ']</span>';
+        h += ' <span style="font-size:14px">' + qzOrig.q + '</span>';
+        h += '<div style="margin:6px 0;font-size:13px;line-height:2.0">';
+        for (var o = 0; o < qzOrig.opts.length; o++) {
+          var oStyle = '', oMark = '';
+          if (o === qzOrig.ans) {
+            oStyle = 'color:var(--green);font-weight:700';
+            oMark = ' ← ✅ 正确';
+          }
+          if (!isR && o === ans.user) {
+            oStyle = 'color:var(--red);font-weight:700;text-decoration:line-through';
+            oMark = ' ← ❌ 你的选择';
+          }
+          h += '<div style="' + oStyle + '">' + qzOrig.opts[o] + oMark + '</div>';
+        }
+        h += '</div>';
+        if (!isR) {
+          h += '<div style="font-size:12px;color:var(--text2);line-height:1.8;padding:8px 12px;background:rgba(239,68,68,.04);border-radius:6px;margin-top:4px"><b>💡 解析：</b>' + qzOrig.exp + '</div>';
+        } else {
+          h += '<div style="font-size:12px;color:var(--green);padding:4px 10px">✅ 正确！</div>';
+        }
+        h += '</div>';
+      }
+      h += '</div>';
+      h += '<button class="btn btn-sm" style="background:var(--bg3);color:var(--text);margin-top:8px" onclick="retakeQuiz()">🔄 重新测验</button>';
+    } else {
+      h += '<h3>📋 Day ' + (curDay + 1) + ' 考察测验（共' + d.quiz.length + '题）</h3>';
+      h += '<p class="quiz-meta">做完点击提交查看成绩。错题自动收录到错题本。</p>';
+      for (var q = 0; q < d.quiz.length; q++) {
+        var qz = d.quiz[q];
+        h += '<div class="problem-item diff-medium" style="margin-bottom:10px">';
+        h += '<span class="diff-badge" style="background:rgba(56,189,248,.12);color:var(--accent);font-size:10px">' + (qz.topic || '综合') + '</span>';
+        h += '<div class="p-q">' + (q + 1) + '. ' + qz.q + '</div>';
+        if (qz.opts) {
+          h += '<div class="p-opts">';
+          for (var oo = 0; oo < qz.opts.length; oo++) {
+            h += '<label><input type="radio" name="qz-' + pId + '-' + curDay + '-' + q + '" value="' + oo + '"> ' + qz.opts[oo] + '</label>';
+          }
+          h += '</div>';
+        }
+        h += '</div>';
+      }
+      h += '<button class="btn btn-primary" onclick="submitQuiz()">📝 提交测验</button>';
+      h += '<div class="quiz-result" id="qz-result-' + pId + '"></div>';
+    }
+    h += '</div>';
+  }
+
+  // Daily report button
+  h += '<div style="margin-top:14px;text-align:center">';
+  h += '<button class="btn btn-sm" style="background:var(--bg3);color:var(--text)" onclick="showDailyReport()">📊 查看每日学习日报</button>';
+  h += '</div>';
+
+  // Check-in
+  h += '<div class="check-area"><h3>✅ 今日打卡</h3><ul class="check-list">';
+  var cks = ['完成知识点学习', '完成分层练习', '完成考察测验', '观看推荐视频'];
+  for (var c = 0; c < cks.length; c++) {
+    var ck = pId + '-' + curDay + '-' + c;
+    var cd = !!STATE.checks[ck];
+    h += '<li class="' + (cd ? 'done' : '') + '" onclick="toggleCheck(\'' + ck + '\', this)">';
+    h += '<span class="cb"></span><span>' + cks[c] + '</span></li>';
+  }
+  h += '</ul></div>';
+
+  $('page-' + curSubj).innerHTML = h;
+  updateSidebar();
+  window.scrollTo(0, 0);
+}
+
+function goDay(i) {
+  curDay = i;
+  renderDay();
+  window.scrollTo(0, 0);
+}
+
+function toggleSec(id) {
+  document.getElementById(id).classList.toggle('open');
+}
+
+// ═══════════════════════════════════════════
+//  PROBLEM CHECK
+// ═══════════════════════════════════════════
+function checkAnswer(el) {
+  // Parse problem ID from radio name: prob-{pId}-{day}-{section}-{problemIdx}
+  var parts = el.name.split('-');
+  var pId = parts[1];
+  var day = parseInt(parts[2]);
+  var sIdx = parseInt(parts[3]);
+  var pIdx = parseInt(parts[4]);
+  var userAns = parseInt(el.value);
+
+  var course = SUBJECTS[curSubj];
+  var prob = course.days[day].sections[sIdx].problems[pIdx];
+  var correctAns = prob.ans;
+  var exp = prob.exp;
+
+  var ansDiv = $('ans-' + el.name);
+  var isCorrect = (userAns === correctAns);
+  var labelMap = ['A', 'B', 'C', 'D'];
+
+  ansDiv.className = 'p-answer show ' + (isCorrect ? 'correct' : 'wrong');
+
+  if (isCorrect) {
+    ansDiv.innerHTML = '<div style="font-size:16px"><b style="color:var(--green)">✅ 正确！</b></div>' +
+      '<div style="font-size:14px;color:var(--text2);line-height:1.9"><b>答案：</b>' + labelMap[correctAns] + '<br><b>解析：</b>' + exp + '</div>';
+  } else {
+    ansDiv.innerHTML = '<div style="font-size:16px"><b style="color:var(--red)">❌ 错误</b></div>' +
+      '<div style="font-size:14px;line-height:2.0;color:var(--text2)">' +
+      '<div>你的答案：<span style="color:var(--red);font-weight:700">' + labelMap[userAns] + '</span> 正确答案：<span style="color:var(--green);font-weight:700">' + labelMap[correctAns] + '</span></div>' +
+      '<div style="margin-top:6px"><b>📖 解析：</b>' + exp + '</div>' +
+      '<div style="border-top:1px solid var(--bg4);padding-top:8px;margin-top:8px"><b>🔍 错误原因：</b>' + (userAns < 0 ? '未作答' : '选项' + labelMap[userAns] + '判断错误，可能混淆了关键概念或忽略了限定条件') + '</div>' +
+      '</div>';
+
+    // Record error
+    var subjName = pId === 'ch' ? '语文' : (pId === 'ma' ? '数学' : '英语');
+    STATE.errors.unshift({
+      subj: subjName,
+      day: day + 1,
+      topic: course.days[day].sections[sIdx].topic,
+      q: prob.q,
+      userAns: labelMap[userAns],
+      correctAns: labelMap[correctAns],
+      explanation: exp,
+      reason: '选项' + labelMap[userAns] + '错误，混淆概念或忽略条件',
+      ts: Date.now(),
+      resolved: false
+    });
+    saveState();
+  }
+}
+
+// ═══════════════════════════════════════════
+//  QUIZ
+// ═══════════════════════════════════════════
+function submitQuiz() {
+  var course = SUBJECTS[curSubj];
+  var d = course.days[curDay];
+  var pId = getSubjId(curSubj);
+  var quiz = d.quiz;
+  var correct = 0;
+  var total = quiz.length;
+  var results = [];
+
+  for (var q = 0; q < total; q++) {
+    var qz = quiz[q];
+    var radios = document.getElementsByName('qz-' + pId + '-' + curDay + '-' + q);
+    var sel = -1;
+    for (var r = 0; r < radios.length; r++) {
+      if (radios[r].checked) sel = parseInt(radios[r].value);
+    }
+    var isR = (sel === qz.ans);
+    if (isR) correct++;
+    results.push({ topic: qz.topic, user: sel, correct: qz.ans, exp: qz.exp, isRight: isR });
+  }
+
+  var score = Math.round(correct / total * 100);
+  var key = pId + '-' + (curDay + 1);
+  STATE.scores[key] = score;
+  STATE.done[key] = true;
+  STATE.quizResults[key] = {
+    score: score,
+    correct: correct,
+    total: total,
+    answers: results,
+    ts: Date.now()
+  };
+
+  // Record wrong answers
+  var labelMap = ['A', 'B', 'C', 'D'];
+  for (var q = 0; q < results.length; q++) {
+    if (!results[q].isRight) {
+      var subjName = pId === 'ch' ? '语文' : (pId === 'ma' ? '数学' : '英语');
+      STATE.errors.unshift({
+        subj: subjName,
+        day: curDay + 1,
+        topic: results[q].topic || quiz[q].topic,
+        q: quiz[q].q,
+        userAns: results[q].user >= 0 ? labelMap[results[q].user] : '未答',
+        correctAns: labelMap[results[q].correct],
+        explanation: results[q].exp,
+        reason: '测验错题',
+        ts: Date.now(),
+        resolved: false
+      });
+    }
+  }
+  saveState();
+
+  var rd = $('qz-result-' + pId);
+  var cls = score >= 80 ? 'good' : (score >= 60 ? 'ok' : 'bad');
+  rd.className = 'quiz-result show ' + cls;
+  rd.innerHTML = '<b>' + (score >= 80 ? '🎉 ' : (score >= 60 ? '👍 ' : '💪 ')) +
+    '测验成绩：' + score + '分</b>（' + correct + '/' + total + '）<br>' +
+    (score >= 80 ? '表现优秀！继续保持！' : (score >= 60 ? '还不错，建议复习错题。' : '需要加强复习！')) +
+    '<br><span style="font-size:13px;color:var(--text2)">错题已自动收录到错题本。</span>';
+
+  renderDay();
+}
+
+function retakeQuiz() {
+  var pId = getSubjId(curSubj);
+  var key = pId + '-' + (curDay + 1);
+  delete STATE.quizResults[key];
+  delete STATE.done[key];
+  delete STATE.scores[key];
+  saveState();
+  renderDay();
+}
+
+// ═══════════════════════════════════════════
+//  CHECK-IN
+// ═══════════════════════════════════════════
+function toggleCheck(ck, el) {
+  STATE.checks[ck] = !STATE.checks[ck];
+  saveState();
+  el.classList.toggle('done');
+}
+
+// ═══════════════════════════════════════════
+//  DAILY REPORT
+// ═══════════════════════════════════════════
+function showDailyReport() {
+  var course = SUBJECTS[curSubj];
+  var d = course.days[curDay];
+  var pId = getSubjId(curSubj);
+  var key = pId + '-' + (curDay + 1);
+  var qr = STATE.quizResults[key];
+  var subjName = pId === 'ch' ? '语文' : (pId === 'ma' ? '数学' : '英语');
+  var dayErrs = [];
+  for (var i = 0; i < STATE.errors.length; i++) {
+    if (STATE.errors[i].subj === subjName && STATE.errors[i].day === curDay + 1) {
+      dayErrs.push(STATE.errors[i]);
+    }
+  }
+
+  var h = '<div style="background:var(--bg2);border-radius:12px;padding:28px;max-width:850px;margin:0 auto">';
+  h += '<h2 style="text-align:center;margin-bottom:4px">📊 ' + course.icon + ' ' + course.name + ' Day ' + (curDay + 1) + ' 学习日报</h2>';
+  h += '<p style="text-align:center;color:var(--text2);font-size:13px;margin-bottom:20px">' + d.title + ' | ' + new Date().toLocaleDateString('zh-CN') + '</p>';
+
+  // Summary cards
+  h += '<div style="display:flex;gap:14px;margin-bottom:18px">';
+  h += '<div style="flex:1;background:var(--bg3);border-radius:8px;padding:16px;text-align:center">';
+  h += '<div style="font-size:30px;font-weight:800;color:' + (qr ? (qr.score >= 80 ? 'var(--green)' : (qr.score >= 60 ? 'var(--orange)' : 'var(--red)')) : 'var(--text3)') + '">' + (qr ? qr.score + '分' : '未测') + '</div>';
+  h += '<div style="font-size:12px;color:var(--text2)">测验成绩</div></div>';
+  h += '<div style="flex:1;background:var(--bg3);border-radius:8px;padding:16px;text-align:center">';
+  h += '<div style="font-size:30px;font-weight:800;color:var(--accent)">' + d.sections.length + '</div>';
+  h += '<div style="font-size:12px;color:var(--text2)">知识点</div></div>';
+  h += '<div style="flex:1;background:var(--bg3);border-radius:8px;padding:16px;text-align:center">';
+  h += '<div style="font-size:30px;font-weight:800;color:var(--red)">' + dayErrs.length + '</div>';
+  h += '<div style="font-size:12px;color:var(--text2)">错题</div></div>';
+  h += '</div>';
+
+  // Knowledge points
+  h += '<div style="background:var(--bg3);border-radius:8px;padding:16px;margin-bottom:12px"><b>📖 今日知识点</b>';
+  h += '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:10px">';
+  for (var s = 0; s < d.sections.length; s++) {
+    h += '<span style="font-size:12px;padding:4px 12px;background:var(--bg2);border-radius:14px">' + d.sections[s].type + '：' + d.sections[s].topic + '</span>';
+  }
+  h += '</div></div>';
+
+  // Quiz details
+  if (qr) {
+    h += '<div style="background:var(--bg3);border-radius:8px;padding:16px;margin-bottom:12px"><b>📝 测验详情（' + qr.score + '分）</b>';
+    for (var q = 0; q < qr.answers.length; q++) {
+      var a = qr.answers[q];
+      var qz = d.quiz[q];
+      h += '<div style="margin-top:8px;font-size:14px">' + (a.isRight ? '✅' : '❌') + ' ' + (q + 1) + '. ' + qz.q + ' → ' + (a.isRight ? '正确' : '错误（正确：' + ['A','B','C','D'][qz.ans] + '）') + '</div>';
+    }
+    h += '</div>';
+  }
+
+  // Errors
+  if (dayErrs.length > 0) {
+    h += '<div style="background:var(--bg3);border-radius:8px;padding:16px;margin-bottom:12px"><b>📝 今日错题</b>';
+    for (var e = 0; e < dayErrs.length; e++) {
+      var err = dayErrs[e];
+      h += '<div style="margin-top:8px;font-size:14px;line-height:1.8">' + (e + 1) + '. ' + err.q + '<br>你的：<span style="color:var(--red)">' + err.userAns + '</span> → 正确：<b style="color:var(--green)">' + err.correctAns + '</b><br>💡 ' + err.explanation + '</div>';
+    }
+    h += '</div>';
+  }
+
+  // Review advice
+  h += '<div style="background:var(--bg3);border-radius:8px;padding:16px"><b>📌 复习建议</b>';
+  if (!qr) {
+    h += '<p style="font-size:14px;margin-top:6px">尚未完成测验，建议先完成考察测验。</p>';
+  } else if (qr.score >= 80) {
+    h += '<p style="font-size:14px;margin-top:6px;color:var(--green)">表现优秀！继续保持当前学习节奏。</p>';
+  } else if (qr.score >= 60) {
+    h += '<p style="font-size:14px;margin-top:6px">建议重点复习错题本中的相关题目，尤其关注：' + 
+      (dayErrs.length > 0 ? dayErrs.map(function(e) { return e.topic; }).filter(function(v, i, a) { return a.indexOf(v) === i; }).join('、') : '所有知识点') + '</p>';
+  } else {
+    h += '<p style="font-size:14px;margin-top:6px;color:var(--red)">成绩偏低，建议重新学习今日全部知识点后再测验。</p>';
+  }
+  h += '</div>';
+
+  h += '<div style="text-align:center;margin-top:18px">';
+  h += '<button class="btn btn-print" onclick="window.print()">🖨️ 打印日报</button> ';
+  h += '<button class="btn btn-sm" style="background:var(--bg3);color:var(--text)" onclick="renderDay()">← 返回</button>';
+  h += '</div></div>';
+
+  $('page-' + curSubj).innerHTML = h;
+  window.scrollTo(0, 0);
+}
+
+// ═══════════════════════════════════════════
+//  ERROR BOOK
+// ═══════════════════════════════════════════
+function renderErrors(tab) {
+  tab = tab || 'active';
+  var h = '<div class="top-bar"><h1>📝 错题本</h1>';
+  h += '<div class="err-tabs">';
+  h += '<button class="btn btn-sm" style="background:' + (tab === 'active' ? 'var(--accent)' : 'var(--bg3)') + ';color:' + (tab === 'active' ? '#0f172a' : 'var(--text)') + '" onclick="renderErrors(\'active\')">📌 待复习</button>';
+  h += '<button class="btn btn-sm" style="background:' + (tab === 'history' ? 'var(--accent)' : 'var(--bg3)') + ';color:' + (tab === 'history' ? '#0f172a' : 'var(--text)') + '" onclick="renderErrors(\'history\')">📋 已消除</button>';
+  h += '</div></div>';
+
+  var list = [];
+  for (var i = 0; i < STATE.errors.length; i++) {
+    if (tab === 'active' && !STATE.errors[i].resolved) list.push({ err: STATE.errors[i], idx: i });
+    else if (tab === 'history' && STATE.errors[i].resolved) list.push({ err: STATE.errors[i], idx: i });
+  }
+
+  if (list.length === 0) {
+    h += '<div class="card" style="text-align:center;padding:50px">';
+    h += '<p style="font-size:18px;color:var(--text2)">' + (tab === 'active' ? '🎉 所有错题已消除！' : '暂无已消除的错题') + '</p>';
+    h += '</div>';
+  } else {
+    var groups = {};
+    for (var i = 0; i < list.length; i++) {
+      var sj = list[i].err.subj;
+      if (!groups[sj]) groups[sj] = [];
+      groups[sj].push(list[i]);
+    }
+    for (var sj in groups) {
+      h += '<div class="card"><h3>' + sj + '（' + groups[sj].length + '题）</h3>';
+      for (var j = 0; j < groups[sj].length; j++) {
+        var it = groups[sj][j];
+        var e = it.err;
+        h += '<div class="err-item' + (e.resolved ? ' resolved' : '') + '">';
+        h += '<div style="font-size:12px;color:var(--text3)">Day ' + e.day + ' · ' + e.topic + '</div>';
+        h += '<div style="font-size:15px;font-weight:500;margin:6px 0">📝 ' + e.q + '</div>';
+        h += '<div style="font-size:14px">你的：<span style="color:var(--red)">' + e.userAns + '</span> → 正确：<b style="color:var(--green)">' + e.correctAns + '</b></div>';
+        h += '<div style="font-size:13px;color:var(--text2);margin-top:6px;line-height:1.8">💡 ' + e.explanation + '</div>';
+        h += '<div style="font-size:13px;color:var(--orange);margin-top:4px">🔍 ' + (e.reason || '混淆概念或忽略条件') + '</div>';
+
+        if (!e.resolved) {
+          h += '<div id="rt-' + it.idx + '" style="margin-top:8px"></div>';
+          h += '<button class="btn btn-sm btn-primary" onclick="startRetest(' + it.idx + ')" style="margin-top:10px">🔄 同类题重测</button>';
+        } else {
+          h += '<div style="margin-top:8px;font-size:12px;color:var(--green)">✅ 已消除</div>';
+          h += '<button class="btn btn-sm" style="background:var(--bg3);color:var(--text);margin-top:6px" onclick="restoreError(' + it.idx + ')">↩ 转回错题本</button>';
+        }
+        h += '</div>';
+      }
+      h += '</div>';
+    }
+  }
+
+  $('page-errors').innerHTML = h;
+}
+
+// Similar questions pool for retest
+var SIMILAR_QUESTIONS = {
+  '字音': [{ q: '"勉强"中"强"的读音是：', opts: ['A. qiáng', 'B. qiǎng', 'C. jiàng', 'D. qiāng'], ans: 1, exp: '勉强读qiǎng，强迫也读qiǎng。' }],
+  '字形': [{ q: '书写完全正确的是：', opts: ['A. 一愁莫展', 'B. 再接再厉', 'C. 迫不急待', 'D. 穿流不息'], ans: 1, exp: 'A一筹莫展 B再接再厉（正确） C迫不及待 D川流不息' }],
+  '病句': [{ q: '下列没有语病的是：', opts: ['A. 通过努力，使成绩提高了', 'B. 春天公园盛开着花', 'C. 他大约30岁左右', 'D. 春天的公园盛开着各种花'], ans: 3, exp: 'A缺主语（删"通过"或"使"）B动宾不搭配 C"大约"与"左右"重复' }],
+  '时态': [{ q: 'She ___ here since 2020.', opts: ['A. is', 'B. was', 'C. has been', 'D. will be'], ans: 2, exp: 'since + 时间点 → 现在完成时。' }],
+  '计算': [{ q: '0.75 + 1/4 =', opts: ['A. 0.5', 'B. 1.0', 'C. 1.25', 'D. 0.75'], ans: 1, exp: '0.75 + 0.25 = 1.0' }],
+  '_default': [{ q: '请回到原知识点页面重新学习。你认为：', opts: ['A. 已完全理解', 'B. 还需要复习', 'C. 跳过此题', 'D. 不确定'], ans: 0, exp: '建议回到知识点页面重新学习后再次测试。' }]
+};
+
+function findSimilarQ(topic) {
+  for (var k in SIMILAR_QUESTIONS) {
+    if (topic && (topic.indexOf(k) >= 0 || k.indexOf(topic) >= 0)) {
+      return SIMILAR_QUESTIONS[k];
+    }
+  }
+  return SIMILAR_QUESTIONS['_default'];
+}
+
+function startRetest(idx) {
+  var e = STATE.errors[idx];
+  var qs = findSimilarQ(e.topic || '');
+  var q = qs[Math.floor(Math.random() * qs.length)];
+  var lbls = ['A', 'B', 'C', 'D'];
+
+  var h = '<div style="background:rgba(56,189,248,.06);border:1px solid var(--accent);border-radius:8px;padding:14px;margin-top:8px">';
+  h += '<b>🔄 同类题重测</b>';
+  h += '<div class="problem-item" style="margin:10px 0;background:var(--bg)">';
+  h += '<div class="p-q">' + q.q + '</div>';
+  h += '<div class="p-opts">';
+  for (var o = 0; o < q.opts.length; o++) {
+    h += '<label><input type="radio" name="rt-' + idx + '" value="' + o + '"> ' + q.opts[o] + '</label>';
+  }
+  h += '</div></div>';
+  h += '<button class="btn btn-sm btn-primary" onclick="submitRetest(' + idx + ')">📝 提交</button>';
+  h += '<div id="rt-r-' + idx + '" style="margin-top:8px"></div></div>';
+
+  $('rt-' + idx).innerHTML = h;
+}
+
+function submitRetest(idx) {
+  var e = STATE.errors[idx];
+  var qs = findSimilarQ(e.topic || '');
+  var q = qs[0]; // Use the first (most relevant) question
+  var radios = document.getElementsByName('rt-' + idx);
+  var sel = -1;
+  for (var r = 0; r < radios.length; r++) {
+    if (radios[r].checked) sel = parseInt(radios[r].value);
+  }
+  var isC = (sel === q.ans);
+  var rd = $('rt-r-' + idx);
+  var lbls = ['A', 'B', 'C', 'D'];
+
+  if (isC) {
+    STATE.errors[idx].resolved = true;
+    saveState();
+    rd.innerHTML = '<div style="color:var(--green);font-weight:700;padding:8px">✅ 答对了！错题已消除。</div>';
+  } else {
+    rd.innerHTML = '<div style="color:var(--red);font-weight:700;padding:8px">❌ 未通过。正确答案：' + lbls[q.ans] + '。<br>💡 ' + q.exp + '</div>';
+  }
+  setTimeout(function() { renderErrors('active'); }, 2500);
+}
+
+function restoreError(idx) {
+  STATE.errors[idx].resolved = false;
+  saveState();
+  renderErrors('history');
+}
+
+// ═══════════════════════════════════════════
+//  SIDEBAR
+// ═══════════════════════════════════════════
+function updateSidebar() {
+  var totalDone = 0;
+  var map = { chinese: 'ch', math: 'ma', english: 'en' };
+  var keys = Object.keys(map);
+  for (var s = 0; s < keys.length; s++) {
+    for (var d = 1; d <= 12; d++) {
+      if (isDayDone(keys[s], d)) totalDone++;
+    }
+  }
+  var pct = Math.round(totalDone / 36 * 100);
+  $('sb-bar').style.width = pct + '%';
+  $('sb-pct').textContent = totalDone + '/36天 · ' + pct + '%';
+}
+
+// ═══════════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════════
+function init() {
+  // Wait for data files to load (they define CHINESE_DATA, MATH_DATA, ENGLISH_DATA)
+  // If a data file isn't loaded yet, retry
+  var retries = 0;
+  function checkData() {
+    if (typeof CHINESE_DATA !== 'undefined') SUBJECTS.chinese = CHINESE_DATA;
+    if (typeof MATH_DATA !== 'undefined') SUBJECTS.math = MATH_DATA;
+    if (typeof ENGLISH_DATA !== 'undefined') SUBJECTS.english = ENGLISH_DATA;
+
+    var loaded = 0;
+    if (SUBJECTS.chinese) loaded++;
+    if (SUBJECTS.math) loaded++;
+    if (SUBJECTS.english) loaded++;
+
+    if (loaded === 3 || retries >= 10) {
+      renderDash();
+      updateSidebar();
+    } else {
+      retries++;
+      setTimeout(checkData, 300);
+    }
+  }
+  checkData();
+}
+
+// Start loading
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
+</script>
+</body>
+</html>
