@@ -120,10 +120,43 @@ main {
 }
 .teach-block b, .teach-block strong { color: #fbbf24; }
 .formula-block {
-  background: rgba(59,130,246,.08); border-left: 4px solid var(--math);
-  padding: 16px 20px; border-radius: 0 10px 10px 0; margin: 14px 0;
-  font-family: var(--font-mono); font-size: 16px; line-height: 2.6;
+  background: linear-gradient(135deg, rgba(59,130,246,.06), rgba(56,189,248,.04));
+  border-left: 4px solid var(--math);
+  border-right: 1px solid rgba(59,130,246,.15);
+  padding: 20px 24px; border-radius: 0 12px 12px 0; margin: 16px 0;
+  font-family: var(--font-mono); font-size: 18px; line-height: 2.8;
+  letter-spacing: 1px; color: #e2e8f0;
+  overflow-x: auto; white-space: pre-wrap;
 }
+.formula-block .var { color: #fbbf24; font-style: italic; }
+.formula-block .num { color: #38bdf8; }
+.formula-block .op { color: #f472b6; }
+.formula-block .frac { display: inline-block; text-align: center; vertical-align: middle; margin: 0 4px; }
+.formula-block .frac > span { display: block; padding: 0 6px; }
+.formula-block .frac > span:first-child { border-bottom: 2px solid var(--math); }
+.formula-block .eq-highlight { color: #22c55e; font-weight: 700; }
+.formula-block .formula-title { display: block; font-size: 13px; color: var(--text3); font-family: var(--font); margin-bottom: 8px; letter-spacing: 0; }
+/* ═══ Knowledge Map ═══ */
+.kmap { background: var(--bg2); border-radius: 12px; padding: 22px 26px; margin-bottom: 18px; border: 1px solid var(--bg3); }
+.kmap h3 { font-size: 18px; margin-bottom: 16px; }
+.kmap-row { display: flex; gap: 8px; margin-bottom: 10px; align-items: flex-start; }
+.kmap-label { font-size: 13px; color: var(--text3); min-width: 80px; padding-top: 4px; font-weight: 700; }
+.kmap-items { display: flex; flex-wrap: wrap; gap: 6px; flex: 1; }
+.kmap-chip { font-size: 12px; padding: 5px 12px; border-radius: 14px; background: var(--bg3); white-space: nowrap; cursor: pointer; transition: all .15s; }
+.kmap-chip:hover { background: var(--bg4); }
+.kmap-chip.learned { background: rgba(34,197,94,.15); color: var(--green); }
+.kmap-chip.current { background: rgba(56,189,248,.15); color: var(--accent); border: 1px solid rgba(56,189,248,.3); }
+.kmap-chip.pending { background: var(--bg3); color: var(--text3); }
+/* ═══ Quick stats ═══ */
+.quick-stats { display: flex; gap: 12px; margin-bottom: 18px; }
+.quick-stat { flex: 1; background: var(--bg2); border-radius: 10px; padding: 16px; text-align: center; border: 1px solid var(--bg3); }
+.quick-stat .qs-val { font-size: 28px; font-weight: 800; }
+.quick-stat .qs-label { font-size: 12px; color: var(--text2); margin-top: 4px; }
+/* ═══ Daily report mini ═══ */
+.rpt-mini { background: var(--bg2); border-radius: 12px; padding: 18px 22px; margin-bottom: 18px; border: 1px solid var(--bg3); }
+.rpt-mini h3 { font-size: 16px; margin-bottom: 12px; }
+.rpt-mini-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.04); font-size: 14px; }
+.rpt-mini-item:last-child { border-bottom: none; }
 .poem-card {
   background: linear-gradient(135deg, rgba(245,158,11,.06), rgba(168,85,247,.06));
   border: 1px solid rgba(245,158,11,.15); border-radius: 12px; padding: 26px; margin: 16px 0;
@@ -344,8 +377,23 @@ function showPage(page) {
   window.scrollTo(0, 0);
 }
 
+var STUDY_START = Date.now();
+try { STUDY_START = parseInt(localStorage.getItem('xsc_study_start') || Date.now()); } catch(e) {}
+function saveStudyStart() { localStorage.setItem('xsc_study_start', String(STUDY_START)); }
+saveStudyStart();
+
+function getStudyDays() {
+  var days = 0;
+  try {
+    var saved = JSON.parse(localStorage.getItem('xsc_review_v3') || '{}');
+    var done = saved.done || {};
+    for (var k in done) { if (done[k]) days++; }
+  } catch(e) {}
+  return Math.max(1, Math.ceil((Date.now() - STUDY_START) / 86400000));
+}
+
 // ═══════════════════════════════════════════
-//  DASHBOARD
+//  DASHBOARD (enhanced)
 // ═══════════════════════════════════════════
 function renderDash() {
   var subs = [
@@ -353,62 +401,120 @@ function renderDash() {
     { key: 'math', id: 'ma', name: '数学', icon: '📐', color: 'var(--math)' },
     { key: 'english', id: 'en', name: '英语', icon: '🔤', color: 'var(--english)' }
   ];
-  var totalDone = 0;
-
-  var h = '<div class="top-bar"><h1>📊 学习总览</h1>';
-  h += '<span class="meta">' + new Date().toLocaleDateString('zh-CN', {year:'numeric',month:'long',day:'numeric',weekday:'long'}) + '</span>';
-  h += '</div><div class="dash-grid">';
+  var totalDone = 0, totalProblems = 0, totalCorrect = 0;
+  var subjectStats = {};
 
   for (var s = 0; s < subs.length; s++) {
     var sb = subs[s];
-    var dn = 0, totalSc = 0, scCount = 0;
+    var dn = 0, totalSc = 0, scCount = 0, subjTotalQ = 0, subjCorrect = 0;
     for (var d = 1; d <= 12; d++) {
       if (isDayDone(sb.key, d)) {
         dn++;
         var sc = getScore(sb.key, d);
         if (sc !== null) { totalSc += sc; scCount++; }
+        var qrKey = sb.id + '-' + d;
+        var qr = STATE.quizResults[qrKey];
+        if (qr) { subjTotalQ += qr.total; subjCorrect += qr.correct; }
       }
     }
     totalDone += dn;
+    totalProblems += subjTotalQ;
+    totalCorrect += subjCorrect;
     var avg = scCount > 0 ? Math.round(totalSc / scCount) : 0;
     var pct = Math.round(dn / 12 * 100);
+    subjectStats[sb.key] = { done: dn, avg: avg, pct: pct, totalQ: subjTotalQ, correct: subjCorrect };
+  }
 
-    h += '<div class="dash-card">';
-    h += '<div class="d-icon">' + sb.icon + '</div>';
-    h += '<div class="d-num" style="color:' + sb.color + '">' + dn + '<span style="font-size:22px;color:var(--text3)">/12</span></div>';
-    h += '<div class="d-label">' + sb.name + '</div>';
-    h += '<div class="d-sub">' + pct + '%' + (scCount > 0 ? ' · 均分' + avg : '') + '</div>';
-    h += '<div class="d-bar"><div class="d-fill" style="width:' + pct + '%;background:' + sb.color + '"></div></div>';
-    h += '<div class="dash-chips">';
+  var h = '<div class="top-bar"><h1>📊 学习总览</h1>';
+  h += '<span class="meta">' + new Date().toLocaleDateString('zh-CN', {year:'numeric',month:'long',day:'numeric',weekday:'long'}) + '</span>';
+  h += '</div>';
+
+  var activeErrs = 0;
+  for (var i = 0; i < STATE.errors.length; i++) { if (!STATE.errors[i].resolved) activeErrs++; }
+  var studyDays = getStudyDays();
+  var totalPct = Math.round(totalDone / 36 * 100);
+  var overallAcc = totalProblems > 0 ? Math.round(totalCorrect / totalProblems * 100) : 0;
+
+  h += '<div class="quick-stats">';
+  h += '<div class="quick-stat"><div class="qs-val" style="color:var(--accent)">' + totalPct + '%</div><div class="qs-label">总进度 ' + totalDone + '/36天</div></div>';
+  h += '<div class="quick-stat"><div class="qs-val" style="color:var(--green)">' + overallAcc + '%</div><div class="qs-label">正确率 ' + totalCorrect + '/' + totalProblems + '题</div></div>';
+  h += '<div class="quick-stat"><div class="qs-val" style="color:var(--red)">' + activeErrs + '</div><div class="qs-label">待复习错题</div></div>';
+  h += '<div class="quick-stat"><div class="qs-val" style="color:var(--orange)">' + studyDays + '天</div><div class="qs-label">已学习天数</div></div>';
+  h += '</div>';
+
+  h += '<div class="kmap"><h3>🗺️ 知识地图</h3>';
+  for (var s = 0; s < subs.length; s++) {
+    var sb = subs[s];
+    var course = SUBJECTS[sb.key];
+    if (!course) continue;
+    h += '<div class="kmap-row"><div class="kmap-label">' + sb.icon + ' ' + sb.name + '</div><div class="kmap-items">';
     for (var d = 0; d < 12; d++) {
+      var dayData = course.days[d];
       var isD = isDayDone(sb.key, d+1);
       var ds = getScore(sb.key, d+1);
-      var cls = isD ? 'done' : (d+1 === (dn+1) && dn < 12 ? 'cur' : '');
-      h += '<span class="chip ' + cls + '" title="' + (isD ? '已完成' + (ds !== null ? ' · ' + ds + '分' : '') : '未完成') + '">D' + (d+1) + (ds !== null ? ' ' + ds + '分' : '') + '</span>';
+      var cls = isD ? 'learned' : '';
+      if (!isD && d === subjectStats[sb.key].done) cls = 'current';
+      h += '<span class="kmap-chip ' + cls + '" title="' + dayData.title + (isD && ds !== null ? ' · ' + ds + '分' : '') + '" onclick="showPage(\'' + sb.key + '\');curDay=' + d + ';renderDay();">D' + (d+1) + ' ' + dayData.title + '</span>';
     }
     h += '</div></div>';
   }
   h += '</div>';
 
-  var totalPct = Math.round(totalDone / 36 * 100);
-  h += '<div class="card"><h3>📈 总进度</h3>';
-  h += '<div style="display:flex;gap:18px;align-items:center">';
-  h += '<div style="font-size:52px;font-weight:800;color:var(--accent)">' + totalPct + '%</div>';
-  h += '<div style="flex:1">';
-  h += '<div class="d-bar" style="height:12px"><div class="d-fill" style="width:' + totalPct + '%;background:var(--accent)"></div></div>';
-  h += '<div style="margin-top:8px;font-size:14px;color:var(--text2)">' + totalDone + '/36 天已完成</div></div></div>';
-
-  var activeErrs = 0;
-  for (var i = 0; i < STATE.errors.length; i++) {
-    if (!STATE.errors[i].resolved) activeErrs++;
+  h += '<div class="dash-grid">';
+  for (var s = 0; s < subs.length; s++) {
+    var sb = subs[s];
+    var st = subjectStats[sb.key];
+    h += '<div class="dash-card">';
+    h += '<div class="d-icon">' + sb.icon + '</div>';
+    h += '<div class="d-num" style="color:' + sb.color + '">' + st.done + '<span style="font-size:22px;color:var(--text3)">/12</span></div>';
+    h += '<div class="d-label">' + sb.name + '</div>';
+    h += '<div class="d-sub">' + st.pct + '%' + (st.avg > 0 ? ' · 均分' + st.avg : '') + (st.totalQ > 0 ? ' · 正确率' + Math.round(st.correct/st.totalQ*100) + '%' : '') + '</div>';
+    h += '<div class="d-bar"><div class="d-fill" style="width:' + st.pct + '%;background:' + sb.color + '"></div></div>';
+    h += '<div class="dash-chips">';
+    for (var d = 0; d < 12; d++) {
+      var isD = isDayDone(sb.key, d+1);
+      var ds = getScore(sb.key, d+1);
+      var cls = isD ? 'done' : '';
+      if (!isD && d === st.done) cls = 'cur';
+      h += '<span class="chip ' + cls + '" onclick="showPage(\'' + sb.key + '\');curDay=' + d + ';renderDay();" style="cursor:pointer" title="' + (isD ? '已完成' + (ds !== null ? ' · ' + ds + '分' : '') : '点击开始学习') + '">D' + (d+1) + (ds !== null ? ' ' + ds + '分' : '') + '</span>';
+    }
+    h += '</div></div>';
   }
+  h += '</div>';
+
+  if (totalDone > 0) {
+    h += '<div class="rpt-mini"><h3>📊 最近学习动态</h3>';
+    var allResults = [];
+    for (var si = 0; si < subs.length; si++) {
+      for (var di = 1; di <= 12; di++) {
+        var key = subs[si].id + '-' + di;
+        var qr = STATE.quizResults[key];
+        if (qr) allResults.push({ subj: subs[si], day: di, qr: qr });
+      }
+    }
+    allResults.sort(function(a, b) { return b.qr.ts - a.qr.ts; });
+    var count = Math.min(allResults.length, 5);
+    if (count === 0) {
+      h += '<div style="font-size:14px;color:var(--text2)">完成第一次测验后这里会显示最近动态</div>';
+    } else {
+      for (var ri = 0; ri < count; ri++) {
+        var r = allResults[ri];
+        h += '<div class="rpt-mini-item">';
+        h += '<span>' + r.subj.icon + ' ' + r.subj.name + ' Day ' + r.day + '</span>';
+        h += '<span style="color:' + (r.qr.score >= 80 ? 'var(--green)' : (r.qr.score >= 60 ? 'var(--orange)' : 'var(--red)')) + ';font-weight:700">' + r.qr.score + '分</span>';
+        h += '<span style="font-size:12px;color:var(--text3)">' + new Date(r.qr.ts).toLocaleDateString('zh-CN') + '</span>';
+        h += '</div>';
+      }
+    }
+    h += '</div>';
+  }
+
   var nextStep = '';
   if (totalDone < 36) {
     for (var s = 0; s < subs.length; s++) {
-      var sb2 = subs[s];
       for (var d = 1; d <= 12; d++) {
-        if (!isDayDone(sb2.key, d)) {
-          nextStep = '👉 建议继续：' + sb2.icon + ' ' + sb2.name + ' Day ' + d;
+        if (!isDayDone(subs[s].key, d)) {
+          nextStep = '👉 建议继续：<a href="javascript:void(0)" onclick="showPage(\'' + subs[s].key + '\');curDay=' + (d-1) + ';renderDay();" style="color:var(--accent);text-decoration:none;font-weight:700">' + subs[s].icon + ' ' + subs[s].name + ' Day ' + d + '</a>';
           break;
         }
       }
@@ -417,10 +523,7 @@ function renderDash() {
   } else {
     nextStep = '🎉 全部完成！建议复习错题本。';
   }
-  h += '<div style="margin-top:10px;font-size:15px">';
-  h += (activeErrs > 0 ? '📝 <b style="color:var(--red)">' + activeErrs + '</b> 道错题待复习 | ' : '✅ 暂无错题 | ');
-  h += nextStep + '</div>';
-  h += '</div>';
+  h += '<div class="card" style="text-align:center"><div style="font-size:16px">' + nextStep + '</div></div>';
 
   $('page-dash').innerHTML = h;
 }
