@@ -701,7 +701,6 @@ function renderDay() {
 
   $('page-' + curSubj).innerHTML = h;
   updateSidebar();
-  window.scrollTo(0, 0);
 }
 
 function goDay(i) {
@@ -832,6 +831,8 @@ function submitQuiz() {
     '<br><span style="font-size:13px;color:var(--text2)">错题已自动收录到错题本。</span>';
 
   renderDay();
+  var qs = $('quiz-' + pId);
+  if (qs) setTimeout(function() { qs.scrollIntoView({ behavior: 'smooth', block: 'start' }); }, 100);
 }
 
 function retakeQuiz() {
