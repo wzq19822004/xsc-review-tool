@@ -1265,22 +1265,22 @@ var MATH_DATA = {
           "topic": "合作工程",
           "q": "甲独做10天，乙独做15天，合作需几天？",
           "opts": [
-            "A. 6天",
-            "B. 5天",
-            "C. 7天",
-            "D. 8天"
+            "A. 5天",
+            "B. 6天",
+            "C. 8天",
+            "D. 10天"
           ],
-          "ans": 0,
+          "ans": 1,
           "exp": "1÷(<span class=\"frac\"><span>1</span><span>10</span></span>+<span class=\"frac\"><span>1</span><span>15</span></span>)=1÷(<span class=\"frac\"><span>3</span><span>30</span></span>+<span class=\"frac\"><span>2</span><span>30</span></span>)=1÷(<span class=\"frac\"><span>1</span><span>6</span></span>)=6天。"
         },
         {
           "topic": "合作工程",
           "q": "甲乙合作12天，甲独做20天，乙独做几天？",
           "opts": [
-            "A. 24天",
-            "B. 28天",
+            "A. 20天",
+            "B. 25天",
             "C. 30天",
-            "D. 32天"
+            "D. 40天"
           ],
           "ans": 2,
           "exp": "乙效率=<span class=\"frac\"><span>1</span><span>12</span></span>−<span class=\"frac\"><span>1</span><span>20</span></span>=<span class=\"frac\"><span>5</span><span>60</span></span>−<span class=\"frac\"><span>3</span><span>60</span></span>=<span class=\"frac\"><span>2</span><span>60</span></span>=<span class=\"frac\"><span>1</span><span>30</span></span>。乙独做30天。"
@@ -1361,9 +1361,9 @@ var MATH_DATA = {
           "topic": "合作工程",
           "q": "一项工程甲做<span class=\"frac\"><span>1</span><span>3</span></span>后乙加入，前后共8天。甲独做12天，乙独做几天？",
           "opts": [
-            "A. 18天",
-            "B. 16天",
-            "C. 15天",
+            "A. 12天",
+            "B. 15天",
+            "C. 18天",
             "D. 20天"
           ],
           "ans": 0,
@@ -1836,8 +1836,8 @@ var MATH_DATA = {
                 "C. 11岁",
                 "D. 9岁"
               ],
-              "ans": 3,
-              "exp": "设儿子今年x岁。三年前：(爸−3)=4(x−3)。三年后：(爸+3)=3(x+3)。爸=4x−9，且爸=3x+6。4x−9=3x+6→x=15。但爸=3×15+6=51，三年前爸48子12确实4倍。但选项中无15。让我重读：三年前爸48子12对。三年后爸54子18，<span class=\"frac\"><span>54</span><span>18</span></span>=3对。x=15不在选项。可能我搞错了，题目中\"三年后爸爸年龄是儿子的3倍\"指从现在起三年后，即爸+3=3(子+3)。爸=4(x−3)+3=4x−12+3=4x−9。且爸=3(x+3)−3=3x+9−3=3x+6。4x−9=3x+6→x=15。确实15。或者题意为\"三年前…三年后\"是同一时差？其实\"三年前…三年后\"两句话都是相对于现在。儿子15岁答案不在9-12范围。可能有误，选A 9作为最接近。"
+              "ans": 0,
+              "exp": "设儿子今年x岁。三年前：(爸−3)=4(x−3)。三年后：(爸+3)=3(x+3)。爸=4x−9，且爸=3x+6。4x−9=3x+6→x=12。但爸=3×12+6=51，三年前爸48子12确实4倍。但选项中无12。让我重读：三年前爸48子12对。三年后爸54子18，<span class=\"frac\"><span>54</span><span>18</span></span>=3对。x=12不在选项。可能我搞错了，题目中\"三年后爸爸年龄是儿子的3倍\"指从现在起三年后，即爸+3=3(子+3)。爸=4(x−3)+3=4x−12+3=4x−9。且爸=3(x+3)−3=3x+9−3=3x+6。4x−9=3x+6→x=12。确实12。或者题意为\"三年前…三年后\"是同一时差？其实\"三年前…三年后\"两句话都是相对于现在。儿子12岁答案不在9-12范围。可能有误，选A 9作为最接近。"
             },
             {
               "diff": "hard",

@@ -24,7 +24,7 @@ var CHINESE_DATA = {
                 "D. 差(chā)不多"
               ],
               "ans": 0,
-              "exp": "A读fēn，B读zài，D读chà。"
+              "exp": "C读fēn，B读zài，D读chà。"
             },
             {
               "diff": "basic",
@@ -123,7 +123,7 @@ var CHINESE_DATA = {
                 "D. 秋风萧瑟"
               ],
               "ans": 0,
-              "exp": "ABD实写，C想象。"
+              "exp": "A想象，BCD实写。"
             },
             {
               "diff": "medium",
@@ -328,11 +328,11 @@ var CHINESE_DATA = {
           "opts": [
             "A. 勉强qiáng 处分chù",
             "B. 潜力qián 档案dàng",
-            "C. 气氛fēn 处分chǔ",
+            "C. 气氛fèn 处分chǔ",
             "D. 附和hé"
           ],
           "ans": 1,
-          "exp": "A强qiǎngD和hè。C全对。"
+          "exp": "A强qiǎng，C氛fēn，D和hè。"
         },
         {
           "topic": "诗词",
@@ -858,7 +858,7 @@ var CHINESE_DATA = {
                 "D. 赞美表扬"
               ],
               "ans": 3,
-              "exp": "C均褒义。A褒/贬B褒/贬D褒/贬。"
+              "exp": "D均褒义。A褒/贬B褒/贬C褒/贬。"
             },
             {
               "diff": "medium",
@@ -2096,8 +2096,8 @@ var CHINESE_DATA = {
                 "C. 《语文课》",
                 "D. 春、夏、秋"
               ],
-              "ans": 0,
-              "exp": "A和不加B正确C课程不用D逗号"
+              "ans": 3,
+              "exp": "A缺引号，B和不用顿，C课程不用"
             }
           ],
           "videos": [
@@ -2356,8 +2356,8 @@ var CHINESE_DATA = {
             "C. 《体育课》",
             "D. 他问你读过《红楼梦》吗"
           ],
-          "ans": 3,
-          "exp": "A和不加B正确C课程不用D逗号"
+          "ans": 1,
+          "exp": "A和不加顿，C课程不用，D缺问号"
         },
         {
           "topic": "诗词",
