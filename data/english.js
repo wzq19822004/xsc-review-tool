@@ -1,4 +1,3 @@
-// Generated with randomized answer distribution
 var ENGLISH_DATA = {
   "name": "英语",
   "icon": "🔤",
@@ -20,9 +19,9 @@ var ENGLISH_DATA = {
               "q": "He often ___ to school by bus.",
               "opts": [
                 "A. go",
-                "D. going",
+                "B. going",
                 "C. went",
-                "B. goes"
+                "D. goes"
               ],
               "ans": 3,
               "exp": "often 表示一般现在时，主语 he 第三人称单数，用 goes。"
@@ -55,9 +54,9 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "My sister ___ to Beijing three times.",
               "opts": [
-                "C. went",
+                "A. went",
                 "B. have been",
-                "A. has been",
+                "C. has been",
                 "D. goes"
               ],
               "ans": 2,
@@ -68,8 +67,8 @@ var ENGLISH_DATA = {
               "q": "I ___ my homework when you called me.",
               "opts": [
                 "A. do",
-                "C. was doing",
-                "B. did",
+                "B. was doing",
+                "C. did",
                 "D. have done"
               ],
               "ans": 1,
@@ -81,8 +80,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. started",
                 "B. has started",
-                "D. was starting",
-                "C. had started"
+                "C. was starting",
+                "D. had started"
               ],
               "ans": 3,
               "exp": "arrived 是过去，在此之前的动作用过去完成时 had started。"
@@ -111,10 +110,10 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "The opposite（反义词）of 'happy' is ___ .",
               "opts": [
-                "D. nonhappy",
+                "A. nonhappy",
                 "B. dishappy",
                 "C. inhappy",
-                "A. unhappy"
+                "D. unhappy"
               ],
               "ans": 3,
               "exp": "happy 加前缀 un- 变成 unhappy。"
@@ -123,9 +122,9 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "A person who teaches is a ___ .",
               "opts": [
-                "C. teacher",
+                "A. teacher",
                 "B. teachist",
-                "A. teachor",
+                "C. teachor",
                 "D. teachman"
               ],
               "ans": 0,
@@ -135,8 +134,8 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "Be ___ when you cross the street.（care 的适当形式）",
               "opts": [
-                "B. careless",
-                "A. careful",
+                "A. careless",
+                "B. careful",
                 "C. carely",
                 "D. caring"
               ],
@@ -147,8 +146,8 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "The word 'impossible' means ___ .",
               "opts": [
-                "B. 不可能的",
-                "A. 很可能的",
+                "A. 不可能的",
+                "B. 很可能的",
                 "C. 重要的",
                 "D. 礼貌的"
               ],
@@ -161,8 +160,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. rewrite",
                 "B. return",
-                "D. refuse",
-                "C. replay"
+                "C. refuse",
+                "D. replay"
               ],
               "ans": 2,
               "exp": "refuse 中的 re- 不是前缀（refuse 不是一个词根），其余三个 re- 都表示'再'。"
@@ -192,8 +191,8 @@ var ENGLISH_DATA = {
               "q": "The past tense of 'go' is ___ .",
               "opts": [
                 "A. goed",
-                "C. went",
-                "B. goes",
+                "B. went",
+                "C. goes",
                 "D. gone"
               ],
               "ans": 1,
@@ -203,10 +202,10 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "I have ___ (eat) my lunch already.",
               "opts": [
-                "D. eaten",
+                "A. eaten",
                 "B. ate",
                 "C. eating",
-                "A. eat"
+                "D. eat"
               ],
               "ans": 0,
               "exp": "have 后接过去分词，eat→ate→eaten。"
@@ -227,10 +226,10 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "They have ___ (be) friends for five years.",
               "opts": [
-                "D. been",
+                "A. been",
                 "B. was",
                 "C. were",
-                "A. be"
+                "D. be"
               ],
               "ans": 0,
               "exp": "have 后接过去分词，be 的过去分词是 been。"
@@ -266,8 +265,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "What did Tom do first last Sunday?",
               "opts": [
-                "B. Did math homework",
-                "A. Played basketball",
+                "A. Did math homework",
+                "B. Played basketball",
                 "C. Cleaned the house",
                 "D. Practiced piano"
               ],
@@ -279,8 +278,8 @@ var ENGLISH_DATA = {
               "q": "How long did Tom play basketball?",
               "opts": [
                 "A. One hour",
-                "C. Two hours",
-                "B. Thirty minutes",
+                "B. Two hours",
+                "C. Thirty minutes",
                 "D. All afternoon"
               ],
               "ans": 1,
@@ -302,9 +301,9 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "How did Tom feel about his day?",
               "opts": [
-                "C. Tired but happy",
+                "A. Tired but happy",
                 "B. Angry",
-                "A. Bored",
+                "C. Bored",
                 "D. Disappointed"
               ],
               "ans": 0,
@@ -337,8 +336,8 @@ var ENGLISH_DATA = {
           "topic": "一般现在时",
           "q": "She usually ___ up at 6:30.",
           "opts": [
-            "B. gets",
-            "A. get",
+            "A. gets",
+            "B. get",
             "C. got",
             "D. getting"
           ],
@@ -350,8 +349,8 @@ var ENGLISH_DATA = {
           "q": "We ___ a great time at the party last night.",
           "opts": [
             "A. have",
-            "C. had",
-            "B. has",
+            "B. had",
+            "C. has",
             "D. having"
           ],
           "ans": 1,
@@ -363,8 +362,8 @@ var ENGLISH_DATA = {
           "opts": [
             "A. sings",
             "B. sang",
-            "D. are singing",
-            "C. is singing"
+            "C. are singing",
+            "D. is singing"
           ],
           "ans": 3,
           "exp": "Listen! 提示正在发生，用现在进行时。someone 用 is singing。"
@@ -374,8 +373,8 @@ var ENGLISH_DATA = {
           "q": "My father ___ in this factory since 2010.",
           "opts": [
             "A. works",
-            "C. has worked",
-            "B. worked",
+            "B. has worked",
+            "C. worked",
             "D. is working"
           ],
           "ans": 1,
@@ -385,9 +384,9 @@ var ENGLISH_DATA = {
           "topic": "过去进行时",
           "q": "I ___ TV when the phone rang.",
           "opts": [
-            "C. was watching",
+            "A. was watching",
             "B. watched",
-            "A. watch",
+            "C. watch",
             "D. have watched"
           ],
           "ans": 0,
@@ -398,8 +397,8 @@ var ENGLISH_DATA = {
           "q": "The prefix 're-' in 'rewrite' means ___ .",
           "opts": [
             "A. 不",
-            "C. 再，重新",
-            "B. 之前",
+            "B. 再，重新",
+            "C. 之前",
             "D. 之后"
           ],
           "ans": 1,
@@ -410,8 +409,8 @@ var ENGLISH_DATA = {
           "q": "Adding '-less' to 'home' makes the word ___ .",
           "opts": [
             "A. homeful",
-            "C. homely",
-            "B. homeless",
+            "B. homely",
+            "C. homeless",
             "D. homeable"
           ],
           "ans": 2,
@@ -471,9 +470,9 @@ var ENGLISH_DATA = {
               "q": "The classroom ___ cleaned every day.",
               "opts": [
                 "A. am",
-                "D. be",
+                "B. be",
                 "C. are",
-                "B. is"
+                "D. is"
               ],
               "ans": 3,
               "exp": "主语 classroom 是单数，一般现在时被动用 is cleaned。"
@@ -482,9 +481,9 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "These books ___ written by Lu Xun.",
               "opts": [
-                "C. were",
+                "A. were",
                 "B. was",
-                "A. is",
+                "C. is",
                 "D. has"
               ],
               "ans": 0,
@@ -506,9 +505,9 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "The window ___ by Tom just now.",
               "opts": [
-                "C. was broken",
+                "A. was broken",
                 "B. broke",
-                "A. breaks",
+                "C. breaks",
                 "D. is broken"
               ],
               "ans": 0,
@@ -518,8 +517,8 @@ var ENGLISH_DATA = {
               "diff": "hard",
               "q": "A new hospital ___ in our city since last year.",
               "opts": [
-                "B. was built",
-                "A. has been built",
+                "A. was built",
+                "B. has been built",
                 "C. is built",
                 "D. will be built"
               ],
@@ -531,8 +530,8 @@ var ENGLISH_DATA = {
               "q": "Which sentence is correct?",
               "opts": [
                 "A. The story was happened in 1990.",
-                "C. The story was happen in 1990.",
-                "B. The story happened in 1990.",
+                "B. The story was happen in 1990.",
+                "C. The story happened in 1990.",
                 "D. The story is happened in 1990."
               ],
               "ans": 2,
@@ -563,9 +562,9 @@ var ENGLISH_DATA = {
               "q": "Which word has the /iː/ sound?",
               "opts": [
                 "A. big",
-                "D. fish",
+                "B. fish",
                 "C. sit",
-                "B. see"
+                "D. see"
               ],
               "ans": 3,
               "exp": "see 中 ee 发长元音 /iː/。"
@@ -575,8 +574,8 @@ var ENGLISH_DATA = {
               "q": "Which word has the /aɪ/ sound?",
               "opts": [
                 "A. cat",
-                "C. like",
-                "B. bed",
+                "B. like",
+                "C. bed",
                 "D. hot"
               ],
               "ans": 1,
@@ -587,8 +586,8 @@ var ENGLISH_DATA = {
               "q": "Find the word with /əʊ/ sound.",
               "opts": [
                 "A. now",
-                "C. how",
-                "B. go",
+                "B. how",
+                "C. go",
                 "D. boy"
               ],
               "ans": 2,
@@ -598,9 +597,9 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "Which pair has the same vowel sound?",
               "opts": [
-                "C. bird / girl",
+                "A. bird / girl",
                 "B. cat / cake",
-                "A. book / food",
+                "C. book / food",
                 "D. dog / go"
               ],
               "ans": 0,
@@ -643,9 +642,9 @@ var ENGLISH_DATA = {
               "q": "Who invented paper according to the passage?",
               "opts": [
                 "A. Lu Ban",
-                "D. Zhang Heng",
+                "B. Zhang Heng",
                 "C. Bi Sheng",
-                "B. Cai Lun"
+                "D. Cai Lun"
               ],
               "ans": 3,
               "exp": "原文：It was invented by Cai Lun about 2,000 years ago。"
@@ -666,8 +665,8 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "Why did Cai Lun's paper become popular?",
               "opts": [
-                "B. It was cheap, light and thin",
-                "A. It was colorful",
+                "A. It was cheap, light and thin",
+                "B. It was colorful",
                 "C. It was made of silk",
                 "D. It smelled good"
               ],
@@ -691,8 +690,8 @@ var ENGLISH_DATA = {
               "q": "Which sentence is in the passive voice?",
               "opts": [
                 "A. Cai Lun found a way to make paper.",
-                "C. Paper was invented by Cai Lun.",
-                "B. This invention changed the world.",
+                "B. Paper was invented by Cai Lun.",
+                "C. This invention changed the world.",
                 "D. People wrote on bamboo slips."
               ],
               "ans": 1,
@@ -713,9 +712,9 @@ var ENGLISH_DATA = {
           "topic": "被动语态",
           "q": "The book ___ by children all over the world.",
           "opts": [
-            "C. loved",
+            "A. loved",
             "B. loves",
-            "A. is loved",
+            "C. is loved",
             "D. is loving"
           ],
           "ans": 2,
@@ -726,8 +725,8 @@ var ENGLISH_DATA = {
           "q": "The homework ___ yesterday.",
           "opts": [
             "A. is done",
-            "C. does",
-            "B. was done",
+            "B. does",
+            "C. was done",
             "D. did"
           ],
           "ans": 2,
@@ -738,8 +737,8 @@ var ENGLISH_DATA = {
           "q": "The classroom must ___ clean.",
           "opts": [
             "A. keep",
-            "C. be kept",
-            "B. kept",
+            "B. be kept",
+            "C. kept",
             "D. is kept"
           ],
           "ans": 1,
@@ -773,8 +772,8 @@ var ENGLISH_DATA = {
           "topic": "音标",
           "q": "The vowel sound in 'boy' is ___ .",
           "opts": [
-            "B. /ɔɪ/",
-            "A. /aɪ/",
+            "A. /ɔɪ/",
+            "B. /aɪ/",
             "C. /eɪ/",
             "D. /aʊ/"
           ],
@@ -785,9 +784,9 @@ var ENGLISH_DATA = {
           "topic": "音标",
           "q": "Find the odd one in vowel sound:",
           "opts": [
-            "C. cat",
+            "A. cat",
             "B. name",
-            "A. cake",
+            "C. cake",
             "D. day"
           ],
           "ans": 0,
@@ -798,8 +797,8 @@ var ENGLISH_DATA = {
           "q": "A new park ___ in our town next year.",
           "opts": [
             "A. builds",
-            "C. will be built",
-            "B. will build",
+            "B. will be built",
+            "C. will build",
             "D. is building"
           ],
           "ans": 1,
@@ -809,9 +808,9 @@ var ENGLISH_DATA = {
           "topic": "音标",
           "q": "How many long vowels are there in English?",
           "opts": [
-            "C. 5",
+            "A. 5",
             "B. 4",
-            "A. 3",
+            "C. 3",
             "D. 6"
           ],
           "ans": 0,
@@ -822,8 +821,8 @@ var ENGLISH_DATA = {
           "q": "The room ___ now.",
           "opts": [
             "A. is cleaned",
-            "C. was cleaned",
-            "B. is being cleaned",
+            "B. was cleaned",
+            "C. is being cleaned",
             "D. cleans"
           ],
           "ans": 2,
@@ -859,9 +858,9 @@ var ENGLISH_DATA = {
               "q": "I have two ___ (knife).",
               "opts": [
                 "A. knifes",
-                "D. knifs",
+                "B. knifs",
                 "C. knife",
-                "B. knives"
+                "D. knives"
               ],
               "ans": 3,
               "exp": "以 fe 结尾，改 fe 为 v + es → knives。"
@@ -870,10 +869,10 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "How many ___ can you see?",
               "opts": [
-                "D. sheepies",
+                "A. sheepies",
                 "B. sheeps",
                 "C. sheepes",
-                "A. sheep"
+                "D. sheep"
               ],
               "ans": 3,
               "exp": "sheep 单复数同形。"
@@ -883,8 +882,8 @@ var ENGLISH_DATA = {
               "q": "There are many ___ in the zoo.",
               "opts": [
                 "A. monkey",
-                "C. monkeys",
-                "B. monkeies",
+                "B. monkeys",
+                "C. monkeies",
                 "D. monkies"
               ],
               "ans": 1,
@@ -907,9 +906,9 @@ var ENGLISH_DATA = {
               "q": "How many ___ are there in the basket?",
               "opts": [
                 "A. potatos",
-                "D. potato",
+                "B. potato",
                 "C. potatoses",
-                "B. potatoes"
+                "D. potatoes"
               ],
               "ans": 3,
               "exp": "以 o 结尾有生命的名词加 es → potatoes。"
@@ -938,9 +937,9 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "This is ___ bag.",
               "opts": [
-                "C. Mary's",
+                "A. Mary's",
                 "B. Marys",
-                "A. Mary",
+                "C. Mary",
                 "D. Marys'"
               ],
               "ans": 0,
@@ -950,9 +949,9 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "The ___ room is on the second floor.",
               "opts": [
-                "C. teacher'",
+                "A. teacher'",
                 "B. teachers's",
-                "A. teachers'",
+                "C. teachers'",
                 "D. teacher"
               ],
               "ans": 2,
@@ -963,9 +962,9 @@ var ENGLISH_DATA = {
               "q": "___ Day is on June 1st.",
               "opts": [
                 "A. Childrens'",
-                "D. Children",
+                "B. Children",
                 "C. Childrens",
-                "B. Children's"
+                "D. Children's"
               ],
               "ans": 3,
               "exp": "不规则复数 children 加 's。"
@@ -975,8 +974,8 @@ var ENGLISH_DATA = {
               "q": "This is a photo of ___ .",
               "opts": [
                 "A. my sister",
-                "C. my sister's",
-                "B. my sisters'",
+                "B. my sister's",
+                "C. my sisters'",
                 "D. my sisters of"
               ],
               "ans": 1,
@@ -987,8 +986,8 @@ var ENGLISH_DATA = {
               "q": "___ rooms are next to each other.",
               "opts": [
                 "A. Tom and Jerry",
-                "C. Tom and Jerry's",
-                "B. Tom's and Jerry's",
+                "B. Tom and Jerry's",
+                "C. Tom's and Jerry's",
                 "D. Toms' and Jerrys'"
               ],
               "ans": 2,
@@ -1015,8 +1014,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. bag",
                 "B. dog",
-                "D. go",
-                "C. pen"
+                "C. go",
+                "D. pen"
               ],
               "ans": 3,
               "exp": "/p/ 是清辅音（声带不振动），/b/ /d/ /g/ 都是浊辅音。"
@@ -1025,8 +1024,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "The 'th' in 'think' is pronounced as ___ .",
               "opts": [
-                "B. /θ/",
-                "A. /ð/",
+                "A. /θ/",
+                "B. /ð/",
                 "C. /s/",
                 "D. /t/"
               ],
@@ -1050,8 +1049,8 @@ var ENGLISH_DATA = {
               "q": "Find the /ŋ/ sound:",
               "opts": [
                 "A. thin",
-                "C. think",
-                "B. thing",
+                "B. think",
+                "C. thing",
                 "D. tin"
               ],
               "ans": 2,
@@ -1062,9 +1061,9 @@ var ENGLISH_DATA = {
               "q": "How many consonant sounds are there in English?",
               "opts": [
                 "A. 20",
-                "D. 28",
+                "B. 28",
                 "C. 26",
-                "B. 24"
+                "D. 24"
               ],
               "ans": 1,
               "exp": "英语共有28个辅音音素。"
@@ -1105,9 +1104,9 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "What do children love to do in spring?",
               "opts": [
-                "C. Fly kites",
+                "A. Fly kites",
                 "B. Make snowmen",
-                "A. Go swimming",
+                "C. Go swimming",
                 "D. Pick fruits"
               ],
               "ans": 0,
@@ -1117,8 +1116,8 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "Why do people go swimming in summer?",
               "opts": [
-                "B. To cool down",
-                "A. To have fun",
+                "A. To cool down",
+                "B. To have fun",
                 "C. To exercise",
                 "D. To make friends"
               ],
@@ -1143,8 +1142,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. Spring",
                 "B. Summer",
-                "D. Winter",
-                "C. Autumn"
+                "C. Winter",
+                "D. Autumn"
               ],
               "ans": 3,
               "exp": "原文：Autumn is a harvest season。"
@@ -1178,8 +1177,8 @@ var ENGLISH_DATA = {
           "opts": [
             "A. woman",
             "B. womans",
-            "D. womens",
-            "C. women"
+            "C. womens",
+            "D. women"
           ],
           "ans": 3,
           "exp": "woman 的不规则复数是 women。"
@@ -1189,8 +1188,8 @@ var ENGLISH_DATA = {
           "q": "Which word has the same singular and plural form?",
           "opts": [
             "A. cat",
-            "C. deer",
-            "B. dog",
+            "B. deer",
+            "C. dog",
             "D. bird"
           ],
           "ans": 1,
@@ -1212,9 +1211,9 @@ var ENGLISH_DATA = {
           "topic": "所有格",
           "q": "The leg ___ is broken.",
           "opts": [
-            "C. tables'",
+            "A. tables'",
             "B. table's",
-            "A. of the table",
+            "C. of the table",
             "D. of table"
           ],
           "ans": 2,
@@ -1236,8 +1235,8 @@ var ENGLISH_DATA = {
           "topic": "音标",
           "q": "Which has the /ʃ/ sound?",
           "opts": [
-            "B. she",
-            "A. see",
+            "A. she",
+            "B. see",
             "C. zoo",
             "D. sit"
           ],
@@ -1248,8 +1247,8 @@ var ENGLISH_DATA = {
           "topic": "名词综合",
           "q": "How many ___ do you want?",
           "opts": [
-            "B. pieces of bread",
-            "A. piece of bread",
+            "A. pieces of bread",
+            "B. piece of bread",
             "C. pieces of breads",
             "D. piece of breads"
           ],
@@ -1261,8 +1260,8 @@ var ENGLISH_DATA = {
           "q": "The 'ng' in 'sing' is ___ .",
           "opts": [
             "A. /n/",
-            "C. /ɡ/",
-            "B. /ŋ/",
+            "B. /ɡ/",
+            "C. /ŋ/",
             "D. /nk/"
           ],
           "ans": 2,
@@ -1298,8 +1297,8 @@ var ENGLISH_DATA = {
               "q": "___ is a good student. (he 的适当形式)",
               "opts": [
                 "A. Him",
-                "C. His",
-                "B. He",
+                "B. His",
+                "C. He",
                 "D. Her"
               ],
               "ans": 2,
@@ -1323,8 +1322,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. my",
                 "B. me",
-                "D. I",
-                "C. mine"
+                "C. I",
+                "D. mine"
               ],
               "ans": 3,
               "exp": "独立使用（后面没有名词），用名词性物主代词 mine。"
@@ -1335,8 +1334,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. They",
                 "B. Them",
-                "D. Theirs",
-                "C. Their"
+                "C. Theirs",
+                "D. Their"
               ],
               "ans": 3,
               "exp": "后面有名词 classroom，用形容词性物主代词 Their。"
@@ -1358,8 +1357,8 @@ var ENGLISH_DATA = {
               "q": "Miss Li teaches ___ English.",
               "opts": [
                 "A. we",
-                "C. our",
-                "B. us",
+                "B. our",
+                "C. us",
                 "D. ours"
               ],
               "ans": 2,
@@ -1390,9 +1389,9 @@ var ENGLISH_DATA = {
               "q": "Is there ___ in the room?",
               "opts": [
                 "A. somebody",
-                "D. everybody",
+                "B. everybody",
                 "C. nobody",
-                "B. anybody"
+                "D. anybody"
               ],
               "ans": 3,
               "exp": "疑问句用 any- 系列：anybody。"
@@ -1401,10 +1400,10 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "I have ___ important to tell you.",
               "opts": [
-                "D. everything",
+                "A. everything",
                 "B. anything",
                 "C. nothing",
-                "A. something"
+                "D. something"
               ],
               "ans": 3,
               "exp": "肯定句用 something，且形容词 important 后置。"
@@ -1415,8 +1414,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. Somebody",
                 "B. Anybody",
-                "D. Everybody",
-                "C. Nobody"
+                "C. Everybody",
+                "D. Nobody"
               ],
               "ans": 3,
               "exp": "因为太难所以没有人知道，用 Nobody。"
@@ -1426,8 +1425,8 @@ var ENGLISH_DATA = {
               "q": "There isn't ___ in the fridge.",
               "opts": [
                 "A. something",
-                "C. nothing",
-                "B. anything",
+                "B. nothing",
+                "C. anything",
                 "D. everything"
               ],
               "ans": 2,
@@ -1437,10 +1436,10 @@ var ENGLISH_DATA = {
               "diff": "hard",
               "q": "Would you like ___ to eat?",
               "opts": [
-                "D. everything",
+                "A. everything",
                 "B. anything",
                 "C. nothing",
-                "A. something"
+                "D. something"
               ],
               "ans": 3,
               "exp": "表示委婉请求/建议的疑问句用 some- 系列，显得更礼貌。"
@@ -1465,9 +1464,9 @@ var ENGLISH_DATA = {
               "q": "When did they arrive at the zoo?",
               "opts": [
                 "A. At 8 a.m.",
-                "D. At 3 p.m.",
+                "B. At 3 p.m.",
                 "C. At 10 a.m.",
-                "B. At 9 a.m."
+                "D. At 9 a.m."
               ],
               "ans": 3,
               "exp": "细节题：They arrived at 9 o'clock in the morning。"
@@ -1476,9 +1475,9 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "What was the first animal they saw?",
               "opts": [
-                "C. Elephant",
+                "A. Elephant",
                 "B. Panda",
-                "A. Monkey",
+                "C. Monkey",
                 "D. Lion"
               ],
               "ans": 0,
@@ -1489,8 +1488,8 @@ var ENGLISH_DATA = {
               "q": "What did the little monkey do?",
               "opts": [
                 "A. It ate a banana",
-                "C. It slept in the cage",
-                "B. It took a boy's cap",
+                "B. It slept in the cage",
+                "C. It took a boy's cap",
                 "D. It climbed a tree"
               ],
               "ans": 2,
@@ -1502,8 +1501,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. About 8 hours",
                 "B. About 10 hours",
-                "D. About 14 hours",
-                "C. About 12 hours"
+                "C. About 14 hours",
+                "D. About 12 hours"
               ],
               "ans": 3,
               "exp": "细节题：pandas eat about 12 hours a day。"
@@ -1548,8 +1547,8 @@ var ENGLISH_DATA = {
           "q": "The teacher asked ___ to answer the question.",
           "opts": [
             "A. he",
-            "C. him",
-            "B. his",
+            "B. him",
+            "C. his",
             "D. he's"
           ],
           "ans": 1,
@@ -1584,9 +1583,9 @@ var ENGLISH_DATA = {
           "q": "I didn't see ___ in the classroom.",
           "opts": [
             "A. somebody",
-            "D. everybody",
+            "B. everybody",
             "C. nobody",
-            "B. anybody"
+            "D. anybody"
           ],
           "ans": 3,
           "exp": "否定句用 any- 系列：anybody。"
@@ -1607,9 +1606,9 @@ var ENGLISH_DATA = {
           "topic": "不定代词",
           "q": "There is ___ wrong with my bike.",
           "opts": [
-            "C. nothing",
+            "A. nothing",
             "B. anything",
-            "A. something",
+            "C. something",
             "D. everything"
           ],
           "ans": 2,
@@ -1619,9 +1618,9 @@ var ENGLISH_DATA = {
           "topic": "阅读理解",
           "q": "What did the elephant eat in the zoo story?",
           "opts": [
-            "C. Bananas",
+            "A. Bananas",
             "B. Grass",
-            "A. Apples",
+            "C. Apples",
             "D. Bamboo"
           ],
           "ans": 0,
@@ -1632,9 +1631,9 @@ var ENGLISH_DATA = {
           "q": "This umbrella is not ___ . It's ___ .",
           "opts": [
             "A. my / her",
-            "D. mine / her",
+            "B. mine / her",
             "C. my / hers",
-            "B. mine / hers"
+            "D. mine / hers"
           ],
           "ans": 3,
           "exp": "两空都独立使用，用名词性物主代词 mine / hers。"
@@ -1669,9 +1668,9 @@ var ENGLISH_DATA = {
               "q": "___ are my pencils over there.",
               "opts": [
                 "A. This",
-                "D. Those",
+                "B. Those",
                 "C. These",
-                "B. That"
+                "D. That"
               ],
               "ans": 1,
               "exp": "over there 表示远处，pencils 复数，用 Those。"
@@ -1680,9 +1679,9 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "The children enjoyed ___ at the party.",
               "opts": [
-                "C. themselves",
+                "A. themselves",
                 "B. them",
-                "A. they",
+                "C. they",
                 "D. their"
               ],
               "ans": 0,
@@ -1692,8 +1691,8 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "We should help ___ .",
               "opts": [
-                "B. one another",
-                "A. each other",
+                "A. one another",
+                "B. each other",
                 "C. ourselves",
                 "D. themselves"
               ],
@@ -1748,8 +1747,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "___ is your favorite subject?",
               "opts": [
-                "B. What",
-                "A. Who",
+                "A. What",
+                "B. Who",
                 "C. Where",
                 "D. When"
               ],
@@ -1784,9 +1783,9 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "___ did you go last Sunday?",
               "opts": [
-                "C. Where",
+                "A. Where",
                 "B. When",
-                "A. What",
+                "C. What",
                 "D. Why"
               ],
               "ans": 0,
@@ -1797,8 +1796,8 @@ var ENGLISH_DATA = {
               "q": "___ did you talk to just now?",
               "opts": [
                 "A. Who",
-                "C. Whose",
-                "B. Whom",
+                "B. Whose",
+                "C. Whom",
                 "D. Which"
               ],
               "ans": 2,
@@ -1828,8 +1827,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "At first, how did the seed feel?",
               "opts": [
-                "B. Scared",
-                "A. Happy",
+                "A. Scared",
+                "B. Happy",
                 "C. Angry",
                 "D. Excited"
               ],
@@ -1840,9 +1839,9 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "Who helped the seed drink water?",
               "opts": [
-                "C. The rain",
+                "A. The rain",
                 "B. The wind",
-                "A. The sun",
+                "C. The sun",
                 "D. A farmer"
               ],
               "ans": 0,
@@ -1854,8 +1853,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. The cold",
                 "B. The rain's words",
-                "D. The soil",
-                "C. The sun's warmth"
+                "C. The soil",
+                "D. The sun's warmth"
               ],
               "ans": 3,
               "exp": "推理题：The seed felt the warmth and wanted to see the world。"
@@ -1865,8 +1864,8 @@ var ENGLISH_DATA = {
               "q": "How did the sunflower feel at the end?",
               "opts": [
                 "A. Still scared",
-                "C. Sad",
-                "B. Wonderful",
+                "B. Sad",
+                "C. Wonderful",
                 "D. Confused"
               ],
               "ans": 2,
@@ -1900,8 +1899,8 @@ var ENGLISH_DATA = {
           "q": "___ flowers in the garden are beautiful.",
           "opts": [
             "A. This",
-            "C. These",
-            "B. That",
+            "B. These",
+            "C. That",
             "D. There"
           ],
           "ans": 1,
@@ -1947,8 +1946,8 @@ var ENGLISH_DATA = {
           "topic": "疑问代词",
           "q": "___ does it take to get to school?",
           "opts": [
-            "B. How long",
-            "A. How far",
+            "A. How long",
+            "B. How far",
             "C. How often",
             "D. How much"
           ],
@@ -1961,8 +1960,8 @@ var ENGLISH_DATA = {
           "opts": [
             "A. What",
             "B. Which",
-            "D. When",
-            "C. Where"
+            "C. When",
+            "D. Where"
           ],
           "ans": 3,
           "exp": "问'最近的医院在哪里'用 Where。"
@@ -1972,8 +1971,8 @@ var ENGLISH_DATA = {
           "q": "He cut ___ while cooking.",
           "opts": [
             "A. him",
-            "C. himself",
-            "B. his",
+            "B. himself",
+            "C. his",
             "D. he"
           ],
           "ans": 1,
@@ -1983,9 +1982,9 @@ var ENGLISH_DATA = {
           "topic": "阅读理解",
           "q": "In 'The Little Seed', what did the seed become?",
           "opts": [
-            "C. A sunflower",
+            "A. A sunflower",
             "B. A rose",
-            "A. A tree",
+            "C. A tree",
             "D. An apple tree"
           ],
           "ans": 0,
@@ -2008,9 +2007,9 @@ var ENGLISH_DATA = {
           "q": "___ of the two T-shirts do you like?",
           "opts": [
             "A. What",
-            "D. Who",
+            "B. Who",
             "C. Whose",
-            "B. Which"
+            "D. Which"
           ],
           "ans": 3,
           "exp": "两者中选择用 Which。"
@@ -2034,8 +2033,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. can",
                 "B. may",
-                "D. needn't",
-                "C. mustn't"
+                "C. needn't",
+                "D. mustn't"
               ],
               "ans": 3,
               "exp": "禁止 = mustn't。mustn't 表示绝对不能做。"
@@ -2046,8 +2045,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. Must",
                 "B. Should",
-                "D. Need",
-                "C. May"
+                "C. Need",
+                "D. May"
               ],
               "ans": 3,
               "exp": "委婉请求许可用 May（或 Can）。"
@@ -2058,8 +2057,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. mustn't",
                 "B. can't",
-                "D. shouldn't",
-                "C. needn't"
+                "C. shouldn't",
+                "D. needn't"
               ],
               "ans": 3,
               "exp": "must 提问的否定回答用 needn't（不必）。mustn't 意为'禁止'。"
@@ -2068,9 +2067,9 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "It's raining outside. You ___ take an umbrella.",
               "opts": [
-                "C. may",
+                "A. may",
                 "B. can",
-                "A. should",
+                "C. should",
                 "D. mustn't"
               ],
               "ans": 2,
@@ -2093,8 +2092,8 @@ var ENGLISH_DATA = {
               "q": "You look tired. You ___ go to bed early tonight.",
               "opts": [
                 "A. must",
-                "C. should",
-                "B. have to",
+                "B. should",
+                "C. have to",
                 "D. can"
               ],
               "ans": 1,
@@ -2124,8 +2123,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "Why was Mrs. Green upset?",
               "opts": [
-                "B. Her necklace was missing",
-                "A. She lost her coat",
+                "A. Her necklace was missing",
+                "B. She lost her coat",
                 "C. Her son was late",
                 "D. She was tired"
               ],
@@ -2137,8 +2136,8 @@ var ENGLISH_DATA = {
               "q": "Where did Mrs. Green wear the necklace last?",
               "opts": [
                 "A. At home",
-                "C. At school",
-                "B. At a party",
+                "B. At school",
+                "C. At a party",
                 "D. In a shop"
               ],
               "ans": 2,
@@ -2150,8 +2149,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. Mrs. Green",
                 "B. Mr. Green",
-                "D. The grandmother",
-                "C. Tom"
+                "C. The grandmother",
+                "D. Tom"
               ],
               "ans": 3,
               "exp": "推理题：Tom suggested checking the coat pocket and they found it there。"
@@ -2161,9 +2160,9 @@ var ENGLISH_DATA = {
               "q": "What can we infer about Tom?",
               "opts": [
                 "A. He was careless",
-                "D. He took the necklace",
+                "B. He took the necklace",
                 "C. He didn't care about his mom",
-                "B. He was clever and observant"
+                "D. He was clever and observant"
               ],
               "ans": 3,
               "exp": "推理题：Tom remembered his mom's coat and suggested checking the pocket — 说明他善于观察且聪明。"
@@ -2173,8 +2172,8 @@ var ENGLISH_DATA = {
               "q": "Why did Mrs. Green call Tom 'clever'?",
               "opts": [
                 "A. Tom got good grades",
-                "C. Tom used reasoning to help find the necklace",
-                "B. Tom found the necklace by accident",
+                "B. Tom used reasoning to help find the necklace",
+                "C. Tom found the necklace by accident",
                 "D. Tom bought a new necklace"
               ],
               "ans": 1,
@@ -2195,9 +2194,9 @@ var ENGLISH_DATA = {
           "topic": "情态动词",
           "q": "You ___ play football in the street. It's dangerous.",
           "opts": [
-            "C. mustn't",
+            "A. mustn't",
             "B. must",
-            "A. can",
+            "C. can",
             "D. needn't"
           ],
           "ans": 0,
@@ -2208,9 +2207,9 @@ var ENGLISH_DATA = {
           "q": "— ___ I use your phone? — Of course.",
           "opts": [
             "A. Must",
-            "D. May",
+            "B. May",
             "C. Need",
-            "B. Should"
+            "D. Should"
           ],
           "ans": 1,
           "exp": "May/Can I... 表示请求许可。"
@@ -2220,9 +2219,9 @@ var ENGLISH_DATA = {
           "q": "I ___ speak English when I was five.",
           "opts": [
             "A. can",
-            "D. must",
+            "B. must",
             "C. may",
-            "B. could"
+            "D. could"
           ],
           "ans": 3,
           "exp": "过去的能力用 could（can 的过去式）。"
@@ -2231,9 +2230,9 @@ var ENGLISH_DATA = {
           "topic": "情态动词",
           "q": "You ___ worry about me. I'm fine.",
           "opts": [
-            "C. needn't",
+            "A. needn't",
             "B. can't",
-            "A. mustn't",
+            "C. mustn't",
             "D. shouldn't"
           ],
           "ans": 0,
@@ -2244,9 +2243,9 @@ var ENGLISH_DATA = {
           "q": "The light is off. He ___ be at home.",
           "opts": [
             "A. must",
-            "D. should",
+            "B. should",
             "C. may",
-            "B. can't"
+            "D. can't"
           ],
           "ans": 3,
           "exp": "灯关着→否定推测用 can't be（不可能在家）。"
@@ -2256,8 +2255,8 @@ var ENGLISH_DATA = {
           "q": "— Would you like some tea? — Yes, ___ .",
           "opts": [
             "A. I would",
-            "C. please",
-            "B. I'd like to",
+            "B. please",
+            "C. I'd like to",
             "D. I like"
           ],
           "ans": 1,
@@ -2269,8 +2268,8 @@ var ENGLISH_DATA = {
           "opts": [
             "A. can",
             "B. may",
-            "D. might",
-            "C. must"
+            "C. might",
+            "D. must"
           ],
           "ans": 3,
           "exp": "必须遵守校规用 must（主观必要）。"
@@ -2280,9 +2279,9 @@ var ENGLISH_DATA = {
           "q": "In 'The Missing Necklace', where was the necklace finally found?",
           "opts": [
             "A. Under the bed",
-            "D. At the party",
+            "B. At the party",
             "C. In the bathroom",
-            "B. In the coat pocket"
+            "D. In the coat pocket"
           ],
           "ans": 3,
           "exp": "The necklace was in the pocket all along。"
@@ -2291,8 +2290,8 @@ var ENGLISH_DATA = {
           "topic": "推理题",
           "q": "Why didn't Mrs. Green find the necklace at first?",
           "opts": [
-            "B. She forgot she put it in her coat",
-            "A. She didn't look carefully",
+            "A. She forgot she put it in her coat",
+            "B. She didn't look carefully",
             "C. Tom hid it",
             "D. It was stolen"
           ],
@@ -2304,9 +2303,9 @@ var ENGLISH_DATA = {
           "q": "You ___ be tired after such a long walk.",
           "opts": [
             "A. can",
-            "D. need",
+            "B. need",
             "C. have to",
-            "B. must"
+            "D. must"
           ],
           "ans": 3,
           "exp": "肯定推测（走那么远一定累了）用 must be。"
@@ -2329,8 +2328,8 @@ var ENGLISH_DATA = {
               "q": "I usually get up ___ six o'clock.",
               "opts": [
                 "A. in",
-                "C. at",
-                "B. on",
+                "B. at",
+                "C. on",
                 "D. for"
               ],
               "ans": 1,
@@ -2340,8 +2339,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "My birthday is ___ May 10th.",
               "opts": [
-                "B. on",
-                "A. in",
+                "A. on",
+                "B. in",
                 "C. at",
                 "D. by"
               ],
@@ -2365,9 +2364,9 @@ var ENGLISH_DATA = {
               "q": "I'm good ___ English.",
               "opts": [
                 "A. in",
-                "D. for",
+                "B. for",
                 "C. on",
-                "B. at"
+                "D. at"
               ],
               "ans": 3,
               "exp": "be good at = 擅长。固定搭配。"
@@ -2378,8 +2377,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. in",
                 "B. on",
-                "D. to",
-                "C. at"
+                "C. to",
+                "D. at"
               ],
               "ans": 3,
               "exp": "arrive at + 小地点；arrive in + 大城市/国家。机场较小用 at。"
@@ -2389,9 +2388,9 @@ var ENGLISH_DATA = {
               "q": "He is different ___ his brother.",
               "opts": [
                 "A. with",
-                "D. for",
+                "B. for",
                 "C. to",
-                "B. from"
+                "D. from"
               ],
               "ans": 3,
               "exp": "be different from = 与…不同。固定搭配。"
@@ -2421,8 +2420,8 @@ var ENGLISH_DATA = {
               "q": "What tense should you mainly use in 'My School Sports Day'?",
               "opts": [
                 "A. 一般现在时",
-                "C. 现在进行时",
-                "B. 一般过去时",
+                "B. 现在进行时",
+                "C. 一般过去时",
                 "D. 一般将来时"
               ],
               "ans": 2,
@@ -2433,9 +2432,9 @@ var ENGLISH_DATA = {
               "q": "Which sentence is the best opening for a sports day essay?",
               "opts": [
                 "A. I like sports.",
-                "D. I can run very fast.",
+                "B. I can run very fast.",
                 "C. Sports are good for health.",
-                "B. Last Friday, we had a sports day at our school."
+                "D. Last Friday, we had a sports day at our school."
               ],
               "ans": 3,
               "exp": "开头应交代时间、地点、事件。"
@@ -2446,8 +2445,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. One",
                 "B. Two",
-                "D. Four",
-                "C. Three"
+                "C. Four",
+                "D. Three"
               ],
               "ans": 3,
               "exp": "开头、主体、结尾三部分。"
@@ -2456,8 +2455,8 @@ var ENGLISH_DATA = {
               "diff": "hard",
               "q": "Write the correct preposition: I go to school ___ foot every day.",
               "opts": [
-                "B. on",
-                "A. by",
+                "A. on",
+                "B. by",
                 "C. with",
                 "D. in"
               ],
@@ -2491,10 +2490,10 @@ var ENGLISH_DATA = {
           "topic": "介词",
           "q": "He was born ___ July.",
           "opts": [
-            "D. for",
+            "A. for",
             "B. on",
             "C. at",
-            "A. in"
+            "D. in"
           ],
           "ans": 3,
           "exp": "月份前用 in。"
@@ -2503,8 +2502,8 @@ var ENGLISH_DATA = {
           "topic": "介词",
           "q": "We have no classes ___ Sunday.",
           "opts": [
-            "B. on",
-            "A. in",
+            "A. on",
+            "B. in",
             "C. at",
             "D. for"
           ],
@@ -2551,10 +2550,10 @@ var ENGLISH_DATA = {
           "topic": "介词",
           "q": "The book was written ___ Lu Xun.",
           "opts": [
-            "D. of",
+            "A. of",
             "B. with",
             "C. from",
-            "A. by"
+            "D. by"
           ],
           "ans": 3,
           "exp": "被动语态中用 by 引出动作的执行者。"
@@ -2564,9 +2563,9 @@ var ENGLISH_DATA = {
           "q": "What comes first in an activity essay?",
           "opts": [
             "A. Feelings",
-            "D. Conclusion",
+            "B. Conclusion",
             "C. Details of the activity",
-            "B. Time and place"
+            "D. Time and place"
           ],
           "ans": 3,
           "exp": "开头先交代时间和地点。"
@@ -2588,8 +2587,8 @@ var ENGLISH_DATA = {
           "q": "We usually have lunch ___ noon.",
           "opts": [
             "A. in",
-            "C. at",
-            "B. on",
+            "B. at",
+            "C. on",
             "D. by"
           ],
           "ans": 1,
@@ -2612,8 +2611,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "Tom is ___ (tall) than Jack.",
               "opts": [
-                "B. taller",
-                "A. tall",
+                "A. taller",
+                "B. tall",
                 "C. tallest",
                 "D. more tall"
               ],
@@ -2624,9 +2623,9 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "She is the ___ (good) student in our class.",
               "opts": [
-                "C. best",
+                "A. best",
                 "B. better",
-                "A. good",
+                "C. good",
                 "D. well"
               ],
               "ans": 0,
@@ -2637,9 +2636,9 @@ var ENGLISH_DATA = {
               "q": "This book is ___ than that one.",
               "opts": [
                 "A. interesting",
-                "D. interestinger",
+                "B. interestinger",
                 "C. most interesting",
-                "B. more interesting"
+                "D. more interesting"
               ],
               "ans": 3,
               "exp": "多音节词比较级前加 more。"
@@ -2649,8 +2648,8 @@ var ENGLISH_DATA = {
               "q": "The weather is getting ___ and ___ (cold).",
               "opts": [
                 "A. cold / cold",
-                "C. more cold / more cold",
-                "B. colder / colder",
+                "B. more cold / more cold",
+                "C. colder / colder",
                 "D. coldest / coldest"
               ],
               "ans": 2,
@@ -2661,9 +2660,9 @@ var ENGLISH_DATA = {
               "q": "China is larger than ___ country in Asia.",
               "opts": [
                 "A. any",
-                "D. the other",
+                "B. the other",
                 "C. all",
-                "B. any other"
+                "D. any other"
               ],
               "ans": 3,
               "exp": "在同一范围内比较（中国在亚洲内），用 any other + 单数名词。"
@@ -2729,9 +2728,9 @@ var ENGLISH_DATA = {
               "q": "How should you end a place essay?",
               "opts": [
                 "A. With a new topic",
-                "D. With a dialogue",
+                "B. With a dialogue",
                 "C. With a question",
-                "B. With your feelings and reasons"
+                "D. With your feelings and reasons"
               ],
               "ans": 3,
               "exp": "结尾应表达感受和原因。"
@@ -2755,8 +2754,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "What is yawning according to the newest research?",
               "opts": [
-                "B. A way to cool the brain",
-                "A. Getting more oxygen",
+                "A. A way to cool the brain",
+                "B. Getting more oxygen",
                 "C. A sign of being tired",
                 "D. A type of exercise"
               ],
@@ -2768,8 +2767,8 @@ var ENGLISH_DATA = {
               "q": "What is the main idea of this passage?",
               "opts": [
                 "A. Yawning is bad for health",
-                "C. Why people yawn and the science behind it",
-                "B. How to stop yawning",
+                "B. Why people yawn and the science behind it",
+                "C. How to stop yawning",
                 "D. Yawning only happens in the morning"
               ],
               "ans": 1,
@@ -2780,8 +2779,8 @@ var ENGLISH_DATA = {
               "q": "What does the author want to tell us?",
               "opts": [
                 "A. Yawning is a bad habit",
-                "C. We should not yawn in public",
-                "B. Yawning helps the brain work better",
+                "B. We should not yawn in public",
+                "C. Yawning helps the brain work better",
                 "D. Only scientists yawn"
               ],
               "ans": 2,
@@ -2815,9 +2814,9 @@ var ENGLISH_DATA = {
           "q": "My brother is ___ than me.",
           "opts": [
             "A. young",
-            "D. more young",
+            "B. more young",
             "C. youngest",
-            "B. younger"
+            "D. younger"
           ],
           "ans": 3,
           "exp": "than 前用比较级 younger。"
@@ -2828,8 +2827,8 @@ var ENGLISH_DATA = {
           "opts": [
             "A. exciting",
             "B. more exciting",
-            "D. excitingest",
-            "C. most exciting"
+            "C. excitingest",
+            "D. most exciting"
           ],
           "ans": 3,
           "exp": "多音节词最高级：the most + 形容词。"
@@ -2840,8 +2839,8 @@ var ENGLISH_DATA = {
           "opts": [
             "A. more / fat",
             "B. much / fatter",
-            "D. much / fat",
-            "C. more / fatter"
+            "C. much / fat",
+            "D. more / fatter"
           ],
           "ans": 3,
           "exp": "the + 比较级, the + 比较级。much→more, fat→fatter。"
@@ -2850,9 +2849,9 @@ var ENGLISH_DATA = {
           "topic": "as...as",
           "q": "This box is as ___ as that one.",
           "opts": [
-            "C. heaviest",
+            "A. heaviest",
             "B. heavier",
-            "A. heavy",
+            "C. heavy",
             "D. more heavy"
           ],
           "ans": 2,
@@ -2863,9 +2862,9 @@ var ENGLISH_DATA = {
           "q": "She runs ___ than any other girl in her class.",
           "opts": [
             "A. fast",
-            "D. more fast",
+            "B. more fast",
             "C. fastest",
-            "B. faster"
+            "D. faster"
           ],
           "ans": 3,
           "exp": "副词比较级 than。fast→faster。"
@@ -2874,8 +2873,8 @@ var ENGLISH_DATA = {
           "topic": "写作",
           "q": "What tense should a place description mainly use?",
           "opts": [
-            "B. 一般现在时",
-            "A. 一般过去时",
+            "A. 一般现在时",
+            "B. 一般过去时",
             "C. 现在进行时",
             "D. 将来时"
           ],
@@ -2886,8 +2885,8 @@ var ENGLISH_DATA = {
           "topic": "主旨题",
           "q": "In 'Why Do We Yawn', yawning might be a sign of ___ .",
           "opts": [
-            "B. empathy",
-            "A. hunger",
+            "A. empathy",
+            "B. hunger",
             "C. anger",
             "D. fear"
           ],
@@ -2898,9 +2897,9 @@ var ENGLISH_DATA = {
           "topic": "比较级",
           "q": "Which is wrong?",
           "opts": [
-            "C. little → littler",
+            "A. little → littler",
             "B. bad → worse",
-            "A. good → better",
+            "C. good → better",
             "D. far → farther"
           ],
           "ans": 0,
@@ -2910,9 +2909,9 @@ var ENGLISH_DATA = {
           "topic": "综合",
           "q": "He is ___ of the two boys.",
           "opts": [
-            "C. the taller",
+            "A. the taller",
             "B. taller",
-            "A. tall",
+            "C. tall",
             "D. the tallest"
           ],
           "ans": 0,
@@ -2959,8 +2958,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "Do you know ___ she will come tomorrow?",
               "opts": [
-                "B. if",
-                "A. that",
+                "A. if",
+                "B. that",
                 "C. what",
                 "D. who"
               ],
@@ -2985,8 +2984,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. if",
                 "B. whether",
-                "D. what",
-                "C. that"
+                "C. what",
+                "D. that"
               ],
               "ans": 3,
               "exp": "陈述句变宾语从句用 that，主句过去时从句用过去完成时（时态一致）。"
@@ -2995,8 +2994,8 @@ var ENGLISH_DATA = {
               "diff": "hard",
               "q": "Which sentence is correct?",
               "opts": [
-                "B. I don't know where he lives.",
-                "A. I don't know where does he live.",
+                "A. I don't know where he lives.",
+                "B. I don't know where does he live.",
                 "C. I don't know where he live.",
                 "D. I don't know where do he lives."
               ],
@@ -3008,8 +3007,8 @@ var ENGLISH_DATA = {
               "q": "I'm not sure ___ he will come or not.",
               "opts": [
                 "A. if",
-                "C. whether",
-                "B. that",
+                "B. whether",
+                "C. that",
                 "D. what"
               ],
               "ans": 1,
@@ -3040,9 +3039,9 @@ var ENGLISH_DATA = {
               "q": "What should you describe first in a person essay?",
               "opts": [
                 "A. The person's pet",
-                "D. The weather",
+                "B. The weather",
                 "C. Your own hobbies",
-                "B. The person's name and relationship to you"
+                "D. The person's name and relationship to you"
               ],
               "ans": 3,
               "exp": "人物写作先介绍姓名和与你的关系。"
@@ -3052,9 +3051,9 @@ var ENGLISH_DATA = {
               "q": "How can you make a person description more vivid?",
               "opts": [
                 "A. Use numbers only",
-                "D. Write very long sentences",
+                "B. Write very long sentences",
                 "C. Use difficult words",
-                "B. Describe appearance and share a story"
+                "D. Describe appearance and share a story"
               ],
               "ans": 3,
               "exp": "生动的描写需要外貌细节 + 具体事例。"
@@ -3090,8 +3089,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "1. He felt very ___ .",
               "opts": [
-                "B. lonely",
-                "A. excited",
+                "A. lonely",
+                "B. excited",
                 "C. angry",
                 "D. surprised"
               ],
@@ -3103,9 +3102,9 @@ var ENGLISH_DATA = {
               "q": "2. ...watched other students ___ happily together.",
               "opts": [
                 "A. play",
-                "D. to play",
+                "B. to play",
                 "C. played",
-                "B. playing"
+                "D. playing"
               ],
               "ans": 3,
               "exp": "watch sb doing = 看到某人正在做某事。"
@@ -3114,9 +3113,9 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "3. ...he asked with a big ___ on his face.",
               "opts": [
-                "C. smile",
+                "A. smile",
                 "B. surprise",
-                "A. tear",
+                "C. tear",
                 "D. frown"
               ],
               "ans": 0,
@@ -3140,8 +3139,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. made",
                 "B. let",
-                "D. ordered",
-                "C. invited"
+                "C. ordered",
+                "D. invited"
               ],
               "ans": 3,
               "exp": "invited = 邀请。Jack 邀请 Tom 去打篮球。"
@@ -3150,9 +3149,9 @@ var ENGLISH_DATA = {
               "diff": "hard",
               "q": "6. Tom was a little ___ at first...",
               "opts": [
-                "C. bored",
+                "A. bored",
                 "B. happy",
-                "A. nervous",
+                "C. nervous",
                 "D. brave"
               ],
               "ans": 2,
@@ -3162,8 +3161,8 @@ var ENGLISH_DATA = {
               "diff": "hard",
               "q": "7. Tom was ___ alone anymore.",
               "opts": [
-                "B. never",
-                "A. always",
+                "A. never",
+                "B. always",
                 "C. often",
                 "D. sometimes"
               ],
@@ -3176,8 +3175,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. quiet",
                 "B. shy",
-                "D. serious",
-                "C. popular"
+                "C. serious",
+                "D. popular"
               ],
               "ans": 3,
               "exp": "交了很多朋友→成了最受欢迎的学生之一 popular。"
@@ -3198,8 +3197,8 @@ var ENGLISH_DATA = {
           "q": "I don't know ___ he will come.",
           "opts": [
             "A. that",
-            "C. what",
-            "B. if",
+            "B. what",
+            "C. if",
             "D. who"
           ],
           "ans": 2,
@@ -3221,9 +3220,9 @@ var ENGLISH_DATA = {
           "topic": "宾语从句",
           "q": "She asked me ___ I had been to Paris.",
           "opts": [
-            "C. if",
+            "A. if",
             "B. what",
-            "A. that",
+            "C. that",
             "D. who"
           ],
           "ans": 0,
@@ -3246,8 +3245,8 @@ var ENGLISH_DATA = {
           "q": "Which part is NOT necessary in a person essay?",
           "opts": [
             "A. Appearance description",
-            "C. The weather report",
-            "B. A shared story",
+            "B. The weather report",
+            "C. A shared story",
             "D. Personal feelings"
           ],
           "ans": 1,
@@ -3282,8 +3281,8 @@ var ENGLISH_DATA = {
           "q": "What did Tom learn at the end?",
           "opts": [
             "A. Basketball is hard",
-            "C. School is boring",
-            "B. One friendly person can change everything",
+            "B. School is boring",
+            "C. One friendly person can change everything",
             "D. Making friends is impossible"
           ],
           "ans": 2,
@@ -3305,8 +3304,8 @@ var ENGLISH_DATA = {
           "topic": "写作",
           "q": "What tense should you use for a shared memory?",
           "opts": [
-            "B. 一般过去时",
-            "A. 一般现在时",
+            "A. 一般过去时",
+            "B. 一般现在时",
             "C. 现在进行时",
             "D. 将来时"
           ],
@@ -3331,8 +3330,8 @@ var ENGLISH_DATA = {
               "q": "The girl ___ is singing is my sister.",
               "opts": [
                 "A. which",
-                "C. whose",
-                "B. who",
+                "B. whose",
+                "C. who",
                 "D. where"
               ],
               "ans": 2,
@@ -3356,8 +3355,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. who",
                 "B. whose",
-                "D. that",
-                "C. where"
+                "C. that",
+                "D. where"
               ],
               "ans": 2,
               "exp": "先行词 book 是物，作宾语用 that/which。"
@@ -3379,8 +3378,8 @@ var ENGLISH_DATA = {
               "q": "This is the best film ___ I have ever seen.",
               "opts": [
                 "A. which",
-                "C. who",
-                "B. that",
+                "B. who",
+                "C. that",
                 "D. whose"
               ],
               "ans": 2,
@@ -3422,8 +3421,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "What is the first tip for keeping healthy?",
               "opts": [
-                "B. Eat a balanced diet",
-                "A. Play computer games",
+                "A. Eat a balanced diet",
+                "B. Play computer games",
                 "C. Stay up late",
                 "D. Watch TV"
               ],
@@ -3436,8 +3435,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. At least 6 hours",
                 "B. At least 7 hours",
-                "D. At least 12 hours",
-                "C. At least 9 hours"
+                "C. At least 12 hours",
+                "D. At least 9 hours"
               ],
               "ans": 3,
               "exp": "范文：Children should sleep at least 9 hours every night。"
@@ -3469,8 +3468,8 @@ var ENGLISH_DATA = {
           "topic": "定语从句",
           "q": "The man ___ is talking to my father is my uncle.",
           "opts": [
-            "B. who",
-            "A. which",
+            "A. who",
+            "B. which",
             "C. whose",
             "D. where"
           ],
@@ -3482,8 +3481,8 @@ var ENGLISH_DATA = {
           "q": "This is the school ___ I studied three years ago.",
           "opts": [
             "A. who",
-            "C. where",
-            "B. which",
+            "B. where",
+            "C. which",
             "D. whose"
           ],
           "ans": 1,
@@ -3494,9 +3493,9 @@ var ENGLISH_DATA = {
           "q": "I like the gift ___ you gave me.",
           "opts": [
             "A. who",
-            "D. that",
+            "B. that",
             "C. where",
-            "B. whose"
+            "D. whose"
           ],
           "ans": 1,
           "exp": "gift 是物，作宾语用 that/which。"
@@ -3506,8 +3505,8 @@ var ENGLISH_DATA = {
           "q": "She is the only person ___ can help us.",
           "opts": [
             "A. which",
-            "C. whom",
-            "B. that",
+            "B. whom",
+            "C. that",
             "D. where"
           ],
           "ans": 2,
@@ -3519,8 +3518,8 @@ var ENGLISH_DATA = {
           "opts": [
             "A. who",
             "B. which",
-            "D. whose",
-            "C. where"
+            "C. whose",
+            "D. where"
           ],
           "ans": 2,
           "exp": "表示'房间的窗户'用 whose。"
@@ -3530,8 +3529,8 @@ var ENGLISH_DATA = {
           "q": "How often should we exercise according to the essay?",
           "opts": [
             "A. Once a month",
-            "C. Never",
-            "B. Regularly",
+            "B. Never",
+            "C. Regularly",
             "D. Only on weekends"
           ],
           "ans": 2,
@@ -3541,9 +3540,9 @@ var ENGLISH_DATA = {
           "topic": "定语从句",
           "q": "Which is correct?",
           "opts": [
-            "C. This is the house where I live.",
+            "A. This is the house where I live.",
             "B. This is the house where I live in.",
-            "A. This is the house which I live.",
+            "C. This is the house which I live.",
             "D. This is the house I live."
           ],
           "ans": 0,
@@ -3553,10 +3552,10 @@ var ENGLISH_DATA = {
           "topic": "写作",
           "q": "What is NOT mentioned as a way to keep healthy?",
           "opts": [
-            "D. Playing video games",
+            "A. Playing video games",
             "B. Doing exercise",
             "C. Sleeping well",
-            "A. Eating vegetables"
+            "D. Eating vegetables"
           ],
           "ans": 0,
           "exp": "范文没有提到玩电子游戏。"
@@ -3565,8 +3564,8 @@ var ENGLISH_DATA = {
           "topic": "定语从句",
           "q": "Do you know the girl ___ is wearing a red dress?",
           "opts": [
-            "B. who",
-            "A. which",
+            "A. who",
+            "B. which",
             "C. whose",
             "D. where"
           ],
@@ -3579,8 +3578,8 @@ var ENGLISH_DATA = {
           "opts": [
             "A. who",
             "B. which",
-            "D. when",
-            "C. where"
+            "C. when",
+            "D. where"
           ],
           "ans": 2,
           "exp": "the day 是时间，定语从句用 when（= on which）。虽然表中未列出 when，但它是常见关系副词。"
@@ -3602,8 +3601,8 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "I will tell him the news ___ he comes back.",
               "opts": [
-                "B. when",
-                "A. until",
+                "A. when",
+                "B. until",
                 "C. although",
                 "D. because"
               ],
@@ -3615,8 +3614,8 @@ var ENGLISH_DATA = {
               "q": "___ it rains tomorrow, we won't go to the park.",
               "opts": [
                 "A. Because",
-                "C. If",
-                "B. Although",
+                "B. If",
+                "C. Although",
                 "D. So"
               ],
               "ans": 1,
@@ -3627,9 +3626,9 @@ var ENGLISH_DATA = {
               "q": "He didn't come to school ___ he was ill.",
               "opts": [
                 "A. so",
-                "D. although",
+                "B. although",
                 "C. if",
-                "B. because"
+                "D. because"
               ],
               "ans": 3,
               "exp": "原因状语从句：他没来学校因为他生病了。用 because。"
@@ -3640,8 +3639,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. Because",
                 "B. If",
-                "D. When",
-                "C. Although"
+                "C. When",
+                "D. Although"
               ],
               "ans": 3,
               "exp": "让步状语从句：虽然他很老但仍每天锻炼。用 Although。"
@@ -3650,9 +3649,9 @@ var ENGLISH_DATA = {
               "diff": "hard",
               "q": "The box is ___ heavy ___ nobody can lift it.",
               "opts": [
-                "C. too / to",
+                "A. too / to",
                 "B. such / that",
-                "A. so / that",
+                "C. so / that",
                 "D. very / that"
               ],
               "ans": 2,
@@ -3694,9 +3693,9 @@ var ENGLISH_DATA = {
               "diff": "basic",
               "q": "What is the main topic of this writing?",
               "opts": [
-                "C. The Internet",
+                "A. The Internet",
                 "B. Food",
-                "A. Sports",
+                "C. Sports",
                 "D. Animals"
               ],
               "ans": 0,
@@ -3707,8 +3706,8 @@ var ENGLISH_DATA = {
               "q": "What is ONE advantage of the Internet mentioned?",
               "opts": [
                 "A. It makes us sleep better",
-                "C. It makes food taste better",
-                "B. It helps us search for information quickly",
+                "B. It makes food taste better",
+                "C. It helps us search for information quickly",
                 "D. It makes us taller"
               ],
               "ans": 2,
@@ -3719,8 +3718,8 @@ var ENGLISH_DATA = {
               "q": "What is the writer's opinion about the Internet?",
               "opts": [
                 "A. We should not use it at all",
-                "C. It is completely harmful",
-                "B. It is a useful tool if used wisely",
+                "B. It is completely harmful",
+                "C. It is a useful tool if used wisely",
                 "D. Only adults should use it"
               ],
               "ans": 2,
@@ -3778,8 +3777,8 @@ var ENGLISH_DATA = {
           "q": "___ he is poor, he is very happy.",
           "opts": [
             "A. Because",
-            "C. Although",
-            "B. If",
+            "B. Although",
+            "C. If",
             "D. When"
           ],
           "ans": 1,
@@ -3790,9 +3789,9 @@ var ENGLISH_DATA = {
           "q": "She is ___ a kind girl ___ everyone loves her.",
           "opts": [
             "A. so / that",
-            "D. very / that",
+            "B. very / that",
             "C. too / to",
-            "B. such / that"
+            "D. such / that"
           ],
           "ans": 3,
           "exp": "such + a + 形容词 + 名词 + that = 如此…以至于。"
@@ -3802,8 +3801,8 @@ var ENGLISH_DATA = {
           "q": "You won't pass the exam ___ you study hard.",
           "opts": [
             "A. if",
-            "C. unless",
-            "B. when",
+            "B. unless",
+            "C. when",
             "D. because"
           ],
           "ans": 1,
@@ -3814,8 +3813,8 @@ var ENGLISH_DATA = {
           "q": "Which is WRONG?",
           "opts": [
             "A. Although he is tired, he keeps working.",
-            "C. Although he is tired, but he keeps working.",
-            "B. He is tired, but he keeps working.",
+            "B. Although he is tired, but he keeps working.",
+            "C. He is tired, but he keeps working.",
             "D. Tired as he is, he keeps working."
           ],
           "ans": 1,
@@ -3826,9 +3825,9 @@ var ENGLISH_DATA = {
           "q": "What does the writer suggest about Internet use?",
           "opts": [
             "A. Never use it",
-            "D. Only for games",
+            "B. Only for games",
             "C. Use it all day",
-            "B. Use it wisely"
+            "D. Use it wisely"
           ],
           "ans": 3,
           "exp": "结尾：we should use the Internet wisely。"
@@ -3837,8 +3836,8 @@ var ENGLISH_DATA = {
           "topic": "时间状语",
           "q": "He ___ TV before his mother came back.",
           "opts": [
-            "B. had watched",
-            "A. watched",
+            "A. had watched",
+            "B. watched",
             "C. will watch",
             "D. watches"
           ],
@@ -3849,8 +3848,8 @@ var ENGLISH_DATA = {
           "topic": "综合",
           "q": "The movie was ___ interesting ___ I watched it twice.",
           "opts": [
-            "B. such / that",
-            "A. so / that",
+            "A. such / that",
+            "B. so / that",
             "C. too / to",
             "D. very / that"
           ],
@@ -3887,8 +3886,8 @@ var ENGLISH_DATA = {
               "q": "The letter ___ yesterday.",
               "opts": [
                 "A. sends",
-                "C. was sent",
-                "B. sent",
+                "B. was sent",
+                "C. sent",
                 "D. is sent"
               ],
               "ans": 1,
@@ -3898,10 +3897,10 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "There ___ some milk and two eggs on the table.",
               "opts": [
-                "D. has",
+                "A. has",
                 "B. are",
                 "C. have",
-                "A. is"
+                "D. is"
               ],
               "ans": 3,
               "exp": "there be 就近原则，milk 不可数用 is。"
@@ -3911,8 +3910,8 @@ var ENGLISH_DATA = {
               "q": "If it ___ tomorrow, I will stay at home.",
               "opts": [
                 "A. rain",
-                "C. will rain",
-                "B. rains",
+                "B. will rain",
+                "C. rains",
                 "D. rained"
               ],
               "ans": 2,
@@ -3922,8 +3921,8 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "The man ___ is standing over there is my uncle.",
               "opts": [
-                "B. who",
-                "A. which",
+                "A. who",
+                "B. which",
                 "C. whose",
                 "D. where"
               ],
@@ -3947,8 +3946,8 @@ var ENGLISH_DATA = {
               "q": "This is the best gift ___ I have ever received.",
               "opts": [
                 "A. which",
-                "C. who",
-                "B. that",
+                "B. who",
+                "C. that",
                 "D. what"
               ],
               "ans": 2,
@@ -3959,8 +3958,8 @@ var ENGLISH_DATA = {
               "q": "___ he is young, ___ he knows a lot.",
               "opts": [
                 "A. Although / but",
-                "C. Although / /",
-                "B. Because / so",
+                "B. Although / /",
+                "C. Because / so",
                 "D. If / then"
               ],
               "ans": 1,
@@ -3998,9 +3997,9 @@ var ENGLISH_DATA = {
               "q": "What is the main idea of this story?",
               "opts": [
                 "A. Sticks are hard to break",
-                "D. The youngest is the strongest",
+                "B. The youngest is the strongest",
                 "C. Fathers are always right",
-                "B. Unity makes us strong"
+                "D. Unity makes us strong"
               ],
               "ans": 3,
               "exp": "主旨题：团结就是力量。"
@@ -4011,8 +4010,8 @@ var ENGLISH_DATA = {
               "opts": [
                 "A. The sticks were too thick",
                 "B. They were not strong enough",
-                "D. They didn't try hard",
-                "C. The sticks tied together became strong"
+                "C. They didn't try hard",
+                "D. The sticks tied together became strong"
               ],
               "ans": 3,
               "exp": "推理题：三根绑在一起就变强了，说明团结力量大。"
@@ -4060,8 +4059,8 @@ var ENGLISH_DATA = {
               "diff": "medium",
               "q": "What is the minimum word count for the essay?",
               "opts": [
-                "B. 80 words",
-                "A. 50 words",
+                "A. 80 words",
+                "B. 50 words",
                 "C. 120 words",
                 "D. 150 words"
               ],
@@ -4073,8 +4072,8 @@ var ENGLISH_DATA = {
               "q": "What does the model essay mention as a touching moment?",
               "opts": [
                 "A. Winning a prize",
-                "C. Getting a good grade",
-                "B. A friend sharing lunch",
+                "B. Getting a good grade",
+                "C. A friend sharing lunch",
                 "D. Meeting a new teacher"
               ],
               "ans": 2,
@@ -4095,8 +4094,8 @@ var ENGLISH_DATA = {
           "topic": "时态",
           "q": "We ___ a test next Monday.",
           "opts": [
-            "B. will have",
-            "A. have",
+            "A. will have",
+            "B. have",
             "C. had",
             "D. are having"
           ],
@@ -4156,9 +4155,9 @@ var ENGLISH_DATA = {
           "q": "I'm interested ___ Chinese history.",
           "opts": [
             "A. at",
-            "D. for",
+            "B. for",
             "C. on",
-            "B. in"
+            "D. in"
           ],
           "ans": 3,
           "exp": "be interested in = 对…感兴趣。"
@@ -4168,9 +4167,9 @@ var ENGLISH_DATA = {
           "q": "Which is ___ , the sun or the moon?",
           "opts": [
             "A. big",
-            "D. more big",
+            "B. more big",
             "C. biggest",
-            "B. bigger"
+            "D. bigger"
           ],
           "ans": 3,
           "exp": "两者比较用比较级 bigger。"
@@ -4193,8 +4192,8 @@ var ENGLISH_DATA = {
           "opts": [
             "A. Because",
             "B. If",
-            "D. When",
-            "C. Although"
+            "C. When",
+            "D. Although"
           ],
           "ans": 3,
           "exp": "虽然忙但还是帮助别人，用 Although。"
@@ -4203,8 +4202,8 @@ var ENGLISH_DATA = {
           "topic": "宾语从句",
           "q": "Could you tell me ___ ?",
           "opts": [
-            "B. how I can get to the station",
-            "A. how can I get to the station",
+            "A. how I can get to the station",
+            "B. how can I get to the station",
             "C. how do I get to the station",
             "D. how I get to the station"
           ],

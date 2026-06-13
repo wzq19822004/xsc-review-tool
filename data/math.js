@@ -43,8 +43,8 @@ var MATH_DATA = {
               "q": "计算：1.25 × 3.2 × 2.5 =",
               "opts": [
                 "A. 8",
-                "C. 12",
-                "B. 10",
+                "B. 12",
+                "C. 10",
                 "D. 15"
               ],
               "ans": 2,
@@ -55,8 +55,8 @@ var MATH_DATA = {
               "q": "计算：99 × <span class=\"frac\"><span>3</span><span>8</span></span> + 0.375 =",
               "opts": [
                 "A. 37.125",
-                "C. 38",
-                "B. 37.5",
+                "B. 38",
+                "C. 37.5",
                 "D. 40"
               ],
               "ans": 2,
@@ -67,8 +67,8 @@ var MATH_DATA = {
               "q": "计算：(<span class=\"frac\"><span>1</span><span>2</span></span> + <span class=\"frac\"><span>1</span><span>3</span></span> + <span class=\"frac\"><span>1</span><span>4</span></span>) × 12 =",
               "opts": [
                 "A. 11",
-                "C. 13",
-                "B. 12",
+                "B. 13",
+                "C. 12",
                 "D. 14"
               ],
               "ans": 1,
@@ -86,9 +86,9 @@ var MATH_DATA = {
               "diff": "basic",
               "q": "<span class=\"frac\"><span>1</span><span>1×2</span></span> + <span class=\"frac\"><span>1</span><span>2×3</span></span> 的裂项结果首项是？",
               "opts": [
-                "C. <span class=\"frac\"><span>1</span><span>3</span></span>",
+                "A. <span class=\"frac\"><span>1</span><span>3</span></span>",
                 "B. <span class=\"frac\"><span>1</span><span>2</span></span>",
-                "A. <span class=\"frac\"><span>1</span><span>1</span></span>",
+                "C. <span class=\"frac\"><span>1</span><span>1</span></span>",
                 "D. <span class=\"frac\"><span>2</span><span>3</span></span>"
               ],
               "ans": 2,
@@ -98,9 +98,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "<span class=\"frac\"><span>1</span><span>1×2</span></span> + <span class=\"frac\"><span>1</span><span>2×3</span></span> + <span class=\"frac\"><span>1</span><span>3×4</span></span> + … + <span class=\"frac\"><span>1</span><span>99×100</span></span> =",
               "opts": [
-                "C. 1",
+                "A. 1",
                 "B. <span class=\"frac\"><span>100</span><span>101</span></span>",
-                "A. <span class=\"frac\"><span>99</span><span>100</span></span>",
+                "C. <span class=\"frac\"><span>99</span><span>100</span></span>",
                 "D. <span class=\"frac\"><span>99</span><span>101</span></span>"
               ],
               "ans": 2,
@@ -110,8 +110,8 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "<span class=\"frac\"><span>1</span><span>2×4</span></span> + <span class=\"frac\"><span>1</span><span>4×6</span></span> + <span class=\"frac\"><span>1</span><span>6×8</span></span> =",
               "opts": [
-                "B. <span class=\"frac\"><span>3</span><span>16</span></span>",
-                "A. <span class=\"frac\"><span>1</span><span>4</span></span>",
+                "A. <span class=\"frac\"><span>3</span><span>16</span></span>",
+                "B. <span class=\"frac\"><span>1</span><span>4</span></span>",
                 "C. <span class=\"frac\"><span>1</span><span>8</span></span>",
                 "D. <span class=\"frac\"><span>5</span><span>16</span></span>"
               ],
@@ -122,8 +122,8 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "<span class=\"frac\"><span>1</span><span>1×3</span></span> + <span class=\"frac\"><span>1</span><span>3×5</span></span> + ... + <span class=\"frac\"><span>1</span><span>19×21</span></span> =",
               "opts": [
-                "B. <span class=\"frac\"><span>10</span><span>21</span></span>",
-                "A. <span class=\"frac\"><span>9</span><span>21</span></span>",
+                "A. <span class=\"frac\"><span>10</span><span>21</span></span>",
+                "B. <span class=\"frac\"><span>9</span><span>21</span></span>",
                 "C. <span class=\"frac\"><span>11</span><span>21</span></span>",
                 "D. <span class=\"frac\"><span>20</span><span>21</span></span>"
               ],
@@ -134,10 +134,10 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "裂项：<span class=\"frac\"><span>1</span><span>1×2×3</span></span> + <span class=\"frac\"><span>1</span><span>2×3×4</span></span> 的前两项裂开后和为？",
               "opts": [
-                "D. <span class=\"frac\"><span>1</span><span>4</span></span> − <span class=\"frac\"><span>1</span><span>24</span></span>",
+                "A. <span class=\"frac\"><span>1</span><span>4</span></span> − <span class=\"frac\"><span>1</span><span>24</span></span>",
                 "B. <span class=\"frac\"><span>1</span><span>4</span></span> − <span class=\"frac\"><span>1</span><span>6</span></span>",
                 "C. <span class=\"frac\"><span>1</span><span>2</span></span>×<span class=\"frac\"><span>1</span><span>4</span></span>",
-                "A. <span class=\"frac\"><span>1</span><span>2</span></span> − <span class=\"frac\"><span>1</span><span>12</span></span>"
+                "D. <span class=\"frac\"><span>1</span><span>2</span></span> − <span class=\"frac\"><span>1</span><span>12</span></span>"
               ],
               "ans": 0,
               "exp": "第一项=(<span class=\"frac\"><span>1</span><span>2</span></span>)[1/(1×2)−1/(2×3)]，第二项=(<span class=\"frac\"><span>1</span><span>2</span></span>)[1/(2×3)−1/(3×4)]，两项和=(<span class=\"frac\"><span>1</span><span>2</span></span>)[<span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>12</span></span>]=<span class=\"frac\"><span>1</span><span>4</span></span>−<span class=\"frac\"><span>1</span><span>24</span></span>。"
@@ -154,9 +154,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "若 3x + 7 = 2x + 12，则 x =",
               "opts": [
-                "C. 5",
+                "A. 5",
                 "B. 4",
-                "A. 3",
+                "C. 3",
                 "D. 6"
               ],
               "ans": 0,
@@ -199,9 +199,9 @@ var MATH_DATA = {
               "q": "等差数列 2, 5, 8, 11, ... 的公差是？",
               "opts": [
                 "A. 2",
-                "D. 5",
+                "B. 5",
                 "C. 4",
-                "B. 3"
+                "D. 3"
               ],
               "ans": 3,
               "exp": "5−2=3，8−5=3，公差 d=3。"
@@ -222,10 +222,10 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "1+3+5+...+99 =",
               "opts": [
-                "D. 2450",
+                "A. 2450",
                 "B. 2550",
                 "C. 5000",
-                "A. 2500"
+                "D. 2500"
               ],
               "ans": 3,
               "exp": "a₁=1，d=2，aₙ=99，n=(99−1)/2+1=50。S₅₀=50×(1+99)/2=2500。"
@@ -236,8 +236,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 4",
                 "B. 5",
-                "D. 7",
-                "C. 6"
+                "C. 7",
+                "D. 6"
               ],
               "ans": 3,
               "exp": "S₅=5a₁+5×4×<span class=\"frac\"><span>3</span><span>2</span></span>=5a₁+30=60，5a₁=30，a₁=6。"
@@ -247,9 +247,9 @@ var MATH_DATA = {
               "q": "等差数列中 a₃=11，a₇=23，则 S₁₀ =",
               "opts": [
                 "A. 155",
-                "D. 195",
+                "B. 195",
                 "C. 185",
-                "B. 175"
+                "D. 175"
               ],
               "ans": 3,
               "exp": "a₃=a₁+2d=11，a₇=a₁+6d=23，相减得4d=12，d=3，a₁=5。a₁₀=5+27=32，S₁₀=10×(5+32)/2=185。"
@@ -263,9 +263,9 @@ var MATH_DATA = {
           "q": "0.125 × 8 + <span class=\"frac\"><span>1</span><span>4</span></span> =",
           "opts": [
             "A. 1",
-            "D. 2",
+            "B. 2",
             "C. 1.5",
-            "B. 1.25"
+            "D. 1.25"
           ],
           "ans": 3,
           "exp": "0.125×8=1，1+0.25=1.25。"
@@ -274,8 +274,8 @@ var MATH_DATA = {
           "topic": "裂项法",
           "q": "<span class=\"frac\"><span>1</span><span>2×3</span></span> 裂项后等于？",
           "opts": [
-            "B. <span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>3</span></span>",
-            "A. <span class=\"frac\"><span>1</span><span>2</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>",
+            "A. <span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>3</span></span>",
+            "B. <span class=\"frac\"><span>1</span><span>2</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>",
             "C. 2−3",
             "D. <span class=\"frac\"><span>1</span><span>6</span></span>"
           ],
@@ -287,8 +287,8 @@ var MATH_DATA = {
           "q": "等差数列首项5，公差2，第20项是？",
           "opts": [
             "A. 41",
-            "C. 45",
-            "B. 43",
+            "B. 45",
+            "C. 43",
             "D. 47"
           ],
           "ans": 2,
@@ -299,8 +299,8 @@ var MATH_DATA = {
           "q": "2+4+6+...+50 =",
           "opts": [
             "A. 600",
-            "C. 650",
-            "B. 625",
+            "B. 650",
+            "C. 625",
             "D. 675"
           ],
           "ans": 1,
@@ -323,8 +323,8 @@ var MATH_DATA = {
           "q": "36×(<span class=\"frac\"><span>1</span><span>2</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>−<span class=\"frac\"><span>1</span><span>4</span></span>) =",
           "opts": [
             "A. 18",
-            "C. 24",
-            "B. 21",
+            "B. 24",
+            "C. 21",
             "D. 27"
           ],
           "ans": 2,
@@ -334,8 +334,8 @@ var MATH_DATA = {
           "topic": "换元法",
           "q": "设 a=0.2，则 5a²−3a+1 =",
           "opts": [
-            "B. 0.8",
-            "A. 0.6",
+            "A. 0.8",
+            "B. 0.6",
             "C. 0.4",
             "D. 1.0"
           ],
@@ -347,8 +347,8 @@ var MATH_DATA = {
           "q": "前n个奇数和是225，则n =",
           "opts": [
             "A. 13",
-            "C. 15",
-            "B. 14",
+            "B. 15",
+            "C. 14",
             "D. 16"
           ],
           "ans": 1,
@@ -358,8 +358,8 @@ var MATH_DATA = {
           "topic": "混合运算",
           "q": "3.14 × 25 =",
           "opts": [
-            "B. 78.5",
-            "A. 75.5",
+            "A. 78.5",
+            "B. 75.5",
             "C. 82.5",
             "D. 85.5"
           ],
@@ -408,8 +408,8 @@ var MATH_DATA = {
               "q": "下列数中能被4整除的是？",
               "opts": [
                 "A. 2022",
-                "C. 2026",
-                "B. 2024",
+                "B. 2026",
+                "C. 2024",
                 "D. 2027"
               ],
               "ans": 2,
@@ -419,8 +419,8 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "四位数5□2□的千位是5，若它能被9整除且被5整除，两个□依次是？",
               "opts": [
-                "B. 2,5",
-                "A. 2,0",
+                "A. 2,5",
+                "B. 2,0",
                 "C. 1,0",
                 "D. 1,5"
               ],
@@ -431,8 +431,8 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "能被11整除的最小四位数是？",
               "opts": [
-                "B. 1012",
-                "A. 1001",
+                "A. 1012",
+                "B. 1001",
                 "C. 1023",
                 "D. 1100"
               ],
@@ -443,10 +443,10 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "一个三位数，各位数字之和为12，且能被11整除。满足条件的最小的数是？",
               "opts": [
-                "D. 462",
+                "A. 462",
                 "B. 264",
                 "C. 363",
-                "A. 165"
+                "D. 165"
               ],
               "ans": 3,
               "exp": "165：(1+5)−6=0，差为0可被11整除，且1+6+5=12。最小。"
@@ -487,10 +487,10 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "下列哪个是质数？",
               "opts": [
-                "D. 97",
+                "A. 97",
                 "B. 57",
                 "C. 91",
-                "A. 51"
+                "D. 51"
               ],
               "ans": 0,
               "exp": "51=3×17，57=3×19，91=7×13。97不能被2,3,5,7整除（√97≈9.8），是质数。"
@@ -499,9 +499,9 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "两个质数的积是65，它们的和是？",
               "opts": [
-                "C. 18",
+                "A. 18",
                 "B. 16",
-                "A. 14",
+                "C. 14",
                 "D. 20"
               ],
               "ans": 0,
@@ -532,8 +532,8 @@ var MATH_DATA = {
               "q": "8和12的最小公倍数是？",
               "opts": [
                 "A. 16",
-                "C. 36",
-                "B. 24",
+                "B. 36",
+                "C. 24",
                 "D. 48"
               ],
               "ans": 2,
@@ -544,8 +544,8 @@ var MATH_DATA = {
               "q": "两个数的GCD=6，LCM=72，若其中一个数为18，另一个为？",
               "opts": [
                 "A. 12",
-                "C. 30",
-                "B. 24",
+                "B. 30",
+                "C. 24",
                 "D. 36"
               ],
               "ans": 2,
@@ -555,9 +555,9 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "一个数除5余3，除7余5，除9余7。这个数最小是？",
               "opts": [
-                "C. 313",
+                "A. 313",
                 "B. 53",
-                "A. 23",
+                "C. 23",
                 "D. 33"
               ],
               "ans": 0,
@@ -575,10 +575,10 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "一个数除以5余2，除以7余2，这个数最小是？",
               "opts": [
-                "D. 37",
+                "A. 37",
                 "B. 12",
                 "C. 35",
-                "A. 7"
+                "D. 7"
               ],
               "ans": 0,
               "exp": "即n−2能被5和7整除。LCM(5,7)=35。n=35k+2。k=1时n=37最小（>2）。检验37÷5=7余2，37÷7=5余2。"
@@ -587,9 +587,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "2024除以某个一位数的余数是2，这个一位数可能是？",
               "opts": [
-                "C. 7",
+                "A. 7",
                 "B. 5",
-                "A. 3",
+                "C. 3",
                 "D. 8"
               ],
               "ans": 2,
@@ -600,8 +600,8 @@ var MATH_DATA = {
               "q": "一堆苹果3个3个数剩1个，5个5个数剩3个，7个7个数剩2个，最少有几个？",
               "opts": [
                 "A. 28",
-                "C. 58",
-                "B. 43",
+                "B. 58",
+                "C. 43",
                 "D. 73"
               ],
               "ans": 2,
@@ -615,9 +615,9 @@ var MATH_DATA = {
           "topic": "整除",
           "q": "能被9整除的数是？",
           "opts": [
-            "C. 3456",
+            "A. 3456",
             "B. 2345",
-            "A. 1234",
+            "C. 1234",
             "D. 4567"
           ],
           "ans": 0,
@@ -627,8 +627,8 @@ var MATH_DATA = {
           "topic": "整除",
           "q": "五位数34□5□能被15整除，两个□填入的数字和是？",
           "opts": [
-            "B. 6",
-            "A. 3",
+            "A. 6",
+            "B. 3",
             "C. 9",
             "D. 12"
           ],
@@ -640,8 +640,8 @@ var MATH_DATA = {
           "q": "既是质数又是偶数的数是？",
           "opts": [
             "A. 0",
-            "C. 2",
-            "B. 1",
+            "B. 2",
+            "C. 1",
             "D. 4"
           ],
           "ans": 1,
@@ -651,10 +651,10 @@ var MATH_DATA = {
           "topic": "质因数",
           "q": "72分解质因数的结果是？",
           "opts": [
-            "D. 8×9",
+            "A. 8×9",
             "B. 2²×3³",
             "C. 2×36",
-            "A. 2³×3²"
+            "D. 2³×3²"
           ],
           "ans": 3,
           "exp": "72=8×9=2³×3²。"
@@ -676,9 +676,9 @@ var MATH_DATA = {
           "q": "两个数的GCD=4，LCM=48，其中一个数是12，另一个是？",
           "opts": [
             "A. 8",
-            "D. 24",
+            "B. 24",
             "C. 20",
-            "B. 16"
+            "D. 16"
           ],
           "ans": 3,
           "exp": "12×b=4×48=192，b=16。"
@@ -688,8 +688,8 @@ var MATH_DATA = {
           "q": "一个数除6余2，除8余4，这个数最小是？",
           "opts": [
             "A. 14",
-            "C. 26",
-            "B. 20",
+            "B. 26",
+            "C. 20",
             "D. 32"
           ],
           "ans": 2,
@@ -699,8 +699,8 @@ var MATH_DATA = {
           "topic": "整除",
           "q": "能被11整除的四位数中最小的是？",
           "opts": [
-            "B. 1001",
-            "A. 1000",
+            "A. 1001",
+            "B. 1000",
             "C. 1010",
             "D. 1012"
           ],
@@ -724,9 +724,9 @@ var MATH_DATA = {
           "q": "100以内的质数共有几个？",
           "opts": [
             "A. 22",
-            "D. 25",
+            "B. 25",
             "C. 24",
-            "B. 23"
+            "D. 23"
           ],
           "ans": 1,
           "exp": "100以内共25个质数：2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97。"
@@ -749,8 +749,8 @@ var MATH_DATA = {
               "q": "一个数的 <span class=\"frac\"><span>2</span><span>5</span></span> 是 30，这个数是？",
               "opts": [
                 "A. 45",
-                "C. 75",
-                "B. 60",
+                "B. 75",
+                "C. 60",
                 "D. 90"
               ],
               "ans": 1,
@@ -772,9 +772,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "某班男生比女生多<span class=\"frac\"><span>1</span><span>5</span></span>，女生有25人，全班多少人？",
               "opts": [
-                "C. 55",
+                "A. 55",
                 "B. 52",
-                "A. 50",
+                "C. 50",
                 "D. 60"
               ],
               "ans": 0,
@@ -784,9 +784,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "一本书第一天看<span class=\"frac\"><span>1</span><span>3</span></span>，第二天看剩下的<span class=\"frac\"><span>1</span><span>2</span></span>，还剩40页，全书多少页？",
               "opts": [
-                "C. 120",
+                "A. 120",
                 "B. 110",
-                "A. 100",
+                "C. 100",
                 "D. 150"
               ],
               "ans": 0,
@@ -809,9 +809,9 @@ var MATH_DATA = {
               "q": "甲比乙多<span class=\"frac\"><span>1</span><span>4</span></span>，乙是甲的几分之几？",
               "opts": [
                 "A. <span class=\"frac\"><span>3</span><span>4</span></span>",
-                "D. <span class=\"frac\"><span>3</span><span>5</span></span>",
+                "B. <span class=\"frac\"><span>3</span><span>5</span></span>",
                 "C. <span class=\"frac\"><span>5</span><span>4</span></span>",
-                "B. <span class=\"frac\"><span>4</span><span>5</span></span>"
+                "D. <span class=\"frac\"><span>4</span><span>5</span></span>"
               ],
               "ans": 3,
               "exp": "甲=乙×<span class=\"frac\"><span>5</span><span>4</span></span>，所以乙=甲×<span class=\"frac\"><span>4</span><span>5</span></span>。"
@@ -820,9 +820,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "一件商品先涨价20%，再降价20%，现价是原价的？",
               "opts": [
-                "C. 100%",
+                "A. 100%",
                 "B. 98%",
-                "A. 96%",
+                "C. 96%",
                 "D. 102%"
               ],
               "ans": 2,
@@ -854,8 +854,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 110元",
                 "B. 115元",
-                "D. 125元",
-                "C. 120元"
+                "C. 125元",
+                "D. 120元"
               ],
               "ans": 3,
               "exp": "售价=成本×(1+利润率)=100×1.2=120元。"
@@ -864,8 +864,8 @@ var MATH_DATA = {
               "diff": "basic",
               "q": "一件商品打八折后卖160元，原价是多少？",
               "opts": [
-                "B. 200元",
-                "A. 180元",
+                "A. 200元",
+                "B. 180元",
                 "C. 210元",
                 "D. 220元"
               ],
@@ -878,8 +878,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 25%",
                 "B. 30%",
-                "D. 40%",
-                "C. 35%"
+                "C. 40%",
+                "D. 35%"
               ],
               "ans": 3,
               "exp": "售价=120×0.9=108，利润=108−80=28，利润率=28÷80=35%。"
@@ -900,8 +900,8 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "某商品按20%利润定价，然后按八八折卖出，获利84元，成本是多少？",
               "opts": [
-                "B. 1500元",
-                "A. 1400元",
+                "A. 1500元",
+                "B. 1400元",
                 "C. 1600元",
                 "D. 1800元"
               ],
@@ -921,9 +921,9 @@ var MATH_DATA = {
               "q": "把20克盐溶入80克水中，浓度是？",
               "opts": [
                 "A. 15%",
-                "D. 30%",
+                "B. 30%",
                 "C. 25%",
-                "B. 20%"
+                "D. 20%"
               ],
               "ans": 3,
               "exp": "溶液=20+80=100克，浓度=20÷100=20%。"
@@ -932,9 +932,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "有300克浓度为15%的盐水，要稀释成10%，需加水多少？",
               "opts": [
-                "C. 150克",
+                "A. 150克",
                 "B. 120克",
-                "A. 100克",
+                "C. 100克",
                 "D. 180克"
               ],
               "ans": 0,
@@ -945,9 +945,9 @@ var MATH_DATA = {
               "q": "把浓度为20%和5%的盐水按2:3混合，混合后浓度为？",
               "opts": [
                 "A. 10%",
-                "D. 13%",
+                "B. 13%",
                 "C. 12%",
-                "B. 11%"
+                "D. 11%"
               ],
               "ans": 3,
               "exp": "(2×20%+3×5%)÷(2+3)=(40%+15%)÷5=55%÷5=11%。"
@@ -958,8 +958,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 3千克",
                 "B. 4千克",
-                "D. 6千克",
-                "C. 5千克"
+                "C. 6千克",
+                "D. 5千克"
               ],
               "ans": 3,
               "exp": "盐=20×0.15=3千克。新溶液=3÷0.2=15千克。蒸发水=20−15=5千克。"
@@ -984,8 +984,8 @@ var MATH_DATA = {
           "topic": "量率对应",
           "q": "一桶油第一次用去<span class=\"frac\"><span>1</span><span>3</span></span>，第二次用去剩下的<span class=\"frac\"><span>1</span><span>2</span></span>，还剩15升，原油多少升？",
           "opts": [
-            "B. 45升",
-            "A. 40升",
+            "A. 45升",
+            "B. 40升",
             "C. 50升",
             "D. 60升"
           ],
@@ -1010,8 +1010,8 @@ var MATH_DATA = {
           "opts": [
             "A. 110元",
             "B. 115元",
-            "D. 125元",
-            "C. 120元"
+            "C. 125元",
+            "D. 120元"
           ],
           "ans": 3,
           "exp": "原价=90÷0.75=120元。"
@@ -1020,8 +1020,8 @@ var MATH_DATA = {
           "topic": "浓度问题",
           "q": "10克糖放入40克水中，浓度是？",
           "opts": [
-            "B. 20%",
-            "A. 15%",
+            "A. 20%",
+            "B. 15%",
             "C. 25%",
             "D. 30%"
           ],
@@ -1045,8 +1045,8 @@ var MATH_DATA = {
           "q": "按20%利润定价再打九折，成本500元，获利？",
           "opts": [
             "A. 30元",
-            "C. 50元",
-            "B. 40元",
+            "B. 50元",
+            "C. 40元",
             "D. 60元"
           ],
           "ans": 2,
@@ -1057,8 +1057,8 @@ var MATH_DATA = {
           "q": "含盐25%的盐水200克，加多少水变20%？",
           "opts": [
             "A. 30g",
-            "C. 50g",
-            "B. 40g",
+            "B. 50g",
+            "C. 40g",
             "D. 60g"
           ],
           "ans": 1,
@@ -1068,8 +1068,8 @@ var MATH_DATA = {
           "topic": "量率对应",
           "q": "小明读一本书，已读的页数是未读的<span class=\"frac\"><span>2</span><span>3</span></span>，已知已读40页，全书？",
           "opts": [
-            "B. 100页",
-            "A. 80页",
+            "A. 100页",
+            "B. 80页",
             "C. 120页",
             "D. 150页"
           ],
@@ -1106,8 +1106,8 @@ var MATH_DATA = {
               "q": "甲独做需6天，乙独做需12天，合作需几天？",
               "opts": [
                 "A. 3天",
-                "C. 5天",
-                "B. 4天",
+                "B. 5天",
+                "C. 4天",
                 "D. 8天"
               ],
               "ans": 2,
@@ -1117,8 +1117,8 @@ var MATH_DATA = {
               "diff": "basic",
               "q": "一项工程甲10天完成，甲做3天后由乙单独完成，乙又做了14天。乙单独做需要几天？",
               "opts": [
-                "B. 20天",
-                "A. 18天",
+                "A. 20天",
+                "B. 18天",
                 "C. 22天",
                 "D. 25天"
               ],
@@ -1130,9 +1130,9 @@ var MATH_DATA = {
               "q": "甲独做15天完成，乙独做20天完成。二人合作4天后甲离开，乙还需几天？",
               "opts": [
                 "A. 8天",
-                "D. <span class=\"frac\"><span>32</span><span>3</span></span>天",
+                "B. <span class=\"frac\"><span>32</span><span>3</span></span>天",
                 "C. 12天",
-                "B. 10天"
+                "D. 10天"
               ],
               "ans": 1,
               "exp": "合作4天完成4×(<span class=\"frac\"><span>1</span><span>15</span></span>+<span class=\"frac\"><span>1</span><span>20</span></span>)=4×(<span class=\"frac\"><span>4</span><span>60</span></span>+<span class=\"frac\"><span>3</span><span>60</span></span>)=4×<span class=\"frac\"><span>7</span><span>60</span></span>=<span class=\"frac\"><span>28</span><span>60</span></span>=<span class=\"frac\"><span>7</span><span>15</span></span>。剩<span class=\"frac\"><span>8</span><span>15</span></span>。乙需要(<span class=\"frac\"><span>8</span><span>15</span></span>)÷(<span class=\"frac\"><span>1</span><span>20</span></span>)=(<span class=\"frac\"><span>8</span><span>15</span></span>)×20=<span class=\"frac\"><span>32</span><span>3</span></span>天。"
@@ -1142,8 +1142,8 @@ var MATH_DATA = {
               "q": "甲乙合作8天完成，甲独做12天完成，乙独做需几天？",
               "opts": [
                 "A. 20天",
-                "C. 28天",
-                "B. 24天",
+                "B. 28天",
+                "C. 24天",
                 "D. 30天"
               ],
               "ans": 2,
@@ -1154,8 +1154,8 @@ var MATH_DATA = {
               "q": "甲独做需10天，乙独做需15天，丙独做需20天。三人合作，中途甲休息1天，乙休息2天，完成工程需要几天？",
               "opts": [
                 "A. 5天",
-                "C. 7天",
-                "B. 6天",
+                "B. 7天",
+                "C. 6天",
                 "D. 8天"
               ],
               "ans": 2,
@@ -1173,9 +1173,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "甲独做需12天，乙独做需18天。甲乙轮流各做1天（甲先），完成需几天？",
               "opts": [
-                "C. 15天",
+                "A. 15天",
                 "B. 14天",
-                "A. 13天",
+                "C. 13天",
                 "D. 16天"
               ],
               "ans": 0,
@@ -1185,9 +1185,9 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "甲效率是乙的1.5倍，甲乙轮流各做1天，甲先做，共需10天完成。若乙先做，需几天？",
               "opts": [
-                "C. 12天",
+                "A. 12天",
                 "B. 11天",
-                "A. 10天",
+                "C. 10天",
                 "D. 9天"
               ],
               "ans": 0,
@@ -1205,8 +1205,8 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "进水管5小时灌满，排水管8小时放完。两管齐开，几小时灌满？",
               "opts": [
-                "B. 13小时",
-                "A. <span class=\"frac\"><span>40</span><span>3</span></span>小时",
+                "A. 13小时",
+                "B. <span class=\"frac\"><span>40</span><span>3</span></span>小时",
                 "C. 15小时",
                 "D. 20小时"
               ],
@@ -1219,8 +1219,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 2小时",
                 "B. <span class=\"frac\"><span>8</span><span>3</span></span>小时",
-                "D. <span class=\"frac\"><span>24</span><span>7</span></span>小时",
-                "C. 3小时"
+                "C. <span class=\"frac\"><span>24</span><span>7</span></span>小时",
+                "D. 3小时"
               ],
               "ans": 2,
               "exp": "净效率=<span class=\"frac\"><span>1</span><span>4</span></span>+<span class=\"frac\"><span>1</span><span>6</span></span>−<span class=\"frac\"><span>1</span><span>8</span></span>=<span class=\"frac\"><span>6</span><span>24</span></span>+<span class=\"frac\"><span>4</span><span>24</span></span>−<span class=\"frac\"><span>3</span><span>24</span></span>=<span class=\"frac\"><span>7</span><span>24</span></span>。时间=<span class=\"frac\"><span>24</span><span>7</span></span>小时。"
@@ -1237,9 +1237,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "27头牛6天吃完，23头牛9天吃完，21头牛几天吃完？",
               "opts": [
-                "C. 12天",
+                "A. 12天",
                 "B. 11天",
-                "A. 10天",
+                "C. 10天",
                 "D. 13天"
               ],
               "ans": 0,
@@ -1277,9 +1277,9 @@ var MATH_DATA = {
           "topic": "合作工程",
           "q": "甲乙合作12天，甲独做20天，乙独做几天？",
           "opts": [
-            "C. 30天",
+            "A. 30天",
             "B. 28天",
-            "A. 24天",
+            "C. 24天",
             "D. 32天"
           ],
           "ans": 0,
@@ -1291,8 +1291,8 @@ var MATH_DATA = {
           "opts": [
             "A. 15小时",
             "B. 16小时",
-            "D. 18小时",
-            "C. 17小时"
+            "C. 18小时",
+            "D. 17小时"
           ],
           "ans": 2,
           "exp": "1÷(<span class=\"frac\"><span>1</span><span>6</span></span>−<span class=\"frac\"><span>1</span><span>9</span></span>)=1÷(<span class=\"frac\"><span>3</span><span>18</span></span>−<span class=\"frac\"><span>2</span><span>18</span></span>)=1÷(<span class=\"frac\"><span>1</span><span>18</span></span>)=18小时。"
@@ -1303,8 +1303,8 @@ var MATH_DATA = {
           "opts": [
             "A. 3",
             "B. 4",
-            "D. 6",
-            "C. 5"
+            "C. 6",
+            "D. 5"
           ],
           "ans": 3,
           "exp": "每天生长=(9×15−12×10)÷(15−10)=(135−120)÷5=3。"
@@ -1313,9 +1313,9 @@ var MATH_DATA = {
           "topic": "合作工程",
           "q": "甲20天乙30天，合作5天后甲走，乙还要几天？",
           "opts": [
-            "C. 17.5天",
+            "A. 17.5天",
             "B. 16.5天",
-            "A. 15天",
+            "C. 15天",
             "D. 18天"
           ],
           "ans": 0,
@@ -1326,9 +1326,9 @@ var MATH_DATA = {
           "q": "甲12天乙24天，轮流各做1天(甲先)，需几天？",
           "opts": [
             "A. 15天",
-            "D. 18天",
+            "B. 18天",
             "C. 17天",
-            "B. 16天"
+            "D. 16天"
           ],
           "ans": 3,
           "exp": "每周期2天完成<span class=\"frac\"><span>1</span><span>12</span></span>+<span class=\"frac\"><span>1</span><span>24</span></span>=<span class=\"frac\"><span>3</span><span>24</span></span>=<span class=\"frac\"><span>1</span><span>8</span></span>。8周期=16天完成。"
@@ -1339,8 +1339,8 @@ var MATH_DATA = {
           "opts": [
             "A. 2.4小时",
             "B. 2.8小时",
-            "D. 3.6小时",
-            "C. 3小时"
+            "C. 3.6小时",
+            "D. 3小时"
           ],
           "ans": 2,
           "exp": "效率=<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>1</span><span>6</span></span>−<span class=\"frac\"><span>1</span><span>9</span></span>=<span class=\"frac\"><span>6</span><span>18</span></span>+<span class=\"frac\"><span>3</span><span>18</span></span>−<span class=\"frac\"><span>2</span><span>18</span></span>=<span class=\"frac\"><span>7</span><span>18</span></span>。时间=<span class=\"frac\"><span>18</span><span>7</span></span>≈2.57h。不对…效率=<span class=\"frac\"><span>6</span><span>18</span></span>+<span class=\"frac\"><span>3</span><span>18</span></span>−<span class=\"frac\"><span>2</span><span>18</span></span>=<span class=\"frac\"><span>7</span><span>18</span></span>，时间=<span class=\"frac\"><span>18</span><span>7</span></span>≈2.57h。选项：A.2.4 B.2.8 C.3 D.3.6。<span class=\"frac\"><span>18</span><span>7</span></span>≈2.571。最接近2.4还是2.8？都不是。重新计算：LCM(3,6,9)=18。<span class=\"frac\"><span>1</span><span>3</span></span>=<span class=\"frac\"><span>6</span><span>18</span></span>，<span class=\"frac\"><span>1</span><span>6</span></span>=<span class=\"frac\"><span>3</span><span>18</span></span>，<span class=\"frac\"><span>1</span><span>9</span></span>=<span class=\"frac\"><span>2</span><span>18</span></span>。净=<span class=\"frac\"><span>7</span><span>18</span></span>。时间=<span class=\"frac\"><span>18</span><span>7</span></span>≈2.571。可能是3.6？不是。我们仔细看：<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>1</span><span>6</span></span>=<span class=\"frac\"><span>1</span><span>2</span></span>=<span class=\"frac\"><span>9</span><span>18</span></span>，<span class=\"frac\"><span>9</span><span>18</span></span>−<span class=\"frac\"><span>2</span><span>18</span></span>=<span class=\"frac\"><span>7</span><span>18</span></span>。是的。答案问题，此题应为<span class=\"frac\"><span>18</span><span>7</span></span>≈2.57小时。可能选D 3.6？不对，3.6=<span class=\"frac\"><span>18</span><span>5</span></span>。选B 2.8最接近？但不够精确。实际是<span class=\"frac\"><span>18</span><span>7</span></span>小时。"
@@ -1350,9 +1350,9 @@ var MATH_DATA = {
           "q": "27牛6天，23牛9天，原有草量？",
           "opts": [
             "A. 60",
-            "D. 90",
+            "B. 90",
             "C. 81",
-            "B. 72"
+            "D. 72"
           ],
           "ans": 3,
           "exp": "生长=(23×9−27×6)÷3=15。原有=27×6−15×6=72。"
@@ -1362,8 +1362,8 @@ var MATH_DATA = {
           "q": "一项工程甲做<span class=\"frac\"><span>1</span><span>3</span></span>后乙加入，前后共8天。甲独做12天，乙独做几天？",
           "opts": [
             "A. 15天",
-            "C. 18天",
-            "B. 16天",
+            "B. 18天",
+            "C. 16天",
             "D. 20天"
           ],
           "ans": 1,
@@ -1373,9 +1373,9 @@ var MATH_DATA = {
           "topic": "综合",
           "q": "进水4h满，排水6h空。先开进水1h后两管齐开，还需几小时满？",
           "opts": [
-            "C. 9h",
+            "A. 9h",
             "B. 8h",
-            "A. 7h",
+            "C. 7h",
             "D. 10h"
           ],
           "ans": 0,
@@ -1398,9 +1398,9 @@ var MATH_DATA = {
               "diff": "basic",
               "q": "解方程组 x+y=10, x−y=2，则 x=",
               "opts": [
-                "C. 6",
+                "A. 6",
                 "B. 5",
-                "A. 4",
+                "C. 4",
                 "D. 7"
               ],
               "ans": 0,
@@ -1410,8 +1410,8 @@ var MATH_DATA = {
               "diff": "basic",
               "q": "解 2x+3y=13, x−y=4，则 y=",
               "opts": [
-                "B. 2",
-                "A. 1",
+                "A. 2",
+                "B. 1",
                 "C. 3",
                 "D. 4"
               ],
@@ -1422,9 +1422,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "3x+2y=19, 2x+3y=21，则 x+y=",
               "opts": [
-                "C. 8",
+                "A. 8",
                 "B. 7",
-                "A. 6",
+                "C. 6",
                 "D. 9"
               ],
               "ans": 0,
@@ -1435,9 +1435,9 @@ var MATH_DATA = {
               "q": "x/2 + y/3 = 6, x/3 + y/2 = 6，则 x−y =",
               "opts": [
                 "A. −6",
-                "D. 12",
+                "B. 12",
                 "C. 6",
-                "B. 0"
+                "D. 0"
               ],
               "ans": 3,
               "exp": "去分母：3x+2y=36①，2x+3y=36②。①−②：x−y=0。"
@@ -1447,8 +1447,8 @@ var MATH_DATA = {
               "q": "甲+乙=50，甲×3+乙×5=190，甲是多少？",
               "opts": [
                 "A. 20",
-                "C. 30",
-                "B. 25",
+                "B. 30",
+                "C. 25",
                 "D. 35"
               ],
               "ans": 1,
@@ -1479,9 +1479,9 @@ var MATH_DATA = {
               "q": "A:B=2:3，B:C=5:4，则A:C =",
               "opts": [
                 "A. 2:3",
-                "D. 3:4",
+                "B. 3:4",
                 "C. 10:12",
-                "B. 5:6"
+                "D. 5:6"
               ],
               "ans": 3,
               "exp": "统一B：A:B=10:15，B:C=15:12，A:C=10:12=5:6。"
@@ -1492,8 +1492,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 20",
                 "B. 22",
-                "D. 28",
-                "C. 24"
+                "C. 28",
+                "D. 24"
               ],
               "ans": 3,
               "exp": "总份7，甲=56×<span class=\"frac\"><span>3</span><span>7</span></span>=24。"
@@ -1502,9 +1502,9 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "三角形三边比5:12:13，周长60cm，面积是？",
               "opts": [
-                "C. 120cm²",
+                "A. 120cm²",
                 "B. 90cm²",
-                "A. 60cm²",
+                "C. 60cm²",
                 "D. 150cm²"
               ],
               "ans": 0,
@@ -1547,8 +1547,8 @@ var MATH_DATA = {
               "q": "定义 x▽y=(x+y)÷(x−y)，若 8▽a=3，则 a =",
               "opts": [
                 "A. 3",
-                "C. 4",
-                "B. 3.5",
+                "B. 4",
+                "C. 3.5",
                 "D. 4.5"
               ],
               "ans": 1,
@@ -1563,8 +1563,8 @@ var MATH_DATA = {
           "q": "x+y=15, x−y=3，y =",
           "opts": [
             "A. 5",
-            "C. 7",
-            "B. 6",
+            "B. 7",
+            "C. 6",
             "D. 8"
           ],
           "ans": 2,
@@ -1588,8 +1588,8 @@ var MATH_DATA = {
           "opts": [
             "A. 30",
             "B. 35",
-            "D. 50",
-            "C. 40"
+            "C. 50",
+            "D. 40"
           ],
           "ans": 3,
           "exp": "总份10，最大=100×<span class=\"frac\"><span>4</span><span>10</span></span>=40。"
@@ -1598,9 +1598,9 @@ var MATH_DATA = {
           "topic": "按比分配",
           "q": "A:B=3:5，A=45，则B =",
           "opts": [
-            "C. 75",
+            "A. 75",
             "B. 70",
-            "A. 65",
+            "C. 65",
             "D. 80"
           ],
           "ans": 0,
@@ -1611,9 +1611,9 @@ var MATH_DATA = {
           "q": "定义 a☆b=2a−b，则 7☆3 =",
           "opts": [
             "A. 10",
-            "D. 14",
+            "B. 14",
             "C. 12",
-            "B. 11"
+            "D. 11"
           ],
           "ans": 3,
           "exp": "2×7−3=14−3=11。"
@@ -1623,9 +1623,9 @@ var MATH_DATA = {
           "q": "买3支笔和2本书共26元，买2支笔和3本书共24元，1支笔多少元？",
           "opts": [
             "A. 3元",
-            "D. 6元",
+            "B. 6元",
             "C. 5元",
-            "B. 4元"
+            "D. 4元"
           ],
           "ans": 1,
           "exp": "设笔x书y。3x+2y=26，2x+3y=24。①×3−②×2：9x−4x=78−48→5x=30→x=6。"
@@ -1636,8 +1636,8 @@ var MATH_DATA = {
           "opts": [
             "A. 2:3",
             "B. 4:5",
-            "D. 5:6",
-            "C. 8:15"
+            "C. 5:6",
+            "D. 8:15"
           ],
           "ans": 3,
           "exp": "甲:乙=4:5=8:10，乙:丙=2:3=10:15，甲:丙=8:15。"
@@ -1646,9 +1646,9 @@ var MATH_DATA = {
           "topic": "新定义",
           "q": "定义 a◇b = (a+b)×(a−b)，则 10◇4 =",
           "opts": [
-            "C. 84",
+            "A. 84",
             "B. 72",
-            "A. 60",
+            "C. 60",
             "D. 96"
           ],
           "ans": 0,
@@ -1659,8 +1659,8 @@ var MATH_DATA = {
           "q": "x=2y, 2x−3y=5，x =",
           "opts": [
             "A. 8",
-            "C. 12",
-            "B. 10",
+            "B. 12",
+            "C. 10",
             "D. 15"
           ],
           "ans": 2,
@@ -1697,8 +1697,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 24",
                 "B. 30",
-                "D. 42",
-                "C. 36"
+                "C. 42",
+                "D. 36"
               ],
               "ans": 3,
               "exp": "甲=(60+12)÷2=36，乙=24。"
@@ -1708,8 +1708,8 @@ var MATH_DATA = {
               "q": "两数之和为45，甲是乙的4倍，甲是？",
               "opts": [
                 "A. 30",
-                "C. 36",
-                "B. 33",
+                "B. 36",
+                "C. 33",
                 "D. 40"
               ],
               "ans": 1,
@@ -1721,8 +1721,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 30",
                 "B. 33",
-                "D. 38",
-                "C. 35"
+                "C. 38",
+                "D. 35"
               ],
               "ans": 3,
               "exp": "设乙=x，甲=3x+5。3x+5−x=25→2x=20→x=10→甲=35。"
@@ -1732,8 +1732,8 @@ var MATH_DATA = {
               "q": "父亲今年40岁，儿子12岁，几年后父亲年龄是儿子的2倍？",
               "opts": [
                 "A. 14年",
-                "C. 18年",
-                "B. 16年",
+                "B. 18年",
+                "C. 16年",
                 "D. 20年"
               ],
               "ans": 2,
@@ -1743,8 +1743,8 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "一个两位数，十位数字是个位的2倍，对调后比原数小27。求这个数。",
               "opts": [
-                "B. 63",
-                "A. 42",
+                "A. 63",
+                "B. 42",
                 "C. 84",
                 "D. 都不对"
               ],
@@ -1763,9 +1763,9 @@ var MATH_DATA = {
               "diff": "basic",
               "q": "分苹果，每人5个剩10个，每人7个缺4个。有几人？",
               "opts": [
-                "C. 7人",
+                "A. 7人",
                 "B. 6人",
-                "A. 5人",
+                "C. 5人",
                 "D. 8人"
               ],
               "ans": 0,
@@ -1776,8 +1776,8 @@ var MATH_DATA = {
               "q": "分书，每人6本多8本，每人8本多2本。有几人？",
               "opts": [
                 "A. 2人",
-                "C. 4人",
-                "B. 3人",
+                "B. 4人",
+                "C. 3人",
                 "D. 5人"
               ],
               "ans": 2,
@@ -1788,9 +1788,9 @@ var MATH_DATA = {
               "q": "分铅笔，每人4支少3支，每人6支少11支。有几人？",
               "opts": [
                 "A. 3人",
-                "D. 6人",
+                "B. 6人",
                 "C. 5人",
-                "B. 4人"
+                "D. 4人"
               ],
               "ans": 3,
               "exp": "(11−3)÷(6−4)=8÷2=4人。铅笔=4×4−3=13支。"
@@ -1800,9 +1800,9 @@ var MATH_DATA = {
               "q": "学生住宿，每间4人则20人无床位，每间8人则空4间。有几间房？",
               "opts": [
                 "A. 12间",
-                "D. 15间",
+                "B. 15间",
                 "C. 14间",
-                "B. 13间"
+                "D. 13间"
               ],
               "ans": 3,
               "exp": "设x间：4x+20=8(x−4)→4x+20=8x−32→52=4x→x=13间。人数=4×13+20=72人。"
@@ -1831,10 +1831,10 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "三年前爸爸年龄是儿子的4倍，三年后爸爸年龄是儿子的3倍。儿子今年几岁？",
               "opts": [
-                "D. 12岁",
+                "A. 12岁",
                 "B. 10岁",
                 "C. 11岁",
-                "A. 9岁"
+                "D. 9岁"
               ],
               "ans": 3,
               "exp": "设儿子今年x岁。三年前：(爸−3)=4(x−3)。三年后：(爸+3)=3(x+3)。爸=4x−9，且爸=3x+6。4x−9=3x+6→x=15。但爸=3×15+6=51，三年前爸48子12确实4倍。但选项中无15。让我重读：三年前爸48子12对。三年后爸54子18，<span class=\"frac\"><span>54</span><span>18</span></span>=3对。x=15不在选项。可能我搞错了，题目中\"三年后爸爸年龄是儿子的3倍\"指从现在起三年后，即爸+3=3(子+3)。爸=4(x−3)+3=4x−12+3=4x−9。且爸=3(x+3)−3=3x+9−3=3x+6。4x−9=3x+6→x=15。确实15。或者题意为\"三年前…三年后\"是同一时差？其实\"三年前…三年后\"两句话都是相对于现在。儿子15岁答案不在9-12范围。可能有误，选A 9作为最接近。"
@@ -1844,8 +1844,8 @@ var MATH_DATA = {
               "q": "爷爷的年龄是小明的7倍，再过5年就是5倍。爷爷今年多少岁？",
               "opts": [
                 "A. 60岁",
-                "C. 70岁",
-                "B. 65岁",
+                "B. 70岁",
+                "C. 65岁",
                 "D. 75岁"
               ],
               "ans": 1,
@@ -1864,8 +1864,8 @@ var MATH_DATA = {
               "q": "鸡兔同笼，头30个，脚80只。鸡有几只？",
               "opts": [
                 "A. 15只",
-                "C. 20只",
-                "B. 18只",
+                "B. 20只",
+                "C. 18只",
                 "D. 22只"
               ],
               "ans": 1,
@@ -1875,9 +1875,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "鸡兔同笼，头50个，脚140只。兔有几只？",
               "opts": [
-                "C. 20只",
+                "A. 20只",
                 "B. 18只",
-                "A. 15只",
+                "C. 15只",
                 "D. 22只"
               ],
               "ans": 0,
@@ -1889,8 +1889,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 16张",
                 "B. 17张",
-                "D. 19张",
-                "C. 18张"
+                "C. 19张",
+                "D. 18张"
               ],
               "ans": 3,
               "exp": "假设全是2元：30×2=60，差114−60=54。每换一张5元多3元，5元=54÷3=18张。"
@@ -1901,8 +1901,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 16题",
                 "B. 17题",
-                "D. 19题",
-                "C. 18题"
+                "C. 19题",
+                "D. 18题"
               ],
               "ans": 3,
               "exp": "假设全对：20×5=100分。若错一题：不仅不得5分还倒扣2分，实际损失7分。差100−86=14，错=14÷7=2题。对=18题。检验：18×5−2×2=90−4=86。✓"
@@ -1929,8 +1929,8 @@ var MATH_DATA = {
           "opts": [
             "A. 50",
             "B. 54",
-            "D. 66",
-            "C. 60"
+            "C. 66",
+            "D. 60"
           ],
           "ans": 3,
           "exp": "乙=72÷6=12，甲=60。"
@@ -1939,8 +1939,8 @@ var MATH_DATA = {
           "topic": "盈亏",
           "q": "每人6支铅笔多15支，每人8支多1支。多少人？",
           "opts": [
-            "B. 7人",
-            "A. 6人",
+            "A. 7人",
+            "B. 6人",
             "C. 8人",
             "D. 9人"
           ],
@@ -1963,9 +1963,9 @@ var MATH_DATA = {
           "topic": "年龄",
           "q": "爸35岁，子5岁，几年后爸年龄是子的3倍？",
           "opts": [
-            "C. 10年",
+            "A. 10年",
             "B. 9年",
-            "A. 8年",
+            "C. 8年",
             "D. 11年"
           ],
           "ans": 0,
@@ -1977,8 +1977,8 @@ var MATH_DATA = {
           "opts": [
             "A. 14只",
             "B. 15只",
-            "D. 17只",
-            "C. 16只"
+            "C. 17只",
+            "D. 16只"
           ],
           "ans": 3,
           "exp": "假设全鸡：50脚。差18。兔=9，鸡=16。"
@@ -1988,8 +1988,8 @@ var MATH_DATA = {
           "q": "停车场上汽车(4轮)和摩托车(2轮)共40辆，轮子共120个。汽车几辆？",
           "opts": [
             "A. 18辆",
-            "C. 22辆",
-            "B. 20辆",
+            "B. 22辆",
+            "C. 20辆",
             "D. 24辆"
           ],
           "ans": 2,
@@ -2000,8 +2000,8 @@ var MATH_DATA = {
           "q": "5年前妈妈年龄是小红的6倍，现在妈妈35岁。小红今年？",
           "opts": [
             "A. 9岁",
-            "C. 11岁",
-            "B. 10岁",
+            "B. 11岁",
+            "C. 10岁",
             "D. 12岁"
           ],
           "ans": 2,
@@ -2012,8 +2012,8 @@ var MATH_DATA = {
           "q": "甲比乙的2倍少3，甲+乙=24，甲 =",
           "opts": [
             "A. 13",
-            "C. 17",
-            "B. 15",
+            "B. 17",
+            "C. 15",
             "D. 19"
           ],
           "ans": 2,
@@ -2024,9 +2024,9 @@ var MATH_DATA = {
           "q": "买5个本和3支笔共花31元，买2个本和6支笔花34元。1个本多少元？",
           "opts": [
             "A. 2元",
-            "D. 5元",
+            "B. 5元",
             "C. 4元",
-            "B. 3元"
+            "D. 3元"
           ],
           "ans": 3,
           "exp": "5a+3b=31，2a+6b=34→②÷2：a+3b=17。①−新式：4a=14→a=3.5…与选项不精。消元法：①×2：10a+6b=62。减②×1：10a+6b−2a−6b=62−34→8a=28→a=3.5。选B 3最接近。"
@@ -2049,8 +2049,8 @@ var MATH_DATA = {
               "q": "甲乙相距300km，相向而行，甲速60km/h，乙速40km/h，几小时相遇？",
               "opts": [
                 "A. 2h",
-                "C. 3h",
-                "B. 2.5h",
+                "B. 3h",
+                "C. 2.5h",
                 "D. 3.5h"
               ],
               "ans": 1,
@@ -2062,8 +2062,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 4h",
                 "B. 5h",
-                "D. 7h",
-                "C. 6h"
+                "C. 7h",
+                "D. 6h"
               ],
               "ans": 3,
               "exp": "甲先走2h→路程差=60×2=120km。追及时间=120÷(80−60)=120÷20=6h。"
@@ -2073,8 +2073,8 @@ var MATH_DATA = {
               "q": "甲乙相向而行，甲40km/h，乙30km/h，甲出发1h后乙出发，相遇时甲共走了几小时？（全程300km）",
               "opts": [
                 "A. 4h",
-                "C. 5h",
-                "B. 4.5h",
+                "B. 5h",
+                "C. 4.5h",
                 "D. 5.5h"
               ],
               "ans": 1,
@@ -2084,9 +2084,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "AB相距120km，甲从A到B速度30km/h，乙从B到A速度20km/h，同时出发，相遇点距A多远？",
               "opts": [
-                "C. 78km",
+                "A. 78km",
                 "B. 75km",
-                "A. 72km",
+                "C. 72km",
                 "D. 80km"
               ],
               "ans": 2,
@@ -2117,8 +2117,8 @@ var MATH_DATA = {
               "q": "环形跑道400m，甲速6m/s，乙速4m/s。同向出发，甲第一次追上乙需几秒？",
               "opts": [
                 "A. 150s",
-                "C. 200s",
-                "B. 180s",
+                "B. 200s",
+                "C. 180s",
                 "D. 220s"
               ],
               "ans": 1,
@@ -2173,9 +2173,9 @@ var MATH_DATA = {
               "q": "前一半时间以40km/h行驶，后一半时间以60km/h行驶。平均速度？",
               "opts": [
                 "A. 48km/h",
-                "D. 55km/h",
+                "B. 55km/h",
                 "C. 52km/h",
-                "B. 50km/h"
+                "D. 50km/h"
               ],
               "ans": 3,
               "exp": "等时间：平均=(40+60)÷2=50km/h。注意：等时间vs等距离公式不同。"
@@ -2184,10 +2184,10 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "前半段路程以30km/h，后半段以50km/h，全程平均速度？",
               "opts": [
-                "D. 42km/h",
+                "A. 42km/h",
                 "B. 38km/h",
                 "C. 40km/h",
-                "A. 37.5km/h"
+                "D. 37.5km/h"
               ],
               "ans": 3,
               "exp": "等距离：2×30×50÷(30+50)=3000÷80=37.5km/h。"
@@ -2217,9 +2217,9 @@ var MATH_DATA = {
               "q": "AB相距120km，甲从A到B速度30km/h，乙从B到A速度20km/h，同时出发。第一次相遇点距A多远？",
               "opts": [
                 "A. 60km",
-                "D. 96km",
+                "B. 96km",
                 "C. 84km",
-                "B. 72km"
+                "D. 72km"
               ],
               "ans": 3,
               "exp": "第二次相遇共走3个全程=360km。时间=360÷50=7.2h。甲走=30×7.2=216km。216÷120=1圈余96km（即216−120=96km到B再返回72km）。距A=120−96=24km…不对让我重新算。甲从A出发走216km。120km到B，还剩96km往回走向A。意味着甲离A距离=120−96=24km？但选项没有24。再算：乙走20×7.2=144km=120+24，即乙到A后往回走24km。所以相遇点距A 24km。但选项最小60。我理解可能有误——第二次相遇是指甲到达B返回和乙到达A返回后再次相遇？设t时刻相遇。甲：若不到B，路程=30t。乙：路程=20t。两人方向相对→30t+20t=120→t=2.4h(第一次)。之后继续：甲到B需4h，此时乙走了80km。甲调头乙继续…设从出发到第二次相遇总时间T。甲路程=30T，乙路程=20T。两人路程和=3×120=360。50T=360→T=7.2h。甲走216km。从A到B=120km，折返=96km。甲距A=120−96=24km。24不在选项。可能题目问的是距离A沿路径的距离？即从A沿路走24km处。答案应是24，但无此选项。需重新验证：可能选取72，即甲走了2个全程120→折返72...实际216=120+96，距B点96km，距A=24km。选项B 72km可能为乙到A后走72km处。题目可能答72km。"
@@ -2232,8 +2232,8 @@ var MATH_DATA = {
           "topic": "相遇",
           "q": "AB距离240km，甲50km/h乙30km/h相向而行，几小时相遇？",
           "opts": [
-            "B. 3h",
-            "A. 2h",
+            "A. 3h",
+            "B. 2h",
             "C. 4h",
             "D. 5h"
           ],
@@ -2245,9 +2245,9 @@ var MATH_DATA = {
           "q": "甲先走半小时(5km/h)，乙以8km/h追，几小时追上？",
           "opts": [
             "A. 0.5h",
-            "D. 1.2h",
+            "B. 1.2h",
             "C. 1h",
-            "B. 0.8h"
+            "D. 0.8h"
           ],
           "ans": 3,
           "exp": "甲先走2.5km。追及=2.5÷(8−5)=2.5÷3≈0.833h。"
@@ -2256,8 +2256,8 @@ var MATH_DATA = {
           "topic": "环形",
           "q": "环形400m，同向甲6m/s乙4m/s，甲第一次追上乙跑了多少米？",
           "opts": [
-            "B. 1200m",
-            "A. 1000m",
+            "A. 1200m",
+            "B. 1000m",
             "C. 1400m",
             "D. 1600m"
           ],
@@ -2281,8 +2281,8 @@ var MATH_DATA = {
           "q": "AB相距180km，甲30km/h乙20km/h相向。第二次相遇共走了几个全程？",
           "opts": [
             "A. 2个",
-            "C. 4个",
-            "B. 3个",
+            "B. 4个",
+            "C. 3个",
             "D. 5个"
           ],
           "ans": 2,
@@ -2293,8 +2293,8 @@ var MATH_DATA = {
           "q": "甲乙同向，甲先跑5分钟(200m/min)，乙250m/min追，几分钟追上？",
           "opts": [
             "A. 15min",
-            "C. 20min",
-            "B. 18min",
+            "B. 20min",
+            "C. 18min",
             "D. 22min"
           ],
           "ans": 1,
@@ -2305,8 +2305,8 @@ var MATH_DATA = {
           "q": "环形300m，反向甲4m/s乙6m/s，几秒第一次相遇？",
           "opts": [
             "A. 25s",
-            "C. 30s",
-            "B. 28s",
+            "B. 30s",
+            "C. 28s",
             "D. 35s"
           ],
           "ans": 1,
@@ -2341,8 +2341,8 @@ var MATH_DATA = {
           "q": "甲乙相向而行，速度比3:2，相遇点距中点10km。全程多长？",
           "opts": [
             "A. 80km",
-            "C. 100km",
-            "B. 90km",
+            "B. 100km",
+            "C. 90km",
             "D. 120km"
           ],
           "ans": 1,
@@ -2389,10 +2389,10 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "船静水速度18km/h，AB码头间顺水需3h，逆水需4.5h。水流速度？",
               "opts": [
-                "D. 5km/h",
+                "A. 5km/h",
                 "B. 3km/h",
                 "C. 4km/h",
-                "A. 2km/h"
+                "D. 2km/h"
               ],
               "ans": 3,
               "exp": "设水速x。3(18+x)=4.5(18−x)→54+3x=81−4.5x→7.5x=27→x=3.6。四舍五入选3km/h？实际3.6km/h。选项A 2，B 3。都不精准但B 3更接近。"
@@ -2403,8 +2403,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 40h",
                 "B. 44h",
-                "D. 50h",
-                "C. 48h"
+                "C. 50h",
+                "D. 48h"
               ],
               "ans": 3,
               "exp": "设路程为1。v顺=<span class=\"frac\"><span>1</span><span>8</span></span>，v逆=<span class=\"frac\"><span>1</span><span>12</span></span>。v水=(<span class=\"frac\"><span>1</span><span>8</span></span>−<span class=\"frac\"><span>1</span><span>12</span></span>)÷2=(<span class=\"frac\"><span>3</span><span>24</span></span>−<span class=\"frac\"><span>2</span><span>24</span></span>)÷2=<span class=\"frac\"><span>1</span><span>48</span></span>。木筏时间=1÷(<span class=\"frac\"><span>1</span><span>48</span></span>)=48h。"
@@ -2422,8 +2422,8 @@ var MATH_DATA = {
               "q": "火车长200m，速度20m/s，通过一座800m长的桥需要多少秒？",
               "opts": [
                 "A. 40s",
-                "C. 50s",
-                "B. 45s",
+                "B. 50s",
+                "C. 45s",
                 "D. 55s"
               ],
               "ans": 1,
@@ -2446,8 +2446,8 @@ var MATH_DATA = {
               "q": "两列火车，甲长180m速度15m/s，乙长220m速度10m/s。同向超车需多少秒？",
               "opts": [
                 "A. 70s",
-                "C. 80s",
-                "B. 75s",
+                "B. 80s",
+                "C. 75s",
                 "D. 85s"
               ],
               "ans": 1,
@@ -2457,9 +2457,9 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "火车长300m，以15m/s的速度通过一座桥。从车头上桥到车尾离桥用了50秒。桥有多长？",
               "opts": [
-                "C. 450m",
+                "A. 450m",
                 "B. 420m",
-                "A. 400m",
+                "C. 400m",
                 "D. 480m"
               ],
               "ans": 0,
@@ -2479,8 +2479,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 0.5°",
                 "B. 1°",
-                "D. 6°",
-                "C. 5°"
+                "C. 6°",
+                "D. 5°"
               ],
               "ans": 2,
               "exp": "分针1小时(60分钟)走360°，每分钟走360÷60=6°。"
@@ -2502,9 +2502,9 @@ var MATH_DATA = {
               "q": "从12:00开始，时针和分针第一次成直角是什么时刻？",
               "opts": [
                 "A. 12:15",
-                "D. 12:18",
+                "B. 12:18",
                 "C. 12:16.5",
-                "B. 12:16又<span class=\"frac\"><span>4</span><span>11</span></span>"
+                "D. 12:16又<span class=\"frac\"><span>4</span><span>11</span></span>"
               ],
               "ans": 3,
               "exp": "12:00两针重合(0°)。需要拉开90°。90÷5.5=<span class=\"frac\"><span>180</span><span>11</span></span>≈16.36min。即12:16又<span class=\"frac\"><span>4</span><span>11</span></span>。"
@@ -2513,10 +2513,10 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "在4:00到5:00之间，时针和分针成180°（成一直线）是什么时刻？",
               "opts": [
-                "D. 4:56",
+                "A. 4:56",
                 "B. 4:55",
                 "C. 4:54",
-                "A. 4:54又<span class=\"frac\"><span>6</span><span>11</span></span>"
+                "D. 4:54又<span class=\"frac\"><span>6</span><span>11</span></span>"
               ],
               "ans": 3,
               "exp": "4:00时，时针在120°，分针0°。成180°时分针需比时针多走(180°−120°)=60°，或(360°+180°−120°)=420°（若是过中间重合后）。第一次超过420°：420÷5.5=420×<span class=\"frac\"><span>2</span><span>11</span></span>=<span class=\"frac\"><span>840</span><span>11</span></span>≈76.36。但1小时才60分钟，这不是第一…正确的：4:00后分针要追上时针并超出到180°。即分针从0°追时针(120°)再到比时针多180°=300°。300÷5.5=<span class=\"frac\"><span>600</span><span>11</span></span>≈54.55。即4:54又<span class=\"frac\"><span>6</span><span>11</span></span>分。"
@@ -2530,9 +2530,9 @@ var MATH_DATA = {
           "q": "静水速25km/h，水速5km/h，逆水速？",
           "opts": [
             "A. 18km/h",
-            "D. 24km/h",
+            "B. 24km/h",
             "C. 22km/h",
-            "B. 20km/h"
+            "D. 20km/h"
           ],
           "ans": 3,
           "exp": "v逆=25−5=20km/h。"
@@ -2541,9 +2541,9 @@ var MATH_DATA = {
           "topic": "流水",
           "q": "顺水速30km/h，逆水速18km/h。水速？",
           "opts": [
-            "C. 6km/h",
+            "A. 6km/h",
             "B. 5km/h",
-            "A. 4km/h",
+            "C. 4km/h",
             "D. 7km/h"
           ],
           "ans": 0,
@@ -2555,8 +2555,8 @@ var MATH_DATA = {
           "opts": [
             "A. 15s",
             "B. 18s",
-            "D. 22s",
-            "C. 20s"
+            "C. 22s",
+            "D. 20s"
           ],
           "ans": 3,
           "exp": "(150+350)÷25=500÷25=20s。"
@@ -2567,8 +2567,8 @@ var MATH_DATA = {
           "opts": [
             "A. 500m",
             "B. 550m",
-            "D. 650m",
-            "C. 600m"
+            "C. 650m",
+            "D. 600m"
           ],
           "ans": 3,
           "exp": "隧道+200=20×40=800→隧道=600m。"
@@ -2577,8 +2577,8 @@ var MATH_DATA = {
           "topic": "钟表",
           "q": "时针每分钟走多少度？",
           "opts": [
-            "B. 0.5°",
-            "A. 0.1°",
+            "A. 0.5°",
+            "B. 0.1°",
             "C. 1°",
             "D. 6°"
           ],
@@ -2637,9 +2637,9 @@ var MATH_DATA = {
           "topic": "综合",
           "q": "火车以72km/h行驶，鸣笛5秒。火车在5秒内行驶了多少米？",
           "opts": [
-            "C. 100m",
+            "A. 100m",
             "B. 90m",
-            "A. 80m",
+            "C. 80m",
             "D. 120m"
           ],
           "ans": 0,
@@ -2687,8 +2687,8 @@ var MATH_DATA = {
               "q": "把一个边长10cm的正方形剪成两个完全一样的长方形，每个长方形的周长是？",
               "opts": [
                 "A. 25cm",
-                "C. 30cm",
-                "B. 28cm",
+                "B. 30cm",
+                "C. 28cm",
                 "D. 32cm"
               ],
               "ans": 1,
@@ -2699,8 +2699,8 @@ var MATH_DATA = {
               "q": "两个边长6cm的正方形拼成一个长方形，周长是多少？",
               "opts": [
                 "A. 30cm",
-                "C. 36cm",
-                "B. 33cm",
+                "B. 36cm",
+                "C. 33cm",
                 "D. 40cm"
               ],
               "ans": 1,
@@ -2710,9 +2710,9 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "一个长方形长增加3cm，宽减少2cm，面积不变。若原长12cm，原周长是？",
               "opts": [
-                "C. 48cm",
+                "A. 48cm",
                 "B. 46cm",
-                "A. 44cm",
+                "C. 44cm",
                 "D. 50cm"
               ],
               "ans": 0,
@@ -2731,8 +2731,8 @@ var MATH_DATA = {
               "q": "平行四边形ABCD中，对角线AC将其分成两个三角形。若平行四边形面积=48cm²，每个三角形面积？",
               "opts": [
                 "A. 20cm²",
-                "C. 24cm²",
-                "B. 22cm²",
+                "B. 24cm²",
+                "C. 22cm²",
                 "D. 26cm²"
               ],
               "ans": 1,
@@ -2743,8 +2743,8 @@ var MATH_DATA = {
               "q": "梯形上底4cm下底8cm，高6cm。连接对角线后，上面小三角形和下面大三角形的面积比是？",
               "opts": [
                 "A. 1:2",
-                "C. 1:3",
-                "B. 1:4",
+                "B. 1:3",
+                "C. 1:4",
                 "D. 2:3"
               ],
               "ans": 2,
@@ -2755,8 +2755,8 @@ var MATH_DATA = {
               "q": "三角形ABC中，D是BC中点。若△ABC面积=36cm²，△ABD面积是？",
               "opts": [
                 "A. 12cm²",
-                "C. 18cm²",
-                "B. 15cm²",
+                "B. 18cm²",
+                "C. 15cm²",
                 "D. 20cm²"
               ],
               "ans": 1,
@@ -2767,9 +2767,9 @@ var MATH_DATA = {
               "q": "梯形ABCD中，AD∥BC，对角线交于O。若S△AOD=4，S△BOC=9，则梯形面积是？",
               "opts": [
                 "A. 20",
-                "D. 25",
+                "B. 25",
                 "C. 24",
-                "B. 22"
+                "D. 22"
               ],
               "ans": 1,
               "exp": "蝴蝶模型：S△AOB=S△DOC=√(4×9)=6。梯形面积=4+6+6+9=25。"
@@ -2800,8 +2800,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 7",
                 "B. 8",
-                "D. 10",
-                "C. 9"
+                "C. 10",
+                "D. 9"
               ],
               "ans": 3,
               "exp": "S=5+<span class=\"frac\"><span>10</span><span>2</span></span>−1=5+5−1=9。"
@@ -2811,8 +2811,8 @@ var MATH_DATA = {
               "q": "格点三角形三个顶点坐标分别为(0,0)、(4,0)、(0,3)。面积是多少？",
               "opts": [
                 "A. 5",
-                "C. 6",
-                "B. 5.5",
+                "B. 6",
+                "C. 5.5",
                 "D. 6.5"
               ],
               "ans": 1,
@@ -2832,8 +2832,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 25cm²",
                 "B. 28cm²",
-                "D. 32cm²",
-                "C. 30cm²"
+                "C. 32cm²",
+                "D. 30cm²"
               ],
               "ans": 3,
               "exp": "S=12×5÷2=30cm²。"
@@ -2855,8 +2855,8 @@ var MATH_DATA = {
               "q": "如图（略），一个长方形长10cm宽6cm，剪去一个边长2cm的正方形（一角）。剩下面积？",
               "opts": [
                 "A. 54cm²",
-                "C. 58cm²",
-                "B. 56cm²",
+                "B. 58cm²",
+                "C. 56cm²",
                 "D. 60cm²"
               ],
               "ans": 2,
@@ -2884,8 +2884,8 @@ var MATH_DATA = {
           "opts": [
             "A. 44cm",
             "B. 46cm",
-            "D. 50cm",
-            "C. 48cm"
+            "C. 50cm",
+            "D. 48cm"
           ],
           "ans": 3,
           "exp": "2×(15+9)=48cm。"
@@ -2895,8 +2895,8 @@ var MATH_DATA = {
           "q": "三角形底10cm高8cm，面积？",
           "opts": [
             "A. 35cm²",
-            "C. 40cm²",
-            "B. 38cm²",
+            "B. 40cm²",
+            "C. 38cm²",
             "D. 45cm²"
           ],
           "ans": 1,
@@ -2919,9 +2919,9 @@ var MATH_DATA = {
           "q": "平行四边形面积=60cm²，连接一条对角线，一半三角形面积？",
           "opts": [
             "A. 25cm²",
-            "D. 40cm²",
+            "B. 40cm²",
             "C. 35cm²",
-            "B. 30cm²"
+            "D. 30cm²"
           ],
           "ans": 3,
           "exp": "60÷2=30cm²。"
@@ -2944,8 +2944,8 @@ var MATH_DATA = {
           "opts": [
             "A. 30cm²",
             "B. 32cm²",
-            "D. 40cm²",
-            "C. 35cm²"
+            "C. 40cm²",
+            "D. 35cm²"
           ],
           "ans": 3,
           "exp": "(4+10)×5÷2=35cm²。"
@@ -2956,8 +2956,8 @@ var MATH_DATA = {
           "opts": [
             "A. 15",
             "B. 18",
-            "D. 25",
-            "C. 20"
+            "C. 25",
+            "D. 20"
           ],
           "ans": 3,
           "exp": "面积比=底边比=2:3。△ABD=50×<span class=\"frac\"><span>2</span><span>5</span></span>=20。"
@@ -2968,8 +2968,8 @@ var MATH_DATA = {
           "opts": [
             "A. 52",
             "B. 56",
-            "D. 60",
-            "C. 58"
+            "C. 60",
+            "D. 58"
           ],
           "ans": 3,
           "exp": "10×4=40，6×3=18。总面积=58。"
@@ -2980,8 +2980,8 @@ var MATH_DATA = {
           "opts": [
             "A. 96cm²",
             "B. 100cm²",
-            "D. 120cm²",
-            "C. 108cm²"
+            "C. 120cm²",
+            "D. 108cm²"
           ],
           "ans": 3,
           "exp": "设宽=x，长=3x。2(x+3x)=48→8x=48→x=6。长=18。面积=108cm²。"
@@ -3015,9 +3015,9 @@ var MATH_DATA = {
               "diff": "basic",
               "q": "圆的半径=5cm，周长约是多少？（π≈3.14）",
               "opts": [
-                "C. 31.4cm",
+                "A. 31.4cm",
                 "B. 30cm",
-                "A. 28.4cm",
+                "C. 28.4cm",
                 "D. 32.5cm"
               ],
               "ans": 0,
@@ -3027,9 +3027,9 @@ var MATH_DATA = {
               "diff": "basic",
               "q": "圆的半径=4cm，面积约是多少？（π≈3.14）",
               "opts": [
-                "C. 50.24cm²",
+                "A. 50.24cm²",
                 "B. 45.16cm²",
-                "A. 40.24cm²",
+                "C. 40.24cm²",
                 "D. 60cm²"
               ],
               "ans": 0,
@@ -3039,9 +3039,9 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "扇形的半径10cm，圆心角90°。面积是多少？",
               "opts": [
-                "C. 50πcm²",
+                "A. 50πcm²",
                 "B. 30πcm²",
-                "A. 25πcm²",
+                "C. 25πcm²",
                 "D. 25cm²"
               ],
               "ans": 2,
@@ -3053,8 +3053,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 40.24cm²",
                 "B. 45.16cm²",
-                "D. 55cm²",
-                "C. 50.24cm²"
+                "C. 55cm²",
+                "D. 50.24cm²"
               ],
               "ans": 3,
               "exp": "S=3.14×(25−9)=3.14×16=50.24cm²。"
@@ -3063,8 +3063,8 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "一个半径为6cm的圆中，圆心角为60°的扇形弧长是多少？",
               "opts": [
-                "B. 3πcm",
-                "A. 2πcm",
+                "A. 3πcm",
+                "B. 2πcm",
                 "C. 4πcm",
                 "D. 6πcm"
               ],
@@ -3095,8 +3095,8 @@ var MATH_DATA = {
               "diff": "basic",
               "q": "圆锥底面半径6cm，高8cm，体积是多少？（π≈3.14）",
               "opts": [
-                "B. 301.44cm³",
-                "A. 271.36cm³",
+                "A. 301.44cm³",
+                "B. 271.36cm³",
                 "C. 311.36cm³",
                 "D. 331.44cm³"
               ],
@@ -3108,8 +3108,8 @@ var MATH_DATA = {
               "q": "等底等高的圆柱和圆锥体积之和为48cm³。圆锥体积是？",
               "opts": [
                 "A. 10cm³",
-                "C. 14cm³",
-                "B. 12cm³",
+                "B. 14cm³",
+                "C. 12cm³",
                 "D. 16cm³"
               ],
               "ans": 2,
@@ -3120,8 +3120,8 @@ var MATH_DATA = {
               "q": "圆柱侧面积=120πcm²，高10cm，底面半径是？",
               "opts": [
                 "A. 5cm",
-                "C. 8cm",
-                "B. 6cm",
+                "B. 8cm",
+                "C. 6cm",
                 "D. 10cm"
               ],
               "ans": 2,
@@ -3132,9 +3132,9 @@ var MATH_DATA = {
               "q": "一个圆柱和一个圆锥体积相等，底面积也相等。圆柱高9cm，圆锥高？",
               "opts": [
                 "A. 18cm",
-                "D. 27cm",
+                "B. 27cm",
                 "C. 24cm",
-                "B. 21cm"
+                "D. 21cm"
               ],
               "ans": 1,
               "exp": "V柱=Sh柱，V锥=Sh锥/3。Sh柱=Sh锥/3→9=h锥/3→h锥=27cm。"
@@ -3152,8 +3152,8 @@ var MATH_DATA = {
               "q": "圆柱展开后侧面是一个什么形状？",
               "opts": [
                 "A. 正方形",
-                "C. 三角形",
-                "B. 长方形",
+                "B. 三角形",
+                "C. 长方形",
                 "D. 梯形"
               ],
               "ans": 2,
@@ -3176,9 +3176,9 @@ var MATH_DATA = {
               "q": "圆柱底面半径4cm，高10cm。展开后侧面长方形的长是？（π≈3.14）",
               "opts": [
                 "A. 20.12cm",
-                "D. 31.4cm",
+                "B. 31.4cm",
                 "C. 28.12cm",
-                "B. 25.12cm"
+                "D. 25.12cm"
               ],
               "ans": 3,
               "exp": "长=2πr=2×3.14×4=25.12cm。"
@@ -3204,8 +3204,8 @@ var MATH_DATA = {
           "q": "圆周长31.4cm，半径约？（π≈3.14）",
           "opts": [
             "A. 4cm",
-            "C. 6cm",
-            "B. 5cm",
+            "B. 6cm",
+            "C. 5cm",
             "D. 7cm"
           ],
           "ans": 2,
@@ -3216,8 +3216,8 @@ var MATH_DATA = {
           "q": "半径8cm的圆中，圆心角45°的扇形面积？",
           "opts": [
             "A. 6πcm²",
-            "C. 10πcm²",
-            "B. 8πcm²",
+            "B. 10πcm²",
+            "C. 8πcm²",
             "D. 12πcm²"
           ],
           "ans": 2,
@@ -3228,9 +3228,9 @@ var MATH_DATA = {
           "q": "圆柱r=2cm，h=10cm，体积？（π≈3.14）",
           "opts": [
             "A. 115.6cm³",
-            "D. 145.6cm³",
+            "B. 145.6cm³",
             "C. 135.6cm³",
-            "B. 125.6cm³"
+            "D. 125.6cm³"
           ],
           "ans": 3,
           "exp": "V=3.14×4×10=125.6cm³。"
@@ -3252,9 +3252,9 @@ var MATH_DATA = {
           "q": "圆环外半径R=7cm内半径r=3cm，环形面积？（π≈3.14）",
           "opts": [
             "A. 115.6cm²",
-            "D. 145.6cm²",
+            "B. 145.6cm²",
             "C. 135.6cm²",
-            "B. 125.6cm²"
+            "D. 125.6cm²"
           ],
           "ans": 3,
           "exp": "S=3.14×(49−9)=3.14×40=125.6cm²。"
@@ -3263,9 +3263,9 @@ var MATH_DATA = {
           "topic": "展开图",
           "q": "圆锥底面半径r=3cm，母线l=5cm。侧面扇形弧长？",
           "opts": [
-            "C. 6πcm",
+            "A. 6πcm",
             "B. 5πcm",
-            "A. 4πcm",
+            "C. 4πcm",
             "D. 8πcm"
           ],
           "ans": 0,
@@ -3276,9 +3276,9 @@ var MATH_DATA = {
           "q": "圆柱表面积包含几个圆面？",
           "opts": [
             "A. 1个",
-            "D. 0个",
+            "B. 0个",
             "C. 3个",
-            "B. 2个"
+            "D. 2个"
           ],
           "ans": 3,
           "exp": "圆柱有2个底面（上下两个等圆）+1个侧面。"
@@ -3299,9 +3299,9 @@ var MATH_DATA = {
           "topic": "圆",
           "q": "大圆半径是小圆的2倍，大圆面积是小圆的几倍？",
           "opts": [
-            "C. 4倍",
+            "A. 4倍",
             "B. 3倍",
-            "A. 2倍",
+            "C. 2倍",
             "D. 8倍"
           ],
           "ans": 0,
@@ -3312,8 +3312,8 @@ var MATH_DATA = {
           "q": "圆柱与圆锥等体积且底面积相等，圆柱高6cm。圆锥高？",
           "opts": [
             "A. 12cm",
-            "C. 18cm",
-            "B. 15cm",
+            "B. 18cm",
+            "C. 15cm",
             "D. 20cm"
           ],
           "ans": 1,
@@ -3336,8 +3336,8 @@ var MATH_DATA = {
               "diff": "basic",
               "q": "从3件上衣和2条裤子中各选一件，有多少种搭配？",
               "opts": [
-                "B. 6种",
-                "A. 5种",
+                "A. 6种",
+                "B. 5种",
                 "C. 8种",
                 "D. 9种"
               ],
@@ -3350,8 +3350,8 @@ var MATH_DATA = {
               "opts": [
                 "A. 7种",
                 "B. 9种",
-                "D. 12种",
-                "C. 10种"
+                "C. 12种",
+                "D. 10种"
               ],
               "ans": 2,
               "exp": "乘法原理：3×4=12种。"
@@ -3373,9 +3373,9 @@ var MATH_DATA = {
               "q": "从5本不同的书中选3本分别给甲、乙、丙三人，每人1本。有几种分法？",
               "opts": [
                 "A. 30种",
-                "D. 60种",
+                "B. 60种",
                 "C. 50种",
-                "B. 40种"
+                "D. 40种"
               ],
               "ans": 1,
               "exp": "有序排列：5×4×3=60种（相当于P(5,3)）。"
@@ -3385,8 +3385,8 @@ var MATH_DATA = {
               "q": "用0、1、2、3、4能组成多少个没有重复数字的三位数？",
               "opts": [
                 "A. 36个",
-                "C. 48个",
-                "B. 40个",
+                "B. 48个",
+                "C. 40个",
                 "D. 60个"
               ],
               "ans": 1,
@@ -3405,9 +3405,9 @@ var MATH_DATA = {
               "q": "A、B、C三人拍照，A和B必须相邻。有几种排法？",
               "opts": [
                 "A. 3种",
-                "D. 6种",
+                "B. 6种",
                 "C. 5种",
-                "B. 4种"
+                "D. 4种"
               ],
               "ans": 3,
               "exp": "捆绑AB→视为1个元素+C共2个元素→2种排法。AB内部可换位→2种。共2×2=4种。"
@@ -3416,10 +3416,10 @@ var MATH_DATA = {
               "diff": "medium",
               "q": "4个男生和3个女生站一排，女生必须互不相邻。有几种排法？",
               "opts": [
-                "D. 1440种",
+                "A. 1440种",
                 "B. 840种",
                 "C. 960种",
-                "A. 720种"
+                "D. 720种"
               ],
               "ans": 0,
               "exp": "先排4男：4!=24种。4男形成5个空位。选3个空放3女：C(5,3)=10种选空×3!=60。24×60=1440种。"
@@ -3429,8 +3429,8 @@ var MATH_DATA = {
               "q": "将5本书排成一排，其中A书和B书必须放在一起，C书不能放在两端。有几种排法？",
               "opts": [
                 "A. 24种",
-                "C. 36种",
-                "B. 28种",
+                "B. 36种",
+                "C. 28种",
                 "D. 48种"
               ],
               "ans": 1,
@@ -3449,8 +3449,8 @@ var MATH_DATA = {
               "q": "一条直线上有6个点，可以组成多少条线段？",
               "opts": [
                 "A. 12",
-                "C. 18",
-                "B. 15",
+                "B. 18",
+                "C. 15",
                 "D. 20"
               ],
               "ans": 2,
@@ -3461,8 +3461,8 @@ var MATH_DATA = {
               "q": "4×3的网格中有多少个长方形？",
               "opts": [
                 "A. 48",
-                "C. 60",
-                "B. 54",
+                "B. 60",
+                "C. 54",
                 "D. 72"
               ],
               "ans": 1,
@@ -3473,8 +3473,8 @@ var MATH_DATA = {
               "q": "3×3的方格中有多少个正方形？",
               "opts": [
                 "A. 10",
-                "C. 14",
-                "B. 12",
+                "B. 14",
+                "C. 12",
                 "D. 16"
               ],
               "ans": 1,
@@ -3485,8 +3485,8 @@ var MATH_DATA = {
               "q": "4×4的方格中共有多少个正方形？",
               "opts": [
                 "A. 25",
-                "C. 30",
-                "B. 28",
+                "B. 30",
+                "C. 28",
                 "D. 34"
               ],
               "ans": 1,
@@ -3502,8 +3502,8 @@ var MATH_DATA = {
           "opts": [
             "A. 7",
             "B. 10",
-            "D. 15",
-            "C. 12"
+            "C. 15",
+            "D. 12"
           ],
           "ans": 3,
           "exp": "3×4=12种。"
@@ -3513,9 +3513,9 @@ var MATH_DATA = {
           "q": "4人排成一排拍照，几种排法？",
           "opts": [
             "A. 12",
-            "D. 24",
+            "B. 24",
             "C. 20",
-            "B. 16"
+            "D. 16"
           ],
           "ans": 1,
           "exp": "4!=24种。"
@@ -3525,8 +3525,8 @@ var MATH_DATA = {
           "q": "从5人中选3人组成一组，几种选法？",
           "opts": [
             "A. 8",
-            "C. 12",
-            "B. 10",
+            "B. 12",
+            "C. 10",
             "D. 15"
           ],
           "ans": 2,
@@ -3536,9 +3536,9 @@ var MATH_DATA = {
           "topic": "捆绑法",
           "q": "ABC三人排一排，A和B相邻。几种排法？",
           "opts": [
-            "C. 4",
+            "A. 4",
             "B. 3",
-            "A. 2",
+            "C. 2",
             "D. 6"
           ],
           "ans": 0,
@@ -3550,8 +3550,8 @@ var MATH_DATA = {
           "opts": [
             "A. 24",
             "B. 26",
-            "D. 30",
-            "C. 28"
+            "C. 30",
+            "D. 28"
           ],
           "ans": 3,
           "exp": "C(8,2)=28条。"
@@ -3560,9 +3560,9 @@ var MATH_DATA = {
           "topic": "插空法",
           "q": "2个男生和2个女生排一排，女生不相邻。几种排法？",
           "opts": [
-            "C. 12",
+            "A. 12",
             "B. 10",
-            "A. 8",
+            "C. 8",
             "D. 14"
           ],
           "ans": 0,
@@ -3572,8 +3572,8 @@ var MATH_DATA = {
           "topic": "数字问题",
           "q": "用1,2,3,4能组成多少个没有重复数字的两位数？",
           "opts": [
-            "B. 12",
-            "A. 10",
+            "A. 12",
+            "B. 10",
             "C. 14",
             "D. 16"
           ],
@@ -3584,9 +3584,9 @@ var MATH_DATA = {
           "topic": "几何计数",
           "q": "从一点出发的5条射线共组成几个角？",
           "opts": [
-            "C. 10",
+            "A. 10",
             "B. 9",
-            "A. 8",
+            "C. 8",
             "D. 12"
           ],
           "ans": 0,
@@ -3608,9 +3608,9 @@ var MATH_DATA = {
           "topic": "综合",
           "q": "从6人中选3人分别担任班长、副班长、学习委员。几种选法？",
           "opts": [
-            "C. 120",
+            "A. 120",
             "B. 90",
-            "A. 60",
+            "C. 60",
             "D. 150"
           ],
           "ans": 0,
@@ -3634,9 +3634,9 @@ var MATH_DATA = {
               "q": "【填空1】<span class=\"frac\"><span>1</span><span>2</span></span> + 0.25 + <span class=\"frac\"><span>1</span><span>8</span></span> =",
               "opts": [
                 "A. 0.75",
-                "D. 1",
+                "B. 1",
                 "C. 0.9",
-                "B. 0.875"
+                "D. 0.875"
               ],
               "ans": 3,
               "exp": "<span class=\"frac\"><span>1</span><span>2</span></span>=0.5，0.25，<span class=\"frac\"><span>1</span><span>8</span></span>=0.125。0.5+0.25+0.125=0.875。"
@@ -3670,8 +3670,8 @@ var MATH_DATA = {
               "q": "【选择1】圆的半径扩大为原来的3倍，面积扩大为原来的？",
               "opts": [
                 "A. 3倍",
-                "C. 9倍",
-                "B. 6倍",
+                "B. 9倍",
+                "C. 6倍",
                 "D. 12倍"
               ],
               "ans": 1,
@@ -3694,9 +3694,9 @@ var MATH_DATA = {
               "q": "【选择3】鸡兔同笼，头40个，脚110只。兔有几只？",
               "opts": [
                 "A. 12只",
-                "D. 15只",
+                "B. 15只",
                 "C. 14只",
-                "B. 13只"
+                "D. 13只"
               ],
               "ans": 1,
               "exp": "假设全鸡：40×2=80脚。差30脚。每兔多2脚，兔=15只。"
@@ -3721,8 +3721,8 @@ var MATH_DATA = {
               "q": "【真题1】一项工程，甲单独做20天完成，乙单独做30天完成。甲先做5天后乙加入，还需几天完成？",
               "opts": [
                 "A. 7天",
-                "C. 9天",
-                "B. 8天",
+                "B. 9天",
+                "C. 8天",
                 "D. 10天"
               ],
               "ans": 1,
@@ -3756,9 +3756,9 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "【真题4】圆柱与圆锥体积相等，底面积相等。圆柱高12cm，圆锥高？",
               "opts": [
-                "C. 36cm",
+                "A. 36cm",
                 "B. 30cm",
-                "A. 24cm",
+                "C. 24cm",
                 "D. 40cm"
               ],
               "ans": 0,
@@ -3768,9 +3768,9 @@ var MATH_DATA = {
               "diff": "hard",
               "q": "【真题5】A、B、C、D、E五人站成一排，A、B必须不相邻。有几种排法？",
               "opts": [
-                "C. 72",
+                "A. 72",
                 "B. 60",
-                "A. 48",
+                "C. 48",
                 "D. 84"
               ],
               "ans": 0,
@@ -3786,8 +3786,8 @@ var MATH_DATA = {
           "opts": [
             "A. 0.5",
             "B. 0.75",
-            "D. 1.25",
-            "C. 1"
+            "C. 1.25",
+            "D. 1"
           ],
           "ans": 3,
           "exp": "0.75÷0.75=1。"
@@ -3796,9 +3796,9 @@ var MATH_DATA = {
           "topic": "数论",
           "q": "能被9整除的三位数：47□。□填几？",
           "opts": [
-            "C. 7",
+            "A. 7",
             "B. 6",
-            "A. 5",
+            "C. 5",
             "D. 8"
           ],
           "ans": 0,
@@ -3808,8 +3808,8 @@ var MATH_DATA = {
           "topic": "应用题",
           "q": "一件商品先涨价25%再打八折，是原价的？",
           "opts": [
-            "B. 100%",
-            "A. 95%",
+            "A. 100%",
+            "B. 95%",
             "C. 105%",
             "D. 110%"
           ],
@@ -3822,8 +3822,8 @@ var MATH_DATA = {
           "opts": [
             "A. 4天",
             "B. 5天",
-            "D. 7天",
-            "C. 6天"
+            "C. 7天",
+            "D. 6天"
           ],
           "ans": 3,
           "exp": "1÷(<span class=\"frac\"><span>1</span><span>10</span></span>+<span class=\"frac\"><span>1</span><span>15</span></span>)=1÷(<span class=\"frac\"><span>3</span><span>30</span></span>+<span class=\"frac\"><span>2</span><span>30</span></span>)=1÷(<span class=\"frac\"><span>1</span><span>6</span></span>)=6天。"
@@ -3832,9 +3832,9 @@ var MATH_DATA = {
           "topic": "行程",
           "q": "AB相距150km，甲40km/h乙35km/h相向而行。几小时相遇？",
           "opts": [
-            "C. 2h",
+            "A. 2h",
             "B. 1.8h",
-            "A. 1.5h",
+            "C. 1.5h",
             "D. 2.2h"
           ],
           "ans": 0,
@@ -3845,9 +3845,9 @@ var MATH_DATA = {
           "q": "圆半径5cm，面积约？（π≈3.14）",
           "opts": [
             "A. 75.5cm²",
-            "D. 82.5cm²",
+            "B. 82.5cm²",
             "C. 80cm²",
-            "B. 78.5cm²"
+            "D. 78.5cm²"
           ],
           "ans": 3,
           "exp": "S=3.14×25=78.5cm²。"
@@ -3857,9 +3857,9 @@ var MATH_DATA = {
           "q": "从6人中选2人，几种选法？",
           "opts": [
             "A. 12",
-            "D. 20",
+            "B. 20",
             "C. 18",
-            "B. 15"
+            "D. 15"
           ],
           "ans": 3,
           "exp": "C(6,2)=15种。"
@@ -3868,10 +3868,10 @@ var MATH_DATA = {
           "topic": "方程",
           "q": "3x−7=2x+8，x=?",
           "opts": [
-            "D. 15",
+            "A. 15",
             "B. 13",
             "C. 14",
-            "A. 12"
+            "D. 12"
           ],
           "ans": 0,
           "exp": "3x−2x=8+7→x=15。"
@@ -3882,8 +3882,8 @@ var MATH_DATA = {
           "opts": [
             "A. 56cm²",
             "B. 60cm²",
-            "D. 68cm²",
-            "C. 64cm²"
+            "C. 68cm²",
+            "D. 64cm²"
           ],
           "ans": 3,
           "exp": "(6+10)×8÷2=64cm²。"
@@ -3892,9 +3892,9 @@ var MATH_DATA = {
           "topic": "综合",
           "q": "27头牛6天吃完一片草，23头牛9天吃完。21头牛几天吃完？",
           "opts": [
-            "C. 12天",
+            "A. 12天",
             "B. 11天",
-            "A. 10天",
+            "C. 10天",
             "D. 13天"
           ],
           "ans": 0,
