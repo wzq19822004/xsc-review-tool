@@ -12,11 +12,11 @@ var MATH_DATA = {
           "type": "知识点",
           "topic": "分小百混合运算",
           "tagColor": "#3b82f6",
-          "content": "<p>分数、小数、百分数的混合运算是小升初计算题的核心，约占20%分值。核心策略：<b>统一形式再计算</b>。</p>\n<p><b>运算顺序：</b>有括号先算括号 → 乘除 → 加减，同级从左到右。</p>\n<p><b>常用技巧：</b></p>\n<ul>\n  <li>分数化小数：分母是2、4、5、8、10、20、25、50、100等可直接化</li>\n  <li>小数化分数：有限小数按位数化分母（一位/10，两位/100…）</li>\n  <li>百分数化分数或小数：去掉%号，除以100</li>\n  <li><b>凑整法：</b>利用0.25+0.75=1、0.125×8=1等凑整</li>\n  <li><b>提取公因数：</b>a×b+a×c=a×(b+c)</li>\n</ul>\n<div class=\"formula-block\">常用互化：1/2=0.5=50%&emsp;1/4=0.25=25%&emsp;3/4=0.75=75%&emsp;1/8=0.125=12.5%&emsp;3/8=0.375=37.5%&emsp;1/5=0.2=20%</div>",
+          "content": "<p>分数、小数、百分数的混合运算是小升初计算题的核心，约占20%分值。核心策略：<b>统一形式再计算</b>。</p>\n<p><b>运算顺序：</b>有括号先算括号 → 乘除 → 加减，同级从左到右。</p>\n<p><b>常用技巧：</b></p>\n<ul>\n  <li>分数化小数：分母是2、4、5、8、10、20、25、50、100等可直接化</li>\n  <li>小数化分数：有限小数按位数化分母（一位/10，两位/100…）</li>\n  <li>百分数化分数或小数：去掉%号，除以100</li>\n  <li><b>凑整法：</b>利用0.25+0.75=1、0.125×8=1等凑整</li>\n  <li><b>提取公因数：</b>a×b+a×c=a×(b+c)</li>\n</ul>\n<div class=\"formula-block\">常用互化：<span class=\"frac\"><span>1</span><span>2</span></span>=0.5=50%&emsp;<span class=\"frac\"><span>1</span><span>4</span></span>=0.25=25%&emsp;<span class=\"frac\"><span>3</span><span>4</span></span>=0.75=75%&emsp;<span class=\"frac\"><span>1</span><span>8</span></span>=0.125=12.5%&emsp;<span class=\"frac\"><span>3</span><span>8</span></span>=0.375=37.5%&emsp;<span class=\"frac\"><span>1</span><span>5</span></span>=0.2=20%</div>",
           "problems": [
             {
               "diff": "basic",
-              "q": "计算：0.75 + 1/4 =",
+              "q": "计算：0.75 + <span class=\"frac\"><span>1</span><span>4</span></span> =",
               "opts": [
                 "A. 0.5",
                 "B. 0.75",
@@ -24,11 +24,11 @@ var MATH_DATA = {
                 "D. 1.25"
               ],
               "ans": 2,
-              "exp": "1/4 = 0.25，0.75 + 0.25 = 1。"
+              "exp": "<span class=\"frac\"><span>1</span><span>4</span></span> = 0.25，0.75 + 0.25 = 1。"
             },
             {
               "diff": "basic",
-              "q": "计算：2.5 × 4/5 =",
+              "q": "计算：2.5 × <span class=\"frac\"><span>4</span><span>5</span></span> =",
               "opts": [
                 "A. 1",
                 "B. 2.5",
@@ -36,7 +36,7 @@ var MATH_DATA = {
                 "D. 3"
               ],
               "ans": 2,
-              "exp": "2.5 × 0.8 = 2，或 5/2 × 4/5 = 20/10 = 2。"
+              "exp": "2.5 × 0.8 = 2，或 <span class=\"frac\"><span>5</span><span>2</span></span> × <span class=\"frac\"><span>4</span><span>5</span></span> = <span class=\"frac\"><span>20</span><span>10</span></span> = 2。"
             },
             {
               "diff": "medium",
@@ -52,7 +52,7 @@ var MATH_DATA = {
             },
             {
               "diff": "medium",
-              "q": "计算：99 × 3/8 + 0.375 =",
+              "q": "计算：99 × <span class=\"frac\"><span>3</span><span>8</span></span> + 0.375 =",
               "opts": [
                 "A. 37.125",
                 "B. 38",
@@ -64,7 +64,7 @@ var MATH_DATA = {
             },
             {
               "diff": "hard",
-              "q": "计算：(1/2 + 1/3 + 1/4) × 12 =",
+              "q": "计算：(<span class=\"frac\"><span>1</span><span>2</span></span> + <span class=\"frac\"><span>1</span><span>3</span></span> + <span class=\"frac\"><span>1</span><span>4</span></span>) × 12 =",
               "opts": [
                 "A. 11",
                 "B. 12",
@@ -72,7 +72,7 @@ var MATH_DATA = {
                 "D. 13"
               ],
               "ans": 3,
-              "exp": "= 12/2 + 12/3 + 12/4 = 6 + 4 + 3 = 13。（乘法分配律）"
+              "exp": "= <span class=\"frac\"><span>12</span><span>2</span></span> + <span class=\"frac\"><span>12</span><span>3</span></span> + <span class=\"frac\"><span>12</span><span>4</span></span> = 6 + 4 + 3 = 13。（乘法分配律）"
             }
           ]
         },
@@ -80,67 +80,67 @@ var MATH_DATA = {
           "type": "知识点",
           "topic": "裂项法",
           "tagColor": "#3b82f6",
-          "content": "<p><b>裂项法</b>（拆项相消法）是处理分数数列求和的高效技巧。核心思想：将一项拆成两项之差，使中间项互相抵消。</p>\n<div class=\"formula-block\">基本裂项公式：1/[n(n+1)] = 1/n − 1/(n+1)</div>\n<div class=\"formula-block\">推广公式：1/[n(n+k)] = (1/k) × (1/n − 1/(n+k))</div>\n<div class=\"formula-block\">三项裂项：1/[n(n+1)(n+2)] = (1/2) × [1/(n(n+1)) − 1/((n+1)(n+2))]</div>\n<p><b>解题步骤：</b></p>\n<ol>\n  <li>观察分母是否为连续整数乘积形式 n(n+1) 或 n(n+k)</li>\n  <li>根据公式拆分为两项之差</li>\n  <li>写开前几项和后几项，观察中间项如何抵消</li>\n  <li>计算剩余的首尾项，得出结果</li>\n</ol>\n<p><b>关键：</b>正负交替相消，只留首项和尾项。</p>",
+          "content": "<p><b>裂项法</b>（拆项相消法）是处理分数数列求和的高效技巧。核心思想：将一项拆成两项之差，使中间项互相抵消。</p>\n<div class=\"formula-block\">基本裂项公式：<span class=\"frac\"><span>1</span><span>n(n+1)</span></span> = 1/n − <span class=\"frac\"><span>1</span><span>n+1</span></span></div>\n<div class=\"formula-block\">推广公式：<span class=\"frac\"><span>1</span><span>n(n+k)</span></span> = (1/k) × (1/n − <span class=\"frac\"><span>1</span><span>n+k</span></span>)</div>\n<div class=\"formula-block\">三项裂项：<span class=\"frac\"><span>1</span><span>n(n+1)(n+2)</span></span> = (<span class=\"frac\"><span>1</span><span>2</span></span>) × [<span class=\"frac\"><span>1</span><span>n(n+1)</span></span> − <span class=\"frac\"><span>1</span><span>(n+1)(n+2)</span></span>]</div>\n<p><b>解题步骤：</b></p>\n<ol>\n  <li>观察分母是否为连续整数乘积形式 n(n+1) 或 n(n+k)</li>\n  <li>根据公式拆分为两项之差</li>\n  <li>写开前几项和后几项，观察中间项如何抵消</li>\n  <li>计算剩余的首尾项，得出结果</li>\n</ol>\n<p><b>关键：</b>正负交替相消，只留首项和尾项。</p>",
           "problems": [
             {
               "diff": "basic",
-              "q": "1/(1×2) + 1/(2×3) 的裂项结果首项是？",
+              "q": "<span class=\"frac\"><span>1</span><span>1×2</span></span> + <span class=\"frac\"><span>1</span><span>2×3</span></span> 的裂项结果首项是？",
               "opts": [
-                "A. 2/3",
-                "B. 1/2",
-                "C. 1/3",
-                "D. 1/1"
+                "A. <span class=\"frac\"><span>2</span><span>3</span></span>",
+                "B. <span class=\"frac\"><span>1</span><span>2</span></span>",
+                "C. <span class=\"frac\"><span>1</span><span>3</span></span>",
+                "D. <span class=\"frac\"><span>1</span><span>1</span></span>"
               ],
               "ans": 3,
-              "exp": "1/(1×2)=1−1/2，1/(2×3)=1/2−1/3。首项是1，尾项是−1/3。"
+              "exp": "<span class=\"frac\"><span>1</span><span>1×2</span></span>=1−<span class=\"frac\"><span>1</span><span>2</span></span>，<span class=\"frac\"><span>1</span><span>2×3</span></span>=<span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>3</span></span>。首项是1，尾项是−<span class=\"frac\"><span>1</span><span>3</span></span>。"
             },
             {
               "diff": "medium",
-              "q": "1/(1×2) + 1/(2×3) + 1/(3×4) + … + 1/(99×100) =",
+              "q": "<span class=\"frac\"><span>1</span><span>1×2</span></span> + <span class=\"frac\"><span>1</span><span>2×3</span></span> + <span class=\"frac\"><span>1</span><span>3×4</span></span> + … + <span class=\"frac\"><span>1</span><span>99×100</span></span> =",
               "opts": [
                 "A. 1",
-                "B. 100/101",
-                "C. 99/100",
-                "D. 99/101"
+                "B. <span class=\"frac\"><span>100</span><span>101</span></span>",
+                "C. <span class=\"frac\"><span>99</span><span>100</span></span>",
+                "D. <span class=\"frac\"><span>99</span><span>101</span></span>"
               ],
               "ans": 2,
-              "exp": "= 1−1/2+1/2−1/3+…+1/99−1/100 = 1−1/100 = 99/100。"
+              "exp": "= 1−<span class=\"frac\"><span>1</span><span>2</span></span>+<span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>3</span></span>+…+<span class=\"frac\"><span>1</span><span>99</span></span>−<span class=\"frac\"><span>1</span><span>100</span></span> = 1−<span class=\"frac\"><span>1</span><span>100</span></span> = <span class=\"frac\"><span>99</span><span>100</span></span>。"
             },
             {
               "diff": "medium",
-              "q": "1/(2×4) + 1/(4×6) + 1/(6×8) =",
+              "q": "<span class=\"frac\"><span>1</span><span>2×4</span></span> + <span class=\"frac\"><span>1</span><span>4×6</span></span> + <span class=\"frac\"><span>1</span><span>6×8</span></span> =",
               "opts": [
-                "A. 1/4",
-                "B. 5/16",
-                "C. 1/8",
-                "D. 3/16"
+                "A. <span class=\"frac\"><span>1</span><span>4</span></span>",
+                "B. <span class=\"frac\"><span>5</span><span>16</span></span>",
+                "C. <span class=\"frac\"><span>1</span><span>8</span></span>",
+                "D. <span class=\"frac\"><span>3</span><span>16</span></span>"
               ],
               "ans": 3,
-              "exp": "每项=(1/2)(1/2−1/4)…=(1/2)(1/2−1/8)=3/16。"
+              "exp": "每项=(<span class=\"frac\"><span>1</span><span>2</span></span>)(<span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>4</span></span>)…=(<span class=\"frac\"><span>1</span><span>2</span></span>)(<span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>8</span></span>)=<span class=\"frac\"><span>3</span><span>16</span></span>。"
             },
             {
               "diff": "hard",
-              "q": "1/(1×3) + 1/(3×5) + ... + 1/(19×21) =",
+              "q": "<span class=\"frac\"><span>1</span><span>1×3</span></span> + <span class=\"frac\"><span>1</span><span>3×5</span></span> + ... + <span class=\"frac\"><span>1</span><span>19×21</span></span> =",
               "opts": [
-                "A. 9/21",
-                "B. 11/21",
-                "C. 10/21",
-                "D. 20/21"
+                "A. <span class=\"frac\"><span>9</span><span>21</span></span>",
+                "B. <span class=\"frac\"><span>11</span><span>21</span></span>",
+                "C. <span class=\"frac\"><span>10</span><span>21</span></span>",
+                "D. <span class=\"frac\"><span>20</span><span>21</span></span>"
               ],
               "ans": 2,
-              "exp": "=(1/2)(1−1/3+1/3−1/5+…+1/19−1/21)=(1/2)(1−1/21)=10/21。"
+              "exp": "=(<span class=\"frac\"><span>1</span><span>2</span></span>)(1−<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>−<span class=\"frac\"><span>1</span><span>5</span></span>+…+<span class=\"frac\"><span>1</span><span>19</span></span>−<span class=\"frac\"><span>1</span><span>21</span></span>)=(<span class=\"frac\"><span>1</span><span>2</span></span>)(1−<span class=\"frac\"><span>1</span><span>21</span></span>)=<span class=\"frac\"><span>10</span><span>21</span></span>。"
             },
             {
               "diff": "hard",
-              "q": "裂项：1/(1×2×3) + 1/(2×3×4) 的前两项裂开后和为？",
+              "q": "裂项：<span class=\"frac\"><span>1</span><span>1×2×3</span></span> + <span class=\"frac\"><span>1</span><span>2×3×4</span></span> 的前两项裂开后和为？",
               "opts": [
-                "A. 1/2 − 1/12",
-                "B. 1/4 − 1/24",
-                "C. 1/2×1/4",
-                "D. 1/4 − 1/6"
+                "A. <span class=\"frac\"><span>1</span><span>2</span></span> − <span class=\"frac\"><span>1</span><span>12</span></span>",
+                "B. <span class=\"frac\"><span>1</span><span>4</span></span> − <span class=\"frac\"><span>1</span><span>24</span></span>",
+                "C. <span class=\"frac\"><span>1</span><span>2</span></span>×<span class=\"frac\"><span>1</span><span>4</span></span>",
+                "D. <span class=\"frac\"><span>1</span><span>4</span></span> − <span class=\"frac\"><span>1</span><span>6</span></span>"
               ],
               "ans": 1,
-              "exp": "第一项=(1/2)[1/(1×2)−1/(2×3)]，第二项=(1/2)[1/(2×3)−1/(3×4)]，两项和=(1/2)[1/2−1/12]=1/4−1/24。"
+              "exp": "第一项=(<span class=\"frac\"><span>1</span><span>2</span></span>)[<span class=\"frac\"><span>1</span><span>1×2</span></span>−<span class=\"frac\"><span>1</span><span>2×3</span></span>]，第二项=(<span class=\"frac\"><span>1</span><span>2</span></span>)[<span class=\"frac\"><span>1</span><span>2×3</span></span>−<span class=\"frac\"><span>1</span><span>3×4</span></span>]，两项和=(<span class=\"frac\"><span>1</span><span>2</span></span>)[<span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>12</span></span>]=<span class=\"frac\"><span>1</span><span>4</span></span>−<span class=\"frac\"><span>1</span><span>24</span></span>。"
             }
           ]
         },
@@ -164,27 +164,27 @@ var MATH_DATA = {
             },
             {
               "diff": "medium",
-              "q": "设 a=1/2+2/3，b=1/3+3/4，则 a−b =",
+              "q": "设 a=<span class=\"frac\"><span>1</span><span>2</span></span>+<span class=\"frac\"><span>2</span><span>3</span></span>，b=<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>3</span><span>4</span></span>，则 a−b =",
               "opts": [
-                "A. 1/12",
-                "B. 1/4",
-                "C. 1/3",
-                "D. 1/6"
+                "A. <span class=\"frac\"><span>1</span><span>12</span></span>",
+                "B. <span class=\"frac\"><span>1</span><span>4</span></span>",
+                "C. <span class=\"frac\"><span>1</span><span>3</span></span>",
+                "D. <span class=\"frac\"><span>1</span><span>6</span></span>"
               ],
               "ans": 3,
-              "exp": "a=3/6+4/6=7/6，b=4/12+9/12=13/12，a−b=14/12−13/12=1/12，约分=1/6。等等…a=7/6=14/12，b=13/12，差=1/12。"
+              "exp": "a=<span class=\"frac\"><span>3</span><span>6</span></span>+<span class=\"frac\"><span>4</span><span>6</span></span>=<span class=\"frac\"><span>7</span><span>6</span></span>，b=<span class=\"frac\"><span>4</span><span>12</span></span>+<span class=\"frac\"><span>9</span><span>12</span></span>=<span class=\"frac\"><span>13</span><span>12</span></span>，a−b=<span class=\"frac\"><span>14</span><span>12</span></span>−<span class=\"frac\"><span>13</span><span>12</span></span>=<span class=\"frac\"><span>1</span><span>12</span></span>，约分=<span class=\"frac\"><span>1</span><span>6</span></span>。等等…a=<span class=\"frac\"><span>7</span><span>6</span></span>=<span class=\"frac\"><span>14</span><span>12</span></span>，b=<span class=\"frac\"><span>13</span><span>12</span></span>，差=<span class=\"frac\"><span>1</span><span>12</span></span>。"
             },
             {
               "diff": "hard",
-              "q": "用换元法简化：(1+1/2)×(1+1/3)×...×(1+1/10) =",
+              "q": "用换元法简化：(1+<span class=\"frac\"><span>1</span><span>2</span></span>)×(1+<span class=\"frac\"><span>1</span><span>3</span></span>)×...×(1+<span class=\"frac\"><span>1</span><span>10</span></span>) =",
               "opts": [
                 "A. 5",
                 "B. 5.5",
                 "C. 6",
-                "D. 11/2"
+                "D. <span class=\"frac\"><span>11</span><span>2</span></span>"
               ],
               "ans": 1,
-              "exp": "=(3/2)×(4/3)×...×(11/10)=11/2=5.5。中间全部约掉，只剩首分母2和尾分子11。"
+              "exp": "=(<span class=\"frac\"><span>3</span><span>2</span></span>)×(<span class=\"frac\"><span>4</span><span>3</span></span>)×...×(<span class=\"frac\"><span>11</span><span>10</span></span>)=<span class=\"frac\"><span>11</span><span>2</span></span>=5.5。中间全部约掉，只剩首分母2和尾分子11。"
             }
           ]
         },
@@ -240,7 +240,7 @@ var MATH_DATA = {
                 "D. 7"
               ],
               "ans": 0,
-              "exp": "S₅=5a₁+5×4×3/2=5a₁+30=60，5a₁=30，a₁=6。"
+              "exp": "S₅=5a₁+5×4×<span class=\"frac\"><span>3</span><span>2</span></span>=5a₁+30=60，5a₁=30，a₁=6。"
             },
             {
               "diff": "hard",
@@ -260,7 +260,7 @@ var MATH_DATA = {
       "quiz": [
         {
           "topic": "混合运算",
-          "q": "0.125 × 8 + 1/4 =",
+          "q": "0.125 × 8 + <span class=\"frac\"><span>1</span><span>4</span></span> =",
           "opts": [
             "A. 1",
             "B. 1.5",
@@ -272,15 +272,15 @@ var MATH_DATA = {
         },
         {
           "topic": "裂项法",
-          "q": "1/(2×3) 裂项后等于？",
+          "q": "<span class=\"frac\"><span>1</span><span>2×3</span></span> 裂项后等于？",
           "opts": [
-            "A. 1/2+1/3",
-            "B. 1/6",
+            "A. <span class=\"frac\"><span>1</span><span>2</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>",
+            "B. <span class=\"frac\"><span>1</span><span>6</span></span>",
             "C. 2−3",
-            "D. 1/2−1/3"
+            "D. <span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>3</span></span>"
           ],
           "ans": 3,
-          "exp": "根据裂项公式 1/[n(n+1)]=1/n−1/(n+1)，得 1/2−1/3。"
+          "exp": "根据裂项公式 <span class=\"frac\"><span>1</span><span>n(n+1)</span></span>=1/n−<span class=\"frac\"><span>1</span><span>n+1</span></span>，得 <span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>3</span></span>。"
         },
         {
           "topic": "等差数列",
@@ -308,19 +308,19 @@ var MATH_DATA = {
         },
         {
           "topic": "裂项法",
-          "q": "1/(1×2)+1/(2×3)+1/(3×4)+1/(4×5) =",
+          "q": "<span class=\"frac\"><span>1</span><span>1×2</span></span>+<span class=\"frac\"><span>1</span><span>2×3</span></span>+<span class=\"frac\"><span>1</span><span>3×4</span></span>+<span class=\"frac\"><span>1</span><span>4×5</span></span> =",
           "opts": [
-            "A. 2/5",
-            "B. 4/5",
-            "C. 3/5",
+            "A. <span class=\"frac\"><span>2</span><span>5</span></span>",
+            "B. <span class=\"frac\"><span>4</span><span>5</span></span>",
+            "C. <span class=\"frac\"><span>3</span><span>5</span></span>",
             "D. 1"
           ],
           "ans": 1,
-          "exp": "=1−1/2+1/2−1/3+1/3−1/4+1/4−1/5=1−1/5=4/5。"
+          "exp": "=1−<span class=\"frac\"><span>1</span><span>2</span></span>+<span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>−<span class=\"frac\"><span>1</span><span>4</span></span>+<span class=\"frac\"><span>1</span><span>4</span></span>−<span class=\"frac\"><span>1</span><span>5</span></span>=1−<span class=\"frac\"><span>1</span><span>5</span></span>=<span class=\"frac\"><span>4</span><span>5</span></span>。"
         },
         {
           "topic": "混合运算",
-          "q": "36×(1/2+1/3−1/4) =",
+          "q": "36×(<span class=\"frac\"><span>1</span><span>2</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>−<span class=\"frac\"><span>1</span><span>4</span></span>) =",
           "opts": [
             "A. 18",
             "B. 21",
@@ -328,7 +328,7 @@ var MATH_DATA = {
             "D. 27"
           ],
           "ans": 1,
-          "exp": "=36/2+36/3−36/4=18+12−9=21。"
+          "exp": "=<span class=\"frac\"><span>36</span><span>2</span></span>+<span class=\"frac\"><span>36</span><span>3</span></span>−<span class=\"frac\"><span>36</span><span>4</span></span>=18+12−9=21。"
         },
         {
           "topic": "换元法",
@@ -368,15 +368,15 @@ var MATH_DATA = {
         },
         {
           "topic": "综合",
-          "q": "裂项求和 1/(1×3)+1/(3×5)+1/(5×7) =",
+          "q": "裂项求和 <span class=\"frac\"><span>1</span><span>1×3</span></span>+<span class=\"frac\"><span>1</span><span>3×5</span></span>+<span class=\"frac\"><span>1</span><span>5×7</span></span> =",
           "opts": [
-            "A. 3/7",
-            "B. 1/3",
-            "C. 1/2",
-            "D. 2/5"
+            "A. <span class=\"frac\"><span>3</span><span>7</span></span>",
+            "B. <span class=\"frac\"><span>1</span><span>3</span></span>",
+            "C. <span class=\"frac\"><span>1</span><span>2</span></span>",
+            "D. <span class=\"frac\"><span>2</span><span>5</span></span>"
           ],
           "ans": 0,
-          "exp": "=(1/2)(1−1/3+1/3−1/5+1/5−1/7)=(1/2)(1−1/7)=3/7。"
+          "exp": "=(<span class=\"frac\"><span>1</span><span>2</span></span>)(1−<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>−<span class=\"frac\"><span>1</span><span>5</span></span>+<span class=\"frac\"><span>1</span><span>5</span></span>−<span class=\"frac\"><span>1</span><span>7</span></span>)=(<span class=\"frac\"><span>1</span><span>2</span></span>)(1−<span class=\"frac\"><span>1</span><span>7</span></span>)=<span class=\"frac\"><span>3</span><span>7</span></span>。"
         }
       ]
     },
@@ -746,7 +746,7 @@ var MATH_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "一个数的 2/5 是 30，这个数是？",
+              "q": "一个数的 <span class=\"frac\"><span>2</span><span>5</span></span> 是 30，这个数是？",
               "opts": [
                 "A. 75",
                 "B. 60",
@@ -754,11 +754,11 @@ var MATH_DATA = {
                 "D. 90"
               ],
               "ans": 0,
-              "exp": "30 ÷ (2/5) = 30 × 5/2 = 75。"
+              "exp": "30 ÷ (<span class=\"frac\"><span>2</span><span>5</span></span>) = 30 × <span class=\"frac\"><span>5</span><span>2</span></span> = 75。"
             },
             {
               "diff": "basic",
-              "q": "一根绳子用去3/8后还剩10米，原长是多少？",
+              "q": "一根绳子用去<span class=\"frac\"><span>3</span><span>8</span></span>后还剩10米，原长是多少？",
               "opts": [
                 "A. 16m",
                 "B. 15m",
@@ -766,11 +766,11 @@ var MATH_DATA = {
                 "D. 18m"
               ],
               "ans": 0,
-              "exp": "剩下1−3/8=5/8。原长=10÷(5/8)=10×8/5=16米。"
+              "exp": "剩下1−<span class=\"frac\"><span>3</span><span>8</span></span>=<span class=\"frac\"><span>5</span><span>8</span></span>。原长=10÷(<span class=\"frac\"><span>5</span><span>8</span></span>)=10×<span class=\"frac\"><span>8</span><span>5</span></span>=16米。"
             },
             {
               "diff": "medium",
-              "q": "某班男生比女生多1/5，女生有25人，全班多少人？",
+              "q": "某班男生比女生多<span class=\"frac\"><span>1</span><span>5</span></span>，女生有25人，全班多少人？",
               "opts": [
                 "A. 50",
                 "B. 52",
@@ -778,11 +778,11 @@ var MATH_DATA = {
                 "D. 60"
               ],
               "ans": 2,
-              "exp": "男生=25×(1+1/5)=25×6/5=30。全班=25+30=55人。"
+              "exp": "男生=25×(1+<span class=\"frac\"><span>1</span><span>5</span></span>)=25×<span class=\"frac\"><span>6</span><span>5</span></span>=30。全班=25+30=55人。"
             },
             {
               "diff": "medium",
-              "q": "一本书第一天看1/3，第二天看剩下的1/2，还剩40页，全书多少页？",
+              "q": "一本书第一天看<span class=\"frac\"><span>1</span><span>3</span></span>，第二天看剩下的<span class=\"frac\"><span>1</span><span>2</span></span>，还剩40页，全书多少页？",
               "opts": [
                 "A. 100",
                 "B. 110",
@@ -790,11 +790,11 @@ var MATH_DATA = {
                 "D. 150"
               ],
               "ans": 2,
-              "exp": "第一天剩2/3，第二天看(2/3)×(1/2)=1/3，两天共看1/3+1/3=2/3，剩1/3=40页，全书120页。"
+              "exp": "第一天剩<span class=\"frac\"><span>2</span><span>3</span></span>，第二天看(<span class=\"frac\"><span>2</span><span>3</span></span>)×(<span class=\"frac\"><span>1</span><span>2</span></span>)=<span class=\"frac\"><span>1</span><span>3</span></span>，两天共看<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>=<span class=\"frac\"><span>2</span><span>3</span></span>，剩<span class=\"frac\"><span>1</span><span>3</span></span>=40页，全书120页。"
             },
             {
               "diff": "hard",
-              "q": "甲是乙的2/3，乙是丙的3/4，三人共270，则甲是？",
+              "q": "甲是乙的<span class=\"frac\"><span>2</span><span>3</span></span>，乙是丙的<span class=\"frac\"><span>3</span><span>4</span></span>，三人共270，则甲是？",
               "opts": [
                 "A. 40",
                 "B. 60",
@@ -806,15 +806,15 @@ var MATH_DATA = {
             },
             {
               "diff": "basic",
-              "q": "甲比乙多1/4，乙是甲的几分之几？",
+              "q": "甲比乙多<span class=\"frac\"><span>1</span><span>4</span></span>，乙是甲的几分之几？",
               "opts": [
-                "A. 3/4",
-                "B. 5/4",
-                "C. 4/5",
-                "D. 3/5"
+                "A. <span class=\"frac\"><span>3</span><span>4</span></span>",
+                "B. <span class=\"frac\"><span>5</span><span>4</span></span>",
+                "C. <span class=\"frac\"><span>4</span><span>5</span></span>",
+                "D. <span class=\"frac\"><span>3</span><span>5</span></span>"
               ],
               "ans": 2,
-              "exp": "甲=乙×5/4，所以乙=甲×4/5。"
+              "exp": "甲=乙×<span class=\"frac\"><span>5</span><span>4</span></span>，所以乙=甲×<span class=\"frac\"><span>4</span><span>5</span></span>。"
             },
             {
               "diff": "medium",
@@ -830,7 +830,7 @@ var MATH_DATA = {
             },
             {
               "diff": "hard",
-              "q": "A比B多1/5，C比B少1/4，A是C的几倍？",
+              "q": "A比B多<span class=\"frac\"><span>1</span><span>5</span></span>，C比B少<span class=\"frac\"><span>1</span><span>4</span></span>，A是C的几倍？",
               "opts": [
                 "A. 1.6倍",
                 "B. 1.5倍",
@@ -838,7 +838,7 @@ var MATH_DATA = {
                 "D. 1.8倍"
               ],
               "ans": 0,
-              "exp": "设B=20。A=20×6/5=24。C=20×3/4=15。A/C=24/15=1.6倍。"
+              "exp": "设B=20。A=20×<span class=\"frac\"><span>6</span><span>5</span></span>=24。C=20×<span class=\"frac\"><span>3</span><span>4</span></span>=15。A/C=<span class=\"frac\"><span>24</span><span>15</span></span>=1.6倍。"
             }
           ]
         },
@@ -970,7 +970,7 @@ var MATH_DATA = {
       "quiz": [
         {
           "topic": "量率对应",
-          "q": "一根绳子截去2/5，还剩18米，原长？",
+          "q": "一根绳子截去<span class=\"frac\"><span>2</span><span>5</span></span>，还剩18米，原长？",
           "opts": [
             "A. 25m",
             "B. 28m",
@@ -978,11 +978,11 @@ var MATH_DATA = {
             "D. 32m"
           ],
           "ans": 2,
-          "exp": "剩3/5→18÷(3/5)=30米。"
+          "exp": "剩<span class=\"frac\"><span>3</span><span>5</span></span>→18÷(<span class=\"frac\"><span>3</span><span>5</span></span>)=30米。"
         },
         {
           "topic": "量率对应",
-          "q": "一桶油第一次用去1/3，第二次用去剩下的1/2，还剩15升，原油多少升？",
+          "q": "一桶油第一次用去<span class=\"frac\"><span>1</span><span>3</span></span>，第二次用去剩下的<span class=\"frac\"><span>1</span><span>2</span></span>，还剩15升，原油多少升？",
           "opts": [
             "A. 40升",
             "B. 50升",
@@ -990,7 +990,7 @@ var MATH_DATA = {
             "D. 60升"
           ],
           "ans": 2,
-          "exp": "第一次剩2/3，第二次用去(2/3)×(1/2)=1/3，两次共用1/3+1/3=2/3，剩1/3=15升，原油45升。"
+          "exp": "第一次剩<span class=\"frac\"><span>2</span><span>3</span></span>，第二次用去(<span class=\"frac\"><span>2</span><span>3</span></span>)×(<span class=\"frac\"><span>1</span><span>2</span></span>)=<span class=\"frac\"><span>1</span><span>3</span></span>，两次共用<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>=<span class=\"frac\"><span>2</span><span>3</span></span>，剩<span class=\"frac\"><span>1</span><span>3</span></span>=15升，原油45升。"
         },
         {
           "topic": "经济问题",
@@ -1030,15 +1030,15 @@ var MATH_DATA = {
         },
         {
           "topic": "转化单位1",
-          "q": "甲比乙多1/3，则乙比甲少几分之几？",
+          "q": "甲比乙多<span class=\"frac\"><span>1</span><span>3</span></span>，则乙比甲少几分之几？",
           "opts": [
-            "A. 1/3",
-            "B. 2/5",
-            "C. 1/4",
-            "D. 2/3"
+            "A. <span class=\"frac\"><span>1</span><span>3</span></span>",
+            "B. <span class=\"frac\"><span>2</span><span>5</span></span>",
+            "C. <span class=\"frac\"><span>1</span><span>4</span></span>",
+            "D. <span class=\"frac\"><span>2</span><span>3</span></span>"
           ],
           "ans": 2,
-          "exp": "甲=4/3乙，乙比甲少(1/3)÷(4/3)=1/4。"
+          "exp": "甲=<span class=\"frac\"><span>4</span><span>3</span></span>乙，乙比甲少(<span class=\"frac\"><span>1</span><span>3</span></span>)÷(<span class=\"frac\"><span>4</span><span>3</span></span>)=<span class=\"frac\"><span>1</span><span>4</span></span>。"
         },
         {
           "topic": "经济问题",
@@ -1066,7 +1066,7 @@ var MATH_DATA = {
         },
         {
           "topic": "量率对应",
-          "q": "小明读一本书，已读的页数是未读的2/3，已知已读40页，全书？",
+          "q": "小明读一本书，已读的页数是未读的<span class=\"frac\"><span>2</span><span>3</span></span>，已知已读40页，全书？",
           "opts": [
             "A. 100页",
             "B. 80页",
@@ -1074,11 +1074,11 @@ var MATH_DATA = {
             "D. 150页"
           ],
           "ans": 0,
-          "exp": "未读=40÷(2/3)=60，全书=40+60=100。"
+          "exp": "未读=40÷(<span class=\"frac\"><span>2</span><span>3</span></span>)=60，全书=40+60=100。"
         },
         {
           "topic": "综合",
-          "q": "一个数减去它的1/4等于12，这个数是？",
+          "q": "一个数减去它的<span class=\"frac\"><span>1</span><span>4</span></span>等于12，这个数是？",
           "opts": [
             "A. 14",
             "B. 15",
@@ -1086,7 +1086,7 @@ var MATH_DATA = {
             "D. 18"
           ],
           "ans": 2,
-          "exp": "12÷(1−1/4)=12÷3/4=16。"
+          "exp": "12÷(1−<span class=\"frac\"><span>1</span><span>4</span></span>)=12÷<span class=\"frac\"><span>3</span><span>4</span></span>=16。"
         }
       ]
     },
@@ -1099,7 +1099,7 @@ var MATH_DATA = {
           "type": "知识点",
           "topic": "简单合作工程",
           "tagColor": "#3b82f6",
-          "content": "<p>工程问题的核心是把<b>工作总量</b>看作单位\"1\"。</p>\n<div class=\"formula-block\">\n<b>基本公式：</b><br>\n• 工作效率 = 工作总量 ÷ 工作时间（通常总量=1）<br>\n• 单独完成时间 = t → 效率 = 1/t<br>\n• 合作效率 = 1/a + 1/b<br>\n• 合作时间 = 1 ÷ (1/a + 1/b) = ab/(a+b)\n</div>\n<p><b>解题步骤：</b></p>\n<ol>\n  <li>设工作总量为1</li>\n  <li>分别求出各自的效率（1/单独时间）</li>\n  <li>求合作效率（效率之和）</li>\n  <li>根据\"工作时间=工作量÷效率\"列式计算</li>\n</ol>",
+          "content": "<p>工程问题的核心是把<b>工作总量</b>看作单位\"1\"。</p>\n<div class=\"formula-block\">\n<b>基本公式：</b><br>\n• 工作效率 = 工作总量 ÷ 工作时间（通常总量=1）<br>\n• 单独完成时间 = t → 效率 = 1/t<br>\n• 合作效率 = 1/a + 1/b<br>\n• 合作时间 = 1 ÷ (1/a + 1/b) = a<span class=\"frac\"><span>b</span><span>a+b</span></span>\n</div>\n<p><b>解题步骤：</b></p>\n<ol>\n  <li>设工作总量为1</li>\n  <li>分别求出各自的效率（1/单独时间）</li>\n  <li>求合作效率（效率之和）</li>\n  <li>根据\"工作时间=工作量÷效率\"列式计算</li>\n</ol>",
           "problems": [
             {
               "diff": "basic",
@@ -1111,7 +1111,7 @@ var MATH_DATA = {
                 "D. 8天"
               ],
               "ans": 2,
-              "exp": "合作时间=1÷(1/6+1/12)=1÷(2/12+1/12)=1÷(1/4)=4天。"
+              "exp": "合作时间=1÷(<span class=\"frac\"><span>1</span><span>6</span></span>+<span class=\"frac\"><span>1</span><span>12</span></span>)=1÷(<span class=\"frac\"><span>2</span><span>12</span></span>+<span class=\"frac\"><span>1</span><span>12</span></span>)=1÷(<span class=\"frac\"><span>1</span><span>4</span></span>)=4天。"
             },
             {
               "diff": "basic",
@@ -1123,19 +1123,19 @@ var MATH_DATA = {
                 "D. 20天"
               ],
               "ans": 3,
-              "exp": "甲3天完成3/10，剩7/10乙用14天。乙效率=(7/10)÷14=1/20，乙单独需20天。"
+              "exp": "甲3天完成<span class=\"frac\"><span>3</span><span>10</span></span>，剩<span class=\"frac\"><span>7</span><span>10</span></span>乙用14天。乙效率=(<span class=\"frac\"><span>7</span><span>10</span></span>)÷14=<span class=\"frac\"><span>1</span><span>20</span></span>，乙单独需20天。"
             },
             {
               "diff": "medium",
               "q": "甲独做15天完成，乙独做20天完成。二人合作4天后甲离开，乙还需几天？",
               "opts": [
                 "A. 8天",
-                "B. 32/3天",
+                "B. <span class=\"frac\"><span>32</span><span>3</span></span>天",
                 "C. 12天",
                 "D. 10天"
               ],
               "ans": 1,
-              "exp": "合作4天完成4×(1/15+1/20)=4×(4/60+3/60)=4×7/60=28/60=7/15。剩8/15。乙需要(8/15)÷(1/20)=(8/15)×20=32/3天。"
+              "exp": "合作4天完成4×(<span class=\"frac\"><span>1</span><span>15</span></span>+<span class=\"frac\"><span>1</span><span>20</span></span>)=4×(<span class=\"frac\"><span>4</span><span>60</span></span>+<span class=\"frac\"><span>3</span><span>60</span></span>)=4×<span class=\"frac\"><span>7</span><span>60</span></span>=<span class=\"frac\"><span>28</span><span>60</span></span>=<span class=\"frac\"><span>7</span><span>15</span></span>。剩<span class=\"frac\"><span>8</span><span>15</span></span>。乙需要(<span class=\"frac\"><span>8</span><span>15</span></span>)÷(<span class=\"frac\"><span>1</span><span>20</span></span>)=(<span class=\"frac\"><span>8</span><span>15</span></span>)×20=<span class=\"frac\"><span>32</span><span>3</span></span>天。"
             },
             {
               "diff": "medium",
@@ -1147,7 +1147,7 @@ var MATH_DATA = {
                 "D. 24天"
               ],
               "ans": 3,
-              "exp": "合作效率=1/8，甲效率=1/12，乙效率=1/8−1/12=3/24−2/24=1/24。乙独做需24天。"
+              "exp": "合作效率=<span class=\"frac\"><span>1</span><span>8</span></span>，甲效率=<span class=\"frac\"><span>1</span><span>12</span></span>，乙效率=<span class=\"frac\"><span>1</span><span>8</span></span>−<span class=\"frac\"><span>1</span><span>12</span></span>=<span class=\"frac\"><span>3</span><span>24</span></span>−<span class=\"frac\"><span>2</span><span>24</span></span>=<span class=\"frac\"><span>1</span><span>24</span></span>。乙独做需24天。"
             },
             {
               "diff": "hard",
@@ -1159,7 +1159,7 @@ var MATH_DATA = {
                 "D. 8天"
               ],
               "ans": 1,
-              "exp": "设共需x天。甲做x−1天，乙做x−2天，丙做x天。(x−1)/10+(x−2)/15+x/20=1。通分分母60：6(x−1)+4(x−2)+3x=60→6x−6+4x−8+3x=60→13x=74→x=74/13≈5.69。向上取整6天。验：甲做5天=5/10=1/2，乙做4天=4/15，丙做6天=6/20=3/10。1/2+4/15+3/10=15/30+8/30+9/30=32/30>1。说明6天内完成。实际精确计算：方程6(x−1)/60+4(x−2)/60+3x/60=1→13x−14=60→x=74/13≈5.69，即6天。"
+              "exp": "设共需x天。甲做x−1天，乙做x−2天，丙做x天。(x−1)/10+(x−2)/15+x/20=1。通分分母60：6(x−1)+4(x−2)+3x=60→6x−6+4x−8+3x=60→13x=74→x=<span class=\"frac\"><span>74</span><span>13</span></span>≈5.69。向上取整6天。验：甲做5天=<span class=\"frac\"><span>5</span><span>10</span></span>=<span class=\"frac\"><span>1</span><span>2</span></span>，乙做4天=<span class=\"frac\"><span>4</span><span>15</span></span>，丙做6天=<span class=\"frac\"><span>6</span><span>20</span></span>=<span class=\"frac\"><span>3</span><span>10</span></span>。<span class=\"frac\"><span>1</span><span>2</span></span>+<span class=\"frac\"><span>4</span><span>15</span></span>+<span class=\"frac\"><span>3</span><span>10</span></span>=<span class=\"frac\"><span>15</span><span>30</span></span>+<span class=\"frac\"><span>8</span><span>30</span></span>+<span class=\"frac\"><span>9</span><span>30</span></span>=<span class=\"frac\"><span>32</span><span>30</span></span>>1。说明6天内完成。实际精确计算：方程6(x−1)/60+4(x−2)/60+3x/60=1→13x−14=60→x=<span class=\"frac\"><span>74</span><span>13</span></span>≈5.69，即6天。"
             }
           ]
         },
@@ -1179,7 +1179,7 @@ var MATH_DATA = {
                 "D. 15天"
               ],
               "ans": 3,
-              "exp": "每周期2天完成1/12+1/18=3/36+2/36=5/36。总需1÷(5/36)=7.2周期≈7完整周期(14天)完成7×5/36=35/36。剩1/36由甲完成，需(1/36)÷(1/12)=1/3天。总共14又1/3天→第15天完成。"
+              "exp": "每周期2天完成<span class=\"frac\"><span>1</span><span>12</span></span>+<span class=\"frac\"><span>1</span><span>18</span></span>=<span class=\"frac\"><span>3</span><span>36</span></span>+<span class=\"frac\"><span>2</span><span>36</span></span>=<span class=\"frac\"><span>5</span><span>36</span></span>。总需1÷(<span class=\"frac\"><span>5</span><span>36</span></span>)=7.2周期≈7完整周期(14天)完成7×<span class=\"frac\"><span>5</span><span>36</span></span>=<span class=\"frac\"><span>35</span><span>36</span></span>。剩<span class=\"frac\"><span>1</span><span>36</span></span>由甲完成，需(<span class=\"frac\"><span>1</span><span>36</span></span>)÷(<span class=\"frac\"><span>1</span><span>12</span></span>)=<span class=\"frac\"><span>1</span><span>3</span></span>天。总共14又<span class=\"frac\"><span>1</span><span>3</span></span>天→第15天完成。"
             },
             {
               "diff": "hard",
@@ -1208,22 +1208,22 @@ var MATH_DATA = {
                 "A. 20小时",
                 "B. 13小时",
                 "C. 15小时",
-                "D. 40/3小时"
+                "D. <span class=\"frac\"><span>40</span><span>3</span></span>小时"
               ],
               "ans": 3,
-              "exp": "净效率=1/5−1/8=8/40−5/40=3/40。时间=1÷(3/40)=40/3小时。"
+              "exp": "净效率=<span class=\"frac\"><span>1</span><span>5</span></span>−<span class=\"frac\"><span>1</span><span>8</span></span>=<span class=\"frac\"><span>8</span><span>40</span></span>−<span class=\"frac\"><span>5</span><span>40</span></span>=<span class=\"frac\"><span>3</span><span>40</span></span>。时间=1÷(<span class=\"frac\"><span>3</span><span>40</span></span>)=<span class=\"frac\"><span>40</span><span>3</span></span>小时。"
             },
             {
               "diff": "hard",
               "q": "进水管A 4小时满，B 6小时满，排水管C 8小时放完。三管齐开，几小时满？",
               "opts": [
                 "A. 2小时",
-                "B. 8/3小时",
-                "C. 24/7小时",
+                "B. <span class=\"frac\"><span>8</span><span>3</span></span>小时",
+                "C. <span class=\"frac\"><span>24</span><span>7</span></span>小时",
                 "D. 3小时"
               ],
               "ans": 2,
-              "exp": "净效率=1/4+1/6−1/8=6/24+4/24−3/24=7/24。时间=24/7小时。"
+              "exp": "净效率=<span class=\"frac\"><span>1</span><span>4</span></span>+<span class=\"frac\"><span>1</span><span>6</span></span>−<span class=\"frac\"><span>1</span><span>8</span></span>=<span class=\"frac\"><span>6</span><span>24</span></span>+<span class=\"frac\"><span>4</span><span>24</span></span>−<span class=\"frac\"><span>3</span><span>24</span></span>=<span class=\"frac\"><span>7</span><span>24</span></span>。时间=<span class=\"frac\"><span>24</span><span>7</span></span>小时。"
             }
           ]
         },
@@ -1271,7 +1271,7 @@ var MATH_DATA = {
             "D. 8天"
           ],
           "ans": 0,
-          "exp": "1÷(1/10+1/15)=1÷(3/30+2/30)=1÷(1/6)=6天。"
+          "exp": "1÷(<span class=\"frac\"><span>1</span><span>10</span></span>+<span class=\"frac\"><span>1</span><span>15</span></span>)=1÷(<span class=\"frac\"><span>3</span><span>30</span></span>+<span class=\"frac\"><span>2</span><span>30</span></span>)=1÷(<span class=\"frac\"><span>1</span><span>6</span></span>)=6天。"
         },
         {
           "topic": "合作工程",
@@ -1283,7 +1283,7 @@ var MATH_DATA = {
             "D. 32天"
           ],
           "ans": 2,
-          "exp": "乙效率=1/12−1/20=5/60−3/60=2/60=1/30。乙独做30天。"
+          "exp": "乙效率=<span class=\"frac\"><span>1</span><span>12</span></span>−<span class=\"frac\"><span>1</span><span>20</span></span>=<span class=\"frac\"><span>5</span><span>60</span></span>−<span class=\"frac\"><span>3</span><span>60</span></span>=<span class=\"frac\"><span>2</span><span>60</span></span>=<span class=\"frac\"><span>1</span><span>30</span></span>。乙独做30天。"
         },
         {
           "topic": "水管问题",
@@ -1295,7 +1295,7 @@ var MATH_DATA = {
             "D. 17小时"
           ],
           "ans": 2,
-          "exp": "1÷(1/6−1/9)=1÷(3/18−2/18)=1÷(1/18)=18小时。"
+          "exp": "1÷(<span class=\"frac\"><span>1</span><span>6</span></span>−<span class=\"frac\"><span>1</span><span>9</span></span>)=1÷(<span class=\"frac\"><span>3</span><span>18</span></span>−<span class=\"frac\"><span>2</span><span>18</span></span>)=1÷(<span class=\"frac\"><span>1</span><span>18</span></span>)=18小时。"
         },
         {
           "topic": "牛吃草",
@@ -1319,7 +1319,7 @@ var MATH_DATA = {
             "D. 17.5天"
           ],
           "ans": 3,
-          "exp": "5天完成5×(1/20+1/30)=5×(3/60+2/60)=5×5/60=25/60=5/12。剩7/12。乙需(7/12)÷(1/30)=7/12×30=17.5天。"
+          "exp": "5天完成5×(<span class=\"frac\"><span>1</span><span>20</span></span>+<span class=\"frac\"><span>1</span><span>30</span></span>)=5×(<span class=\"frac\"><span>3</span><span>60</span></span>+<span class=\"frac\"><span>2</span><span>60</span></span>)=5×<span class=\"frac\"><span>5</span><span>60</span></span>=<span class=\"frac\"><span>25</span><span>60</span></span>=<span class=\"frac\"><span>5</span><span>12</span></span>。剩<span class=\"frac\"><span>7</span><span>12</span></span>。乙需(<span class=\"frac\"><span>7</span><span>12</span></span>)÷(<span class=\"frac\"><span>1</span><span>30</span></span>)=<span class=\"frac\"><span>7</span><span>12</span></span>×30=17.5天。"
         },
         {
           "topic": "周期工程",
@@ -1331,7 +1331,7 @@ var MATH_DATA = {
             "D. 16天"
           ],
           "ans": 3,
-          "exp": "每周期2天完成1/12+1/24=3/24=1/8。8周期=16天完成。"
+          "exp": "每周期2天完成<span class=\"frac\"><span>1</span><span>12</span></span>+<span class=\"frac\"><span>1</span><span>24</span></span>=<span class=\"frac\"><span>3</span><span>24</span></span>=<span class=\"frac\"><span>1</span><span>8</span></span>。8周期=16天完成。"
         },
         {
           "topic": "水管问题",
@@ -1343,7 +1343,7 @@ var MATH_DATA = {
             "D. 3.6小时"
           ],
           "ans": 3,
-          "exp": "效率=1/3+1/6−1/9=6/18+3/18−2/18=7/18。时间=18/7≈2.57h。不对…效率=6/18+3/18−2/18=7/18，时间=18/7≈2.57h。选项：A.2.4 B.2.8 C.3 D.3.6。18/7≈2.571。最接近2.4还是2.8？都不是。重新计算：LCM(3,6,9)=18。1/3=6/18，1/6=3/18，1/9=2/18。净=7/18。时间=18/7≈2.571。可能是3.6？不是。我们仔细看：1/3+1/6=1/2=9/18，9/18−2/18=7/18。是的。答案问题，此题应为18/7≈2.57小时。可能选D 3.6？不对，3.6=18/5。选B 2.8最接近？但不够精确。实际是18/7小时。"
+          "exp": "效率=<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>1</span><span>6</span></span>−<span class=\"frac\"><span>1</span><span>9</span></span>=<span class=\"frac\"><span>6</span><span>18</span></span>+<span class=\"frac\"><span>3</span><span>18</span></span>−<span class=\"frac\"><span>2</span><span>18</span></span>=<span class=\"frac\"><span>7</span><span>18</span></span>。时间=<span class=\"frac\"><span>18</span><span>7</span></span>≈2.57h。不对…效率=<span class=\"frac\"><span>6</span><span>18</span></span>+<span class=\"frac\"><span>3</span><span>18</span></span>−<span class=\"frac\"><span>2</span><span>18</span></span>=<span class=\"frac\"><span>7</span><span>18</span></span>，时间=<span class=\"frac\"><span>18</span><span>7</span></span>≈2.57h。选项：A.2.4 B.2.8 C.3 D.3.6。<span class=\"frac\"><span>18</span><span>7</span></span>≈2.571。最接近2.4还是2.8？都不是。重新计算：LCM(3,6,9)=18。<span class=\"frac\"><span>1</span><span>3</span></span>=<span class=\"frac\"><span>6</span><span>18</span></span>，<span class=\"frac\"><span>1</span><span>6</span></span>=<span class=\"frac\"><span>3</span><span>18</span></span>，<span class=\"frac\"><span>1</span><span>9</span></span>=<span class=\"frac\"><span>2</span><span>18</span></span>。净=<span class=\"frac\"><span>7</span><span>18</span></span>。时间=<span class=\"frac\"><span>18</span><span>7</span></span>≈2.571。可能是3.6？不是。我们仔细看：<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>1</span><span>6</span></span>=<span class=\"frac\"><span>1</span><span>2</span></span>=<span class=\"frac\"><span>9</span><span>18</span></span>，<span class=\"frac\"><span>9</span><span>18</span></span>−<span class=\"frac\"><span>2</span><span>18</span></span>=<span class=\"frac\"><span>7</span><span>18</span></span>。是的。答案问题，此题应为<span class=\"frac\"><span>18</span><span>7</span></span>≈2.57小时。可能选D 3.6？不对，3.6=<span class=\"frac\"><span>18</span><span>5</span></span>。选B 2.8最接近？但不够精确。实际是<span class=\"frac\"><span>18</span><span>7</span></span>小时。"
         },
         {
           "topic": "牛吃草",
@@ -1359,7 +1359,7 @@ var MATH_DATA = {
         },
         {
           "topic": "合作工程",
-          "q": "一项工程甲做1/3后乙加入，前后共8天。甲独做12天，乙独做几天？",
+          "q": "一项工程甲做<span class=\"frac\"><span>1</span><span>3</span></span>后乙加入，前后共8天。甲独做12天，乙独做几天？",
           "opts": [
             "A. 18天",
             "B. 16天",
@@ -1367,7 +1367,7 @@ var MATH_DATA = {
             "D. 20天"
           ],
           "ans": 0,
-          "exp": "甲做1/3需4天。剩余2/3甲乙合作用4天。合效率=(2/3)÷4=1/6。甲效率1/12，乙效率=1/6−1/12=1/12。乙需12天。等等1/6−1/12=1/12没错。选项18不匹配。重新审题：甲独做需12天→效率1/12。前1/3甲做需4天。后2/3甲乙合作需8−4=4天。合效率=2/3÷4=1/6。乙效率=1/6−1/12=1/12→乙需12天。但12不在选项。再仔细算：可能我理解有误。说\"前后共8天\"，并非各4天。设甲先做x天，则1/12×x=完成量=α，且甲乙合作(8−x)天完成1−α。(8−x)×(1/12+1/y)=1−x/12。同时需要甲完成1/3后乙加入→x/12=1/3→x=4。所以确实甲4天乙4天。结果乙=12天。选项中没有12。可能我理解错了，\"甲做1/3后乙加入\"可能不是在4天节点。设总8天，设甲做a天乙做b天，a+b=8，a/12+(a+b−a)×效率=?…重新：设甲单独做效率1/12。题目说甲\"做\"1/3不一定是一个人，可能是甲乙同时但甲只做了部分…再读：\"一项工程甲做1/3后乙加入\"，甲乙并非同时开始。甲先做了一些，完成1/3，然后乙加入。所以甲单干部分=1/3耗时4天，合作部分=甲乙合干2/3耗时4天。合作效率=2/3÷4=1/6=1/12+1/y→y=12。结果乙独做12天不在选项。选项里最接近的是18。但可能是我算错了：若甲做1/3消耗不止4天而是甲乙共8天中甲一直做…无论如何，若无精确匹配，选C 18天（假设数据有调整）。"
+          "exp": "甲做<span class=\"frac\"><span>1</span><span>3</span></span>需4天。剩余<span class=\"frac\"><span>2</span><span>3</span></span>甲乙合作用4天。合效率=(<span class=\"frac\"><span>2</span><span>3</span></span>)÷4=<span class=\"frac\"><span>1</span><span>6</span></span>。甲效率<span class=\"frac\"><span>1</span><span>12</span></span>，乙效率=<span class=\"frac\"><span>1</span><span>6</span></span>−<span class=\"frac\"><span>1</span><span>12</span></span>=<span class=\"frac\"><span>1</span><span>12</span></span>。乙需12天。等等<span class=\"frac\"><span>1</span><span>6</span></span>−<span class=\"frac\"><span>1</span><span>12</span></span>=<span class=\"frac\"><span>1</span><span>12</span></span>没错。选项18不匹配。重新审题：甲独做需12天→效率<span class=\"frac\"><span>1</span><span>12</span></span>。前<span class=\"frac\"><span>1</span><span>3</span></span>甲做需4天。后<span class=\"frac\"><span>2</span><span>3</span></span>甲乙合作需8−4=4天。合效率=<span class=\"frac\"><span>2</span><span>3</span></span>÷4=<span class=\"frac\"><span>1</span><span>6</span></span>。乙效率=<span class=\"frac\"><span>1</span><span>6</span></span>−<span class=\"frac\"><span>1</span><span>12</span></span>=<span class=\"frac\"><span>1</span><span>12</span></span>→乙需12天。但12不在选项。再仔细算：可能我理解有误。说\"前后共8天\"，并非各4天。设甲先做x天，则<span class=\"frac\"><span>1</span><span>12</span></span>×x=完成量=α，且甲乙合作(8−x)天完成1−α。(8−x)×(<span class=\"frac\"><span>1</span><span>12</span></span>+1/y)=1−x/12。同时需要甲完成<span class=\"frac\"><span>1</span><span>3</span></span>后乙加入→x/12=<span class=\"frac\"><span>1</span><span>3</span></span>→x=4。所以确实甲4天乙4天。结果乙=12天。选项中没有12。可能我理解错了，\"甲做<span class=\"frac\"><span>1</span><span>3</span></span>后乙加入\"可能不是在4天节点。设总8天，设甲做a天乙做b天，a+b=8，a/12+(a+b−a)×效率=?…重新：设甲单独做效率<span class=\"frac\"><span>1</span><span>12</span></span>。题目说甲\"做\"<span class=\"frac\"><span>1</span><span>3</span></span>不一定是一个人，可能是甲乙同时但甲只做了部分…再读：\"一项工程甲做<span class=\"frac\"><span>1</span><span>3</span></span>后乙加入\"，甲乙并非同时开始。甲先做了一些，完成<span class=\"frac\"><span>1</span><span>3</span></span>，然后乙加入。所以甲单干部分=<span class=\"frac\"><span>1</span><span>3</span></span>耗时4天，合作部分=甲乙合干<span class=\"frac\"><span>2</span><span>3</span></span>耗时4天。合作效率=<span class=\"frac\"><span>2</span><span>3</span></span>÷4=<span class=\"frac\"><span>1</span><span>6</span></span>=<span class=\"frac\"><span>1</span><span>12</span></span>+1/y→y=12。结果乙独做12天不在选项。选项里最接近的是18。但可能是我算错了：若甲做<span class=\"frac\"><span>1</span><span>3</span></span>消耗不止4天而是甲乙共8天中甲一直做…无论如何，若无精确匹配，选C 18天（假设数据有调整）。"
         },
         {
           "topic": "综合",
@@ -1379,7 +1379,7 @@ var MATH_DATA = {
             "D. 10h"
           ],
           "ans": 1,
-          "exp": "1h进水1/4。剩3/4。净效率=1/4−1/6=1/12。时间=(3/4)÷(1/12)=9h。"
+          "exp": "1h进水<span class=\"frac\"><span>1</span><span>4</span></span>。剩<span class=\"frac\"><span>3</span><span>4</span></span>。净效率=<span class=\"frac\"><span>1</span><span>4</span></span>−<span class=\"frac\"><span>1</span><span>6</span></span>=<span class=\"frac\"><span>1</span><span>12</span></span>。时间=(<span class=\"frac\"><span>3</span><span>4</span></span>)÷(<span class=\"frac\"><span>1</span><span>12</span></span>)=9h。"
         }
       ]
     },
@@ -1460,7 +1460,7 @@ var MATH_DATA = {
           "type": "知识点",
           "topic": "按比分配",
           "tagColor": "#3b82f6",
-          "content": "<p><b>按比例分配</b>：将一个总量按一定的比例分成若干部分。</p>\n<div class=\"formula-block\">\n已知总量M，按 a:b:c 分配：<br>\n• 总份数 = a + b + c<br>\n• 第一份 = M × a/(a+b+c)<br>\n• 第二份 = M × b/(a+b+c)<br>\n• 第三份 = M × c/(a+b+c)\n</div>\n<p><b>连比化法：</b>若A:B=2:3，B:C=4:5，则A:B:C=8:12:15（找B的最小公倍数统一）。</p>\n<p><b>正比例：</b>y/x=k（k为常数）；<b>反比例：</b>xy=k。</p>",
+          "content": "<p><b>按比例分配</b>：将一个总量按一定的比例分成若干部分。</p>\n<div class=\"formula-block\">\n已知总量M，按 a:b:c 分配：<br>\n• 总份数 = a + b + c<br>\n• 第一份 = M × <span class=\"frac\"><span>a</span><span>a+b+c</span></span><br>\n• 第二份 = M × <span class=\"frac\"><span>b</span><span>a+b+c</span></span><br>\n• 第三份 = M × <span class=\"frac\"><span>c</span><span>a+b+c</span></span>\n</div>\n<p><b>连比化法：</b>若A:B=2:3，B:C=4:5，则A:B:C=8:12:15（找B的最小公倍数统一）。</p>\n<p><b>正比例：</b>y/x=k（k为常数）；<b>反比例：</b>xy=k。</p>",
           "problems": [
             {
               "diff": "basic",
@@ -1496,7 +1496,7 @@ var MATH_DATA = {
                 "D. 28"
               ],
               "ans": 2,
-              "exp": "总份7，甲=56×3/7=24。"
+              "exp": "总份7，甲=56×<span class=\"frac\"><span>3</span><span>7</span></span>=24。"
             },
             {
               "diff": "hard",
@@ -1508,7 +1508,7 @@ var MATH_DATA = {
                 "D. 120cm²"
               ],
               "ans": 3,
-              "exp": "三边=60×5/30=10，60×12/30=24，60×13/30=26。10²+24²=100+576=676=26²，是直角三角形。面积=10×24÷2=120cm²。"
+              "exp": "三边=60×<span class=\"frac\"><span>5</span><span>30</span></span>=10，60×<span class=\"frac\"><span>12</span><span>30</span></span>=24，60×<span class=\"frac\"><span>13</span><span>30</span></span>=26。10²+24²=100+576=676=26²，是直角三角形。面积=10×24÷2=120cm²。"
             }
           ]
         },
@@ -1552,7 +1552,7 @@ var MATH_DATA = {
                 "D. 4"
               ],
               "ans": 3,
-              "exp": "(8+a)/(8−a)=3→8+a=24−3a→4a=16→a=4。"
+              "exp": "<span class=\"frac\"><span>8+a</span><span>8−a</span></span>=3→8+a=24−3a→4a=16→a=4。"
             }
           ]
         }
@@ -1592,7 +1592,7 @@ var MATH_DATA = {
             "D. 50"
           ],
           "ans": 2,
-          "exp": "总份10，最大=100×4/10=40。"
+          "exp": "总份10，最大=100×<span class=\"frac\"><span>4</span><span>10</span></span>=40。"
         },
         {
           "topic": "按比分配",
@@ -1676,7 +1676,7 @@ var MATH_DATA = {
             "D. 14岁"
           ],
           "ans": 0,
-          "exp": "总份12，乙=36×4/12=12岁。"
+          "exp": "总份12，乙=36×<span class=\"frac\"><span>4</span><span>12</span></span>=12岁。"
         }
       ]
     },
@@ -1837,7 +1837,7 @@ var MATH_DATA = {
                 "D. 9岁"
               ],
               "ans": 3,
-              "exp": "设儿子今年x岁。三年前：(爸−3)=4(x−3)。三年后：(爸+3)=3(x+3)。爸=4x−9，且爸=3x+6。4x−9=3x+6→x=15。但爸=3×15+6=51，三年前爸48子12确实4倍。但选项中无15。让我重读：三年前爸48子12对。三年后爸54子18，54/18=3对。x=15不在选项。可能我搞错了，题目中\"三年后爸爸年龄是儿子的3倍\"指从现在起三年后，即爸+3=3(子+3)。爸=4(x−3)+3=4x−12+3=4x−9。且爸=3(x+3)−3=3x+9−3=3x+6。4x−9=3x+6→x=15。确实15。或者题意为\"三年前…三年后\"是同一时差？其实\"三年前…三年后\"两句话都是相对于现在。儿子15岁答案不在9-12范围。可能有误，选A 9作为最接近。"
+              "exp": "设儿子今年x岁。三年前：(爸−3)=4(x−3)。三年后：(爸+3)=3(x+3)。爸=4x−9，且爸=3x+6。4x−9=3x+6→x=15。但爸=3×15+6=51，三年前爸48子12确实4倍。但选项中无15。让我重读：三年前爸48子12对。三年后爸54子18，<span class=\"frac\"><span>54</span><span>18</span></span>=3对。x=15不在选项。可能我搞错了，题目中\"三年后爸爸年龄是儿子的3倍\"指从现在起三年后，即爸+3=3(子+3)。爸=4(x−3)+3=4x−12+3=4x−9。且爸=3(x+3)−3=3x+9−3=3x+6。4x−9=3x+6→x=15。确实15。或者题意为\"三年前…三年后\"是同一时差？其实\"三年前…三年后\"两句话都是相对于现在。儿子15岁答案不在9-12范围。可能有误，选A 9作为最接近。"
             },
             {
               "diff": "hard",
@@ -2078,7 +2078,7 @@ var MATH_DATA = {
                 "D. 5.5h"
               ],
               "ans": 0,
-              "exp": "甲1h走40km，剩余260km。速度和=70。相遇还需260÷70≈3.71h。甲共1+3.71=4.71h。选C 5h最接近。验：5h甲走200km，乙4h走120km，共320>300。所以不到5h。实际甲走时间：设甲走t小时。40t+30(t−1)=300→70t−30=300→70t=330→t=33/7≈4.71h。"
+              "exp": "甲1h走40km，剩余260km。速度和=70。相遇还需260÷70≈3.71h。甲共1+3.71=4.71h。选C 5h最接近。验：5h甲走200km，乙4h走120km，共320>300。所以不到5h。实际甲走时间：设甲走t小时。40t+30(t−1)=300→70t−30=300→70t=330→t=<span class=\"frac\"><span>33</span><span>7</span></span>≈4.71h。"
             },
             {
               "diff": "medium",
@@ -2407,7 +2407,7 @@ var MATH_DATA = {
                 "D. 48h"
               ],
               "ans": 3,
-              "exp": "设路程为1。v顺=1/8，v逆=1/12。v水=(1/8−1/12)÷2=(3/24−2/24)÷2=1/48。木筏时间=1÷(1/48)=48h。"
+              "exp": "设路程为1。v顺=<span class=\"frac\"><span>1</span><span>8</span></span>，v逆=<span class=\"frac\"><span>1</span><span>12</span></span>。v水=(<span class=\"frac\"><span>1</span><span>8</span></span>−<span class=\"frac\"><span>1</span><span>12</span></span>)÷2=(<span class=\"frac\"><span>3</span><span>24</span></span>−<span class=\"frac\"><span>2</span><span>24</span></span>)÷2=<span class=\"frac\"><span>1</span><span>48</span></span>。木筏时间=1÷(<span class=\"frac\"><span>1</span><span>48</span></span>)=48h。"
             }
           ]
         },
@@ -2471,7 +2471,7 @@ var MATH_DATA = {
           "type": "知识点",
           "topic": "钟表问题",
           "tagColor": "#3b82f6",
-          "content": "<p><b>钟表问题</b>本质是环形追及问题。时钟可以看作两个指针在圆形跑道上运动。</p>\n<div class=\"formula-block\">\n分针速度：360°/60min = 6°/min<br>\n时针速度：360°/720min = 0.5°/min（或 360°/12h ÷ 60 = 0.5°/min）<br>\n速度差 = 5.5°/min\n</div>\n<p><b>常见题型：</b></p>\n<ul>\n  <li><b>重合时间：</b>两次重合之间间隔 720/11 ≈ 65.45分钟</li>\n  <li><b>成直线（180°）：</b>从某时刻起，用追及公式求</li>\n  <li><b>成直角（90°）：</b>每次成直角间隔 360/11×3 min ?— 实际每分钟差5.5°，90°→90÷5.5≈16.36min</li>\n</ul>",
+          "content": "<p><b>钟表问题</b>本质是环形追及问题。时钟可以看作两个指针在圆形跑道上运动。</p>\n<div class=\"formula-block\">\n分针速度：360°/60min = 6°/min<br>\n时针速度：360°/720min = 0.5°/min（或 360°/12h ÷ 60 = 0.5°/min）<br>\n速度差 = 5.5°/min\n</div>\n<p><b>常见题型：</b></p>\n<ul>\n  <li><b>重合时间：</b>两次重合之间间隔 <span class=\"frac\"><span>720</span><span>11</span></span> ≈ 65.45分钟</li>\n  <li><b>成直线（180°）：</b>从某时刻起，用追及公式求</li>\n  <li><b>成直角（90°）：</b>每次成直角间隔 <span class=\"frac\"><span>360</span><span>11</span></span>×3 min ?— 实际每分钟差5.5°，90°→90÷5.5≈16.36min</li>\n</ul>",
           "problems": [
             {
               "diff": "basic",
@@ -2491,35 +2491,35 @@ var MATH_DATA = {
               "opts": [
                 "A. 3:15",
                 "B. 3:16.5",
-                "C. 3:16又4/11",
+                "C. 3:16又<span class=\"frac\"><span>4</span><span>11</span></span>",
                 "D. 3:17"
               ],
               "ans": 2,
-              "exp": "3:00时，时针在90°，分针在0°。速度差5.5°/min。追及时间=90÷5.5=90×2/11=180/11≈16.36。即3:16又4/11分。"
+              "exp": "3:00时，时针在90°，分针在0°。速度差5.5°/min。追及时间=90÷5.5=90×<span class=\"frac\"><span>2</span><span>11</span></span>=<span class=\"frac\"><span>180</span><span>11</span></span>≈16.36。即3:16又<span class=\"frac\"><span>4</span><span>11</span></span>分。"
             },
             {
               "diff": "medium",
               "q": "从12:00开始，时针和分针第一次成直角是什么时刻？",
               "opts": [
-                "A. 12:16又4/11",
+                "A. 12:16又<span class=\"frac\"><span>4</span><span>11</span></span>",
                 "B. 12:15",
                 "C. 12:16.5",
                 "D. 12:18"
               ],
               "ans": 0,
-              "exp": "12:00两针重合(0°)。需要拉开90°。90÷5.5=180/11≈16.36min。即12:16又4/11。"
+              "exp": "12:00两针重合(0°)。需要拉开90°。90÷5.5=<span class=\"frac\"><span>180</span><span>11</span></span>≈16.36min。即12:16又<span class=\"frac\"><span>4</span><span>11</span></span>。"
             },
             {
               "diff": "hard",
               "q": "在4:00到5:00之间，时针和分针成180°（成一直线）是什么时刻？",
               "opts": [
-                "A. 4:54又6/11",
+                "A. 4:54又<span class=\"frac\"><span>6</span><span>11</span></span>",
                 "B. 4:55",
                 "C. 4:54",
                 "D. 4:56"
               ],
               "ans": 0,
-              "exp": "4:00时，时针在120°，分针0°。成180°时分针需比时针多走(180°−120°)=60°，或(360°+180°−120°)=420°（若是过中间重合后）。第一次超过420°：420÷5.5=420×2/11=840/11≈76.36。但1小时才60分钟，这不是第一…正确的：4:00后分针要追上时针并超出到180°。即分针从0°追时针(120°)再到比时针多180°=300°。300÷5.5=600/11≈54.55。即4:54又6/11分。"
+              "exp": "4:00时，时针在120°，分针0°。成180°时分针需比时针多走(180°−120°)=60°，或(360°+180°−120°)=420°（若是过中间重合后）。第一次超过420°：420÷5.5=420×<span class=\"frac\"><span>2</span><span>11</span></span>=<span class=\"frac\"><span>840</span><span>11</span></span>≈76.36。但1小时才60分钟，这不是第一…正确的：4:00后分针要追上时针并超出到180°。即分针从0°追时针(120°)再到比时针多180°=300°。300÷5.5=<span class=\"frac\"><span>600</span><span>11</span></span>≈54.55。即4:54又<span class=\"frac\"><span>6</span><span>11</span></span>分。"
             }
           ]
         }
@@ -2601,13 +2601,13 @@ var MATH_DATA = {
           "topic": "钟表",
           "q": "从6:00到时针分针第一次重合，需要多少分钟？",
           "opts": [
-            "A. 32又8/11min",
+            "A. 32又<span class=\"frac\"><span>8</span><span>11</span></span>min",
             "B. 30min",
             "C. 33min",
             "D. 35min"
           ],
           "ans": 0,
-          "exp": "6:00时针在180°，分针0°。追及180°。180÷5.5=360/11=32又8/11min。"
+          "exp": "6:00时针在180°，分针0°。追及180°。180÷5.5=<span class=\"frac\"><span>360</span><span>11</span></span>=32又<span class=\"frac\"><span>8</span><span>11</span></span>min。"
         },
         {
           "topic": "火车",
@@ -2619,7 +2619,7 @@ var MATH_DATA = {
             "D. 10s"
           ],
           "ans": 1,
-          "exp": "先统一单位：甲速=60×1000/3600=50/3≈16.67m/s，乙速=54×1000/3600=15m/s。速度和=31.67m/s。总长=300m。时间=300÷31.67≈9.47s。选C 9s最接近。"
+          "exp": "先统一单位：甲速=60×<span class=\"frac\"><span>1000</span><span>3600</span></span>=<span class=\"frac\"><span>50</span><span>3</span></span>≈16.67m/s，乙速=54×<span class=\"frac\"><span>1000</span><span>3600</span></span>=15m/s。速度和=31.67m/s。总长=300m。时间=300÷31.67≈9.47s。选C 9s最接近。"
         },
         {
           "topic": "流水",
@@ -2643,7 +2643,7 @@ var MATH_DATA = {
             "D. 120m"
           ],
           "ans": 0,
-          "exp": "72km/h=72000/3600=20m/s。5秒=20×5=100m。"
+          "exp": "72km/h=<span class=\"frac\"><span>72000</span><span>3600</span></span>=20m/s。5秒=20×5=100m。"
         }
       ]
     },
@@ -2792,7 +2792,7 @@ var MATH_DATA = {
                 "D. 15"
               ],
               "ans": 2,
-              "exp": "S=8+12/2−1=8+6−1=13。"
+              "exp": "S=8+<span class=\"frac\"><span>12</span><span>2</span></span>−1=8+6−1=13。"
             },
             {
               "diff": "medium",
@@ -2804,7 +2804,7 @@ var MATH_DATA = {
                 "D. 9"
               ],
               "ans": 3,
-              "exp": "S=5+10/2−1=5+5−1=9。"
+              "exp": "S=5+<span class=\"frac\"><span>10</span><span>2</span></span>−1=5+5−1=9。"
             },
             {
               "diff": "hard",
@@ -2816,7 +2816,7 @@ var MATH_DATA = {
                 "D. 6.5"
               ],
               "ans": 1,
-              "exp": "直角三角形面积=4×3÷2=6。或用皮克：内部格点=(1,1),(1,2),(2,1)=3个，边界格点=8个。S=3+8/2−1=6。"
+              "exp": "直角三角形面积=4×3÷2=6。或用皮克：内部格点=(1,1),(1,2),(2,1)=3个，边界格点=8个。S=3+<span class=\"frac\"><span>8</span><span>2</span></span>−1=6。"
             }
           ]
         },
@@ -2936,7 +2936,7 @@ var MATH_DATA = {
             "D. 10"
           ],
           "ans": 0,
-          "exp": "S=7+14/2−1=7+7−1=13。"
+          "exp": "S=7+<span class=\"frac\"><span>14</span><span>2</span></span>−1=7+7−1=13。"
         },
         {
           "topic": "切割",
@@ -2960,7 +2960,7 @@ var MATH_DATA = {
             "D. 25"
           ],
           "ans": 0,
-          "exp": "面积比=底边比=2:3。△ABD=50×2/5=20。"
+          "exp": "面积比=底边比=2:3。△ABD=50×<span class=\"frac\"><span>2</span><span>5</span></span>=20。"
         },
         {
           "topic": "切割",
@@ -3045,7 +3045,7 @@ var MATH_DATA = {
                 "D. 25cm²"
               ],
               "ans": 2,
-              "exp": "S=90π×100/360=9000π/360=25πcm²。或πr²/4=100π/4=25π。"
+              "exp": "S=90π×<span class=\"frac\"><span>100</span><span>360</span></span>=9000π/360=25πcm²。或πr²/4=100π/4=25π。"
             },
             {
               "diff": "medium",
@@ -3069,7 +3069,7 @@ var MATH_DATA = {
                 "D. 6πcm"
               ],
               "ans": 0,
-              "exp": "l=60×π×6/180=360π/180=2πcm。"
+              "exp": "l=60×π×<span class=\"frac\"><span>6</span><span>180</span></span>=360π/180=2πcm。"
             }
           ]
         },
@@ -3077,7 +3077,7 @@ var MATH_DATA = {
           "type": "知识点",
           "topic": "圆柱与圆锥",
           "tagColor": "#3b82f6",
-          "content": "<p><b>圆柱公式：</b></p>\n<div class=\"formula-block\">\n侧面积：S<sub>侧</sub> = 2πrh = Ch（C为底面周长）<br>\n表面积：S<sub>表</sub> = 2πr² + 2πrh = 2πr(r+h)<br>\n体积：V<sub>柱</sub> = πr²h\n</div>\n<p><b>圆锥公式：</b></p>\n<div class=\"formula-block\">\n体积：V<sub>锥</sub> = πr²h/3 = V<sub>柱</sub>/3（同底等高圆柱的1/3）<br>\n母线长：l = √(r²+h²)\n</div>\n<p><b>关键关系：</b>等底等高的圆柱体积是圆锥的3倍。</p>",
+          "content": "<p><b>圆柱公式：</b></p>\n<div class=\"formula-block\">\n侧面积：S<sub>侧</sub> = 2πrh = Ch（C为底面周长）<br>\n表面积：S<sub>表</sub> = 2πr² + 2πrh = 2πr(r+h)<br>\n体积：V<sub>柱</sub> = πr²h\n</div>\n<p><b>圆锥公式：</b></p>\n<div class=\"formula-block\">\n体积：V<sub>锥</sub> = πr²h/3 = V<sub>柱</sub>/3（同底等高圆柱的<span class=\"frac\"><span>1</span><span>3</span></span>）<br>\n母线长：l = √(r²+h²)\n</div>\n<p><b>关键关系：</b>等底等高的圆柱体积是圆锥的3倍。</p>",
           "problems": [
             {
               "diff": "basic",
@@ -3221,7 +3221,7 @@ var MATH_DATA = {
             "D. 12πcm²"
           ],
           "ans": 2,
-          "exp": "45/360=1/8，S=π×64/8=8πcm²。"
+          "exp": "<span class=\"frac\"><span>45</span><span>360</span></span>=<span class=\"frac\"><span>1</span><span>8</span></span>，S=π×<span class=\"frac\"><span>64</span><span>8</span></span>=8πcm²。"
         },
         {
           "topic": "圆柱",
@@ -3287,13 +3287,13 @@ var MATH_DATA = {
           "topic": "圆锥",
           "q": "等底等高的圆锥体积是圆柱的？",
           "opts": [
-            "A. 1/2",
-            "B. 1/3",
-            "C. 1/4",
-            "D. 2/3"
+            "A. <span class=\"frac\"><span>1</span><span>2</span></span>",
+            "B. <span class=\"frac\"><span>1</span><span>3</span></span>",
+            "C. <span class=\"frac\"><span>1</span><span>4</span></span>",
+            "D. <span class=\"frac\"><span>2</span><span>3</span></span>"
           ],
           "ans": 1,
-          "exp": "V锥=πr²h/3，V柱=πr²h，V锥/V柱=1/3。"
+          "exp": "V锥=πr²h/3，V柱=πr²h，V锥/V柱=<span class=\"frac\"><span>1</span><span>3</span></span>。"
         },
         {
           "topic": "圆",
@@ -3434,7 +3434,7 @@ var MATH_DATA = {
                 "D. 48种"
               ],
               "ans": 2,
-              "exp": "捆绑AB→视为1个元素+其余3本=4个元素排列：4!=24。AB内部2种：×2=48。C不在两端：4个元素中C在两端概率=2/4=1/2。48×(1−1/2)=24。但注意：C不在两端限制的是4元素排列中的位置。4个元素排列共24种，其中C在两端有2×3!=12种(C在第一位或第四位×其余3个排列)。合格=24−12=12种。×AB内部2=24种。不行这不是36…让我重新算。捆绑AB后共4个大元素：{AB},C,D,E。总排列=4!=24种。其中C在两端：若C在位置1→剩下3个排列=6种；C在位置4→6种。共12种不合格。合格=24−12=12种。×AB内部2种=24种。这仍是24。但答案是36…让我排查：C不能放两端，但AB捆绑可能在某些排列中AB在两端而C不在两端，这样也算合格。我的方法：4!排列后排除C在两端的情况是对的。12×2=24。但36意味着15×2=30或18×2=36。可能\"两端\"指物理两端而非4大元素排列的两端。物理排列中5本书，AB捆绑占2个位置，共5个物理位置。两端是位置1和5。若AB捆在一起，它占2个连续位置。考虑所有可能：AB捆+3个单本，总共占5个位置。设AB在位置(i,i+1)。枚举AB在(1,2)：C可选3,4,5中非两端即3,4（位置5是端）。C不能在5，所以C在3或4。位置3选C→剩下D,E放4,5→2种；C在4→D,E放3,5→2种。计4种。AB在(2,3)：C不在1和5，只能4。位置4→D,E放1,5→2种。AB在(3,4)：对称2种。AB在(4,5)：对称4种。总计(4+2+2+4)=12种外排×AB内部2=24。还是24。所以答案确实应该是24，但选项中有36。可能题目有额外条件或计算差异。选最接近的C 36。"
+              "exp": "捆绑AB→视为1个元素+其余3本=4个元素排列：4!=24。AB内部2种：×2=48。C不在两端：4个元素中C在两端概率=<span class=\"frac\"><span>2</span><span>4</span></span>=<span class=\"frac\"><span>1</span><span>2</span></span>。48×(1−<span class=\"frac\"><span>1</span><span>2</span></span>)=24。但注意：C不在两端限制的是4元素排列中的位置。4个元素排列共24种，其中C在两端有2×3!=12种(C在第一位或第四位×其余3个排列)。合格=24−12=12种。×AB内部2=24种。不行这不是36…让我重新算。捆绑AB后共4个大元素：{AB},C,D,E。总排列=4!=24种。其中C在两端：若C在位置1→剩下3个排列=6种；C在位置4→6种。共12种不合格。合格=24−12=12种。×AB内部2种=24种。这仍是24。但答案是36…让我排查：C不能放两端，但AB捆绑可能在某些排列中AB在两端而C不在两端，这样也算合格。我的方法：4!排列后排除C在两端的情况是对的。12×2=24。但36意味着15×2=30或18×2=36。可能\"两端\"指物理两端而非4大元素排列的两端。物理排列中5本书，AB捆绑占2个位置，共5个物理位置。两端是位置1和5。若AB捆在一起，它占2个连续位置。考虑所有可能：AB捆+3个单本，总共占5个位置。设AB在位置(i,i+1)。枚举AB在(1,2)：C可选3,4,5中非两端即3,4（位置5是端）。C不能在5，所以C在3或4。位置3选C→剩下D,E放4,5→2种；C在4→D,E放3,5→2种。计4种。AB在(2,3)：C不在1和5，只能4。位置4→D,E放1,5→2种。AB在(3,4)：对称2种。AB在(4,5)：对称4种。总计(4+2+2+4)=12种外排×AB内部2=24。还是24。所以答案确实应该是24，但选项中有36。可能题目有额外条件或计算差异。选最接近的C 36。"
             }
           ]
         },
@@ -3466,7 +3466,7 @@ var MATH_DATA = {
                 "D. 60"
               ],
               "ans": 3,
-              "exp": "4×5/2×3×4/2=10×6=60。或C(5,2)×C(4,2)=10×6=60。"
+              "exp": "4×<span class=\"frac\"><span>5</span><span>2</span></span>×3×<span class=\"frac\"><span>4</span><span>2</span></span>=10×6=60。或C(5,2)×C(4,2)=10×6=60。"
             },
             {
               "diff": "medium",
@@ -3530,7 +3530,7 @@ var MATH_DATA = {
             "D. 15"
           ],
           "ans": 0,
-          "exp": "C(5,3)=5×4×3/(3×2×1)=10种。"
+          "exp": "C(5,3)=5×4×<span class=\"frac\"><span>3</span><span>3×2×1</span></span>=10种。"
         },
         {
           "topic": "捆绑法",
@@ -3631,7 +3631,7 @@ var MATH_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "【填空1】1/2 + 0.25 + 1/8 =",
+              "q": "【填空1】<span class=\"frac\"><span>1</span><span>2</span></span> + 0.25 + <span class=\"frac\"><span>1</span><span>8</span></span> =",
               "opts": [
                 "A. 0.75",
                 "B. 0.9",
@@ -3639,7 +3639,7 @@ var MATH_DATA = {
                 "D. 1"
               ],
               "ans": 2,
-              "exp": "1/2=0.5，0.25，1/8=0.125。0.5+0.25+0.125=0.875。"
+              "exp": "<span class=\"frac\"><span>1</span><span>2</span></span>=0.5，0.25，<span class=\"frac\"><span>1</span><span>8</span></span>=0.125。0.5+0.25+0.125=0.875。"
             },
             {
               "diff": "basic",
@@ -3655,15 +3655,15 @@ var MATH_DATA = {
             },
             {
               "diff": "medium",
-              "q": "【填空3】1/(2×3)+1/(3×4)+1/(4×5)+1/(5×6) =",
+              "q": "【填空3】<span class=\"frac\"><span>1</span><span>2×3</span></span>+<span class=\"frac\"><span>1</span><span>3×4</span></span>+<span class=\"frac\"><span>1</span><span>4×5</span></span>+<span class=\"frac\"><span>1</span><span>5×6</span></span> =",
               "opts": [
-                "A. 1/3",
-                "B. 1/2",
-                "C. 2/3",
-                "D. 3/4"
+                "A. <span class=\"frac\"><span>1</span><span>3</span></span>",
+                "B. <span class=\"frac\"><span>1</span><span>2</span></span>",
+                "C. <span class=\"frac\"><span>2</span><span>3</span></span>",
+                "D. <span class=\"frac\"><span>3</span><span>4</span></span>"
               ],
               "ans": 0,
-              "exp": "=1/2−1/3+1/3−1/4+1/4−1/5+1/5−1/6=1/2−1/6=3/6−1/6=2/6=1/3。"
+              "exp": "=<span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>3</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>−<span class=\"frac\"><span>1</span><span>4</span></span>+<span class=\"frac\"><span>1</span><span>4</span></span>−<span class=\"frac\"><span>1</span><span>5</span></span>+<span class=\"frac\"><span>1</span><span>5</span></span>−<span class=\"frac\"><span>1</span><span>6</span></span>=<span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>6</span></span>=<span class=\"frac\"><span>3</span><span>6</span></span>−<span class=\"frac\"><span>1</span><span>6</span></span>=<span class=\"frac\"><span>2</span><span>6</span></span>=<span class=\"frac\"><span>1</span><span>3</span></span>。"
             },
             {
               "diff": "medium",
@@ -3687,7 +3687,7 @@ var MATH_DATA = {
                 "D. 8天"
               ],
               "ans": 0,
-              "exp": "1÷(1/12+1/18)=1÷(3/36+2/36)=1÷(5/36)=36/5=7.2天。"
+              "exp": "1÷(<span class=\"frac\"><span>1</span><span>12</span></span>+<span class=\"frac\"><span>1</span><span>18</span></span>)=1÷(<span class=\"frac\"><span>3</span><span>36</span></span>+<span class=\"frac\"><span>2</span><span>36</span></span>)=1÷(<span class=\"frac\"><span>5</span><span>36</span></span>)=<span class=\"frac\"><span>36</span><span>5</span></span>=7.2天。"
             },
             {
               "diff": "hard",
@@ -3707,7 +3707,7 @@ var MATH_DATA = {
           "type": "重点回顾",
           "topic": "六大易错点",
           "tagColor": "#3b82f6",
-          "content": "<p><b>考试中最容易出错的六大知识点：</b></p>\n<ol>\n  <li><b>裂项法首尾项：</b>注意最后一项符号！1/[n(n+1)]=1/n−1/(n+1)，求和只剩首项正和尾项负。</li>\n  <li><b>单位1转换：</b>\"比\"后面是单位1，\"A比B多1/4\"中B是单位1。千万别搞反。</li>\n  <li><b>平均速度≠速度平均：</b>等距离用调和平均 2v₁v₂/(v₁+v₂)，只有等时间才用算术平均。</li>\n  <li><b>流水行船顺逆：</b>v顺=v静+v水，v逆=v静−v水。水速=(v顺−v逆)/2。</li>\n  <li><b>火车过桥：</b>路程=桥长+车长，不是只算桥长！</li>\n  <li><b>圆锥体积的1/3：</b>V锥=πr²h/3，别忘了除以3！等底等高圆柱体积是圆锥的3倍。</li>\n</ol>\n<div class=\"formula-block\">考前速记：裂项前正后负 / 比后是单位1 / 等距平均调和平 / 水速顺逆差一半 / 火车过桥加车长 / 圆锥体积除3</div>",
+          "content": "<p><b>考试中最容易出错的六大知识点：</b></p>\n<ol>\n  <li><b>裂项法首尾项：</b>注意最后一项符号！<span class=\"frac\"><span>1</span><span>n(n+1)</span></span>=1/n−<span class=\"frac\"><span>1</span><span>n+1</span></span>，求和只剩首项正和尾项负。</li>\n  <li><b>单位1转换：</b>\"比\"后面是单位1，\"A比B多<span class=\"frac\"><span>1</span><span>4</span></span>\"中B是单位1。千万别搞反。</li>\n  <li><b>平均速度≠速度平均：</b>等距离用调和平均 2v₁v₂/(v₁+v₂)，只有等时间才用算术平均。</li>\n  <li><b>流水行船顺逆：</b>v顺=v静+v水，v逆=v静−v水。水速=(v顺−v逆)/2。</li>\n  <li><b>火车过桥：</b>路程=桥长+车长，不是只算桥长！</li>\n  <li><b>圆锥体积的<span class=\"frac\"><span>1</span><span>3</span></span>：</b>V锥=πr²h/3，别忘了除以3！等底等高圆柱体积是圆锥的3倍。</li>\n</ol>\n<div class=\"formula-block\">考前速记：裂项前正后负 / 比后是单位1 / 等距平均调和平 / 水速顺逆差一半 / 火车过桥加车长 / 圆锥体积除3</div>",
           "problems": []
         },
         {
@@ -3726,11 +3726,11 @@ var MATH_DATA = {
                 "D. 10天"
               ],
               "ans": 1,
-              "exp": "甲5天完成1/4。剩3/4。合作效率=1/20+1/30=5/60=1/12。时间=(3/4)÷(1/12)=9天。"
+              "exp": "甲5天完成<span class=\"frac\"><span>1</span><span>4</span></span>。剩<span class=\"frac\"><span>3</span><span>4</span></span>。合作效率=<span class=\"frac\"><span>1</span><span>20</span></span>+<span class=\"frac\"><span>1</span><span>30</span></span>=<span class=\"frac\"><span>5</span><span>60</span></span>=<span class=\"frac\"><span>1</span><span>12</span></span>。时间=(<span class=\"frac\"><span>3</span><span>4</span></span>)÷(<span class=\"frac\"><span>1</span><span>12</span></span>)=9天。"
             },
             {
               "diff": "medium",
-              "q": "【真题2】一个数的3/5比它的1/2多12，这个数是多少？",
+              "q": "【真题2】一个数的<span class=\"frac\"><span>3</span><span>5</span></span>比它的<span class=\"frac\"><span>1</span><span>2</span></span>多12，这个数是多少？",
               "opts": [
                 "A. 100",
                 "B. 110",
@@ -3742,15 +3742,15 @@ var MATH_DATA = {
             },
             {
               "diff": "hard",
-              "q": "【真题3】甲乙从AB两地同时相向而行，相遇时甲走了全程的3/5，相遇后乙提速到原来的1.5倍。甲到B时乙离A还有多少全程？",
+              "q": "【真题3】甲乙从AB两地同时相向而行，相遇时甲走了全程的<span class=\"frac\"><span>3</span><span>5</span></span>，相遇后乙提速到原来的1.5倍。甲到B时乙离A还有多少全程？",
               "opts": [
-                "A. 1/8",
-                "B. 1/10",
-                "C. 1/6",
-                "D. 1/5"
+                "A. <span class=\"frac\"><span>1</span><span>8</span></span>",
+                "B. <span class=\"frac\"><span>1</span><span>10</span></span>",
+                "C. <span class=\"frac\"><span>1</span><span>6</span></span>",
+                "D. <span class=\"frac\"><span>1</span><span>5</span></span>"
               ],
               "ans": 1,
-              "exp": "相遇时甲走3/5，乙走2/5。速度比甲:乙=3:2。乙提速为原1.5倍→新速比=3:3=1:1。甲到B需走2/5。乙同时走2/5。乙还需走A的3/5，但只走了2/5→剩1/5？不，乙总需走3/5，走了2/5，剩1/5全程。选D 1/5。但在选项中A是1/10。重新：相遇后速度比为1:1→相同时间走路程相等。甲走2/5到B，乙也走2/5。乙需走3/5到A。还剩3/5−2/5=1/5。答案是1/5即D。"
+              "exp": "相遇时甲走<span class=\"frac\"><span>3</span><span>5</span></span>，乙走<span class=\"frac\"><span>2</span><span>5</span></span>。速度比甲:乙=3:2。乙提速为原1.5倍→新速比=3:3=1:1。甲到B需走<span class=\"frac\"><span>2</span><span>5</span></span>。乙同时走<span class=\"frac\"><span>2</span><span>5</span></span>。乙还需走A的<span class=\"frac\"><span>3</span><span>5</span></span>，但只走了<span class=\"frac\"><span>2</span><span>5</span></span>→剩<span class=\"frac\"><span>1</span><span>5</span></span>？不，乙总需走<span class=\"frac\"><span>3</span><span>5</span></span>，走了<span class=\"frac\"><span>2</span><span>5</span></span>，剩<span class=\"frac\"><span>1</span><span>5</span></span>全程。选D <span class=\"frac\"><span>1</span><span>5</span></span>。但在选项中A是<span class=\"frac\"><span>1</span><span>10</span></span>。重新：相遇后速度比为1:1→相同时间走路程相等。甲走<span class=\"frac\"><span>2</span><span>5</span></span>到B，乙也走<span class=\"frac\"><span>2</span><span>5</span></span>。乙需走<span class=\"frac\"><span>3</span><span>5</span></span>到A。还剩<span class=\"frac\"><span>3</span><span>5</span></span>−<span class=\"frac\"><span>2</span><span>5</span></span>=<span class=\"frac\"><span>1</span><span>5</span></span>。答案是<span class=\"frac\"><span>1</span><span>5</span></span>即D。"
             },
             {
               "diff": "hard",
@@ -3782,7 +3782,7 @@ var MATH_DATA = {
       "quiz": [
         {
           "topic": "计算",
-          "q": "0.75 ÷ 3/4 =",
+          "q": "0.75 ÷ <span class=\"frac\"><span>3</span><span>4</span></span> =",
           "opts": [
             "A. 1",
             "B. 0.75",
@@ -3826,7 +3826,7 @@ var MATH_DATA = {
             "D. 7天"
           ],
           "ans": 1,
-          "exp": "1÷(1/10+1/15)=1÷(3/30+2/30)=1÷(1/6)=6天。"
+          "exp": "1÷(<span class=\"frac\"><span>1</span><span>10</span></span>+<span class=\"frac\"><span>1</span><span>15</span></span>)=1÷(<span class=\"frac\"><span>3</span><span>30</span></span>+<span class=\"frac\"><span>2</span><span>30</span></span>)=1÷(<span class=\"frac\"><span>1</span><span>6</span></span>)=6天。"
         },
         {
           "topic": "行程",
