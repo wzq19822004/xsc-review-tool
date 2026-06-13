@@ -84,7 +84,7 @@ var MATH_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "1/(1×2) + 1/(2×3) 的裂项结果首项是？",
+              "q": "<span class=\"frac\"><span>1</span><span>1×2</span></span> + <span class=\"frac\"><span>1</span><span>2×3</span></span> 的裂项结果首项是？",
               "opts": [
                 "C. <span class=\"frac\"><span>1</span><span>3</span></span>",
                 "B. <span class=\"frac\"><span>1</span><span>2</span></span>",
@@ -96,7 +96,7 @@ var MATH_DATA = {
             },
             {
               "diff": "medium",
-              "q": "1/(1×2) + 1/(2×3) + 1/(3×4) + … + 1/(99×100) =",
+              "q": "<span class=\"frac\"><span>1</span><span>1×2</span></span> + <span class=\"frac\"><span>1</span><span>2×3</span></span> + <span class=\"frac\"><span>1</span><span>3×4</span></span> + … + <span class=\"frac\"><span>1</span><span>99×100</span></span> =",
               "opts": [
                 "C. 1",
                 "B. <span class=\"frac\"><span>100</span><span>101</span></span>",
@@ -108,7 +108,7 @@ var MATH_DATA = {
             },
             {
               "diff": "medium",
-              "q": "1/(2×4) + 1/(4×6) + 1/(6×8) =",
+              "q": "<span class=\"frac\"><span>1</span><span>2×4</span></span> + <span class=\"frac\"><span>1</span><span>4×6</span></span> + <span class=\"frac\"><span>1</span><span>6×8</span></span> =",
               "opts": [
                 "B. <span class=\"frac\"><span>3</span><span>16</span></span>",
                 "A. <span class=\"frac\"><span>1</span><span>4</span></span>",
@@ -120,7 +120,7 @@ var MATH_DATA = {
             },
             {
               "diff": "hard",
-              "q": "1/(1×3) + 1/(3×5) + ... + 1/(19×21) =",
+              "q": "<span class=\"frac\"><span>1</span><span>1×3</span></span> + <span class=\"frac\"><span>1</span><span>3×5</span></span> + ... + <span class=\"frac\"><span>1</span><span>19×21</span></span> =",
               "opts": [
                 "B. <span class=\"frac\"><span>10</span><span>21</span></span>",
                 "A. <span class=\"frac\"><span>9</span><span>21</span></span>",
@@ -132,7 +132,7 @@ var MATH_DATA = {
             },
             {
               "diff": "hard",
-              "q": "裂项：1/(1×2×3) + 1/(2×3×4) 的前两项裂开后和为？",
+              "q": "裂项：<span class=\"frac\"><span>1</span><span>1×2×3</span></span> + <span class=\"frac\"><span>1</span><span>2×3×4</span></span> 的前两项裂开后和为？",
               "opts": [
                 "D. <span class=\"frac\"><span>1</span><span>4</span></span> − <span class=\"frac\"><span>1</span><span>24</span></span>",
                 "B. <span class=\"frac\"><span>1</span><span>4</span></span> − <span class=\"frac\"><span>1</span><span>6</span></span>",
@@ -272,7 +272,7 @@ var MATH_DATA = {
         },
         {
           "topic": "裂项法",
-          "q": "1/(2×3) 裂项后等于？",
+          "q": "<span class=\"frac\"><span>1</span><span>2×3</span></span> 裂项后等于？",
           "opts": [
             "B. <span class=\"frac\"><span>1</span><span>2</span></span>−<span class=\"frac\"><span>1</span><span>3</span></span>",
             "A. <span class=\"frac\"><span>1</span><span>2</span></span>+<span class=\"frac\"><span>1</span><span>3</span></span>",
@@ -308,7 +308,7 @@ var MATH_DATA = {
         },
         {
           "topic": "裂项法",
-          "q": "1/(1×2)+1/(2×3)+1/(3×4)+1/(4×5) =",
+          "q": "<span class=\"frac\"><span>1</span><span>1×2</span></span>+<span class=\"frac\"><span>1</span><span>2×3</span></span>+<span class=\"frac\"><span>1</span><span>3×4</span></span>+<span class=\"frac\"><span>1</span><span>4×5</span></span> =",
           "opts": [
             "A. <span class=\"frac\"><span>2</span><span>5</span></span>",
             "B. <span class=\"frac\"><span>3</span><span>5</span></span>",
@@ -368,7 +368,7 @@ var MATH_DATA = {
         },
         {
           "topic": "综合",
-          "q": "裂项求和 1/(1×3)+1/(3×5)+1/(5×7) =",
+          "q": "裂项求和 <span class=\"frac\"><span>1</span><span>1×3</span></span>+<span class=\"frac\"><span>1</span><span>3×5</span></span>+<span class=\"frac\"><span>1</span><span>5×7</span></span> =",
           "opts": [
             "A. <span class=\"frac\"><span>1</span><span>3</span></span>",
             "B. <span class=\"frac\"><span>3</span><span>7</span></span>",
@@ -3530,7 +3530,7 @@ var MATH_DATA = {
             "D. 15"
           ],
           "ans": 2,
-          "exp": "C(5,3)=5×4×3/(3×2×1)=10种。"
+          "exp": "C(5,3)=5×4×<span class=\"frac\"><span>3</span><span>3×2×1</span></span>=10种。"
         },
         {
           "topic": "捆绑法",
@@ -3655,7 +3655,7 @@ var MATH_DATA = {
             },
             {
               "diff": "medium",
-              "q": "【填空3】1/(2×3)+1/(3×4)+1/(4×5)+1/(5×6) =",
+              "q": "【填空3】<span class=\"frac\"><span>1</span><span>2×3</span></span>+<span class=\"frac\"><span>1</span><span>3×4</span></span>+<span class=\"frac\"><span>1</span><span>4×5</span></span>+<span class=\"frac\"><span>1</span><span>5×6</span></span> =",
               "opts": [
                 "A. <span class=\"frac\"><span>1</span><span>3</span></span>",
                 "B. <span class=\"frac\"><span>1</span><span>2</span></span>",
