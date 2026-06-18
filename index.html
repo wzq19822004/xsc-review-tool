@@ -19,7 +19,12 @@ html { font-size: 16px; scroll-behavior: smooth; }
 body {
   font-family: var(--font); background: var(--bg); color: var(--text);
   line-height: 1.85; display: flex; min-height: 100vh;
+  touch-action: manipulation; -webkit-tap-highlight-color: transparent;
 }
+body { overscroll-behavior: contain; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+button, [role="button"], a, .clickable { cursor: pointer; transition: all .15s ease; }
+button:active { transform: scale(.97); }
 /* ═══ Sidebar ═══ */
 aside {
   width: var(--sidebar-w); background: var(--bg2); padding: 20px 0;
@@ -104,7 +109,9 @@ main {
 .section-card .sec-hdr {
   padding: 16px 22px; cursor: pointer; display: flex; align-items: center;
   justify-content: space-between; user-select: none; background: rgba(255,255,255,.01);
+  min-height: 44px; transition: background .15s;
 }
+.section-card .sec-hdr:hover { background: rgba(56,189,248,.04); }
 .section-card.open .sec-hdr { border-bottom: 1px solid var(--bg3); }
 .section-card .sec-hdr .s-left { display: flex; align-items: center; gap: 12px; }
 .section-card .sec-hdr .s-tag { font-size: 12px; padding: 4px 10px; border-radius: 5px; font-weight: 700; }
@@ -199,11 +206,12 @@ main {
 .problem-item .p-q { font-size: 15px; font-weight: 500; margin: 10px 0; line-height: 1.9; }
 .problem-item .p-opts { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
 .problem-item .p-opts label {
-  display: flex; align-items: center; gap: 6px; padding: 7px 16px;
+  display: flex; align-items: center; gap: 8px; padding: 10px 16px; min-height: 44px;
   background: var(--bg2); border-radius: 8px; cursor: pointer;
-  font-size: 14px; border: 1px solid var(--bg4); transition: all .15s;
+  font-size: 15px; border: 1px solid var(--bg4); transition: all .15s;
 }
-.problem-item .p-opts label:hover { border-color: var(--accent); }
+.problem-item .p-opts label:hover { border-color: var(--accent); background: rgba(56,189,248,.06); }
+.problem-item .p-opts label:has(input:checked) { border-color: var(--accent); background: rgba(56,189,248,.1); }
 .problem-item .p-opts input[type=radio] { accent-color: var(--accent); width: 16px; height: 16px; }
 .p-answer { display: none; margin-top: 12px; padding: 14px 18px; border-radius: 8px; font-size: 14px; line-height: 1.9; }
 .p-answer.show { display: block; }
