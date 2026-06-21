@@ -91,7 +91,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "作者是：",
+              "q": "这首诗的作者是：",
               "opts": [
                 "A. 曹操",
                 "B. 杜甫",
@@ -508,7 +508,7 @@ var CHINESE_DATA = {
             },
             {
               "diff": "basic",
-              "q": "作者：",
+              "q": "本文作者是：",
               "opts": [
                 "A. 杜甫",
                 "B. 李白",
@@ -913,7 +913,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "作者：",
+              "q": "本文作者是：",
               "opts": [
                 "A. 马致远",
                 "B. 李白",
@@ -988,7 +988,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "出自：",
+              "q": "本文出自哪部作品：",
               "opts": [
                 "A. 论语",
                 "B. 世说新语",
@@ -1051,7 +1051,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "①修辞：",
+              "q": "划线句①使用的修辞手法是：",
               "opts": [
                 "A. 拟人",
                 "B. 比喻",
@@ -1551,7 +1551,7 @@ var CHINESE_DATA = {
         },
         {
           "topic": "诗词",
-          "q": "思乡句：",
+          "q": "诗中表达思乡之情的句子是：",
           "opts": [
             "A. 潮平两岸阔",
             "B. 海日生残夜",
@@ -1684,7 +1684,7 @@ var CHINESE_DATA = {
             },
             {
               "diff": "hard",
-              "q": "修改正确：",
+              "q": "下列修改正确的是：",
               "opts": [
                 "A. 保留通过使",
                 "B. 保留大约左右",
@@ -1810,7 +1810,7 @@ var CHINESE_DATA = {
             },
             {
               "diff": "medium",
-              "q": "寓意：",
+              "q": "这则故事的寓意是：",
               "opts": [
                 "A. 不要轻信传言",
                 "B. 多打井",
@@ -1980,7 +1980,7 @@ var CHINESE_DATA = {
         },
         {
           "topic": "文言",
-          "q": "寓意：",
+          "q": "这则故事的寓意是：",
           "opts": [
             "A. 多打井",
             "B. 打井危险",
@@ -3457,7 +3457,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "作者：",
+              "q": "本文作者是：",
               "opts": [
                 "A. 老舍",
                 "B. 鲁迅",
@@ -3532,7 +3532,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "关系：",
+              "q": "两人是什么关系：",
               "opts": [
                 "A. 父子",
                 "B. 兄弟",
@@ -3862,7 +3862,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "作者：",
+              "q": "本文作者是：",
               "opts": [
                 "A. 罗贯中",
                 "B. 曹雪芹",
@@ -3937,7 +3937,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "去见谁：",
+              "q": "他要去见谁：",
               "opts": [
                 "A. 戴安道",
                 "B. 左思",
@@ -4255,7 +4255,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "作者：",
+              "q": "本文作者是：",
               "opts": [
                 "A. 罗贯中",
                 "B. 施耐庵",
@@ -4378,7 +4378,7 @@ var CHINESE_DATA = {
             },
             {
               "diff": "hard",
-              "q": "道理：",
+              "q": "这个故事告诉我们什么道理：",
               "opts": [
                 "A. 玉不重要",
                 "B. 不要礼物",
@@ -4480,7 +4480,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "第一步：",
+              "q": "写半命题作文的第一步是：",
               "opts": [
                 "A. 开始写",
                 "B. 写结尾",
@@ -4648,7 +4648,7 @@ var CHINESE_DATA = {
           "problems": [
             {
               "diff": "basic",
-              "q": "作者：",
+              "q": "本文作者是：",
               "opts": [
                 "A. 罗贯中",
                 "B. 曹雪芹",
