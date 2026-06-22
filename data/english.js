@@ -420,10 +420,10 @@ var ENGLISH_DATA = {
           "topic": "不规则动词",
           "q": "The past tense of 'think' is ___ .",
           "opts": [
-            "A. thinked",
-            "B. thank",
+            "A. thank",
+            "B. thinking",
             "C. thought",
-            "D. thinked"
+            "D. thinks"
           ],
           "ans": 2,
           "exp": "think 的过去式是不规则变化 thought。"
@@ -3268,13 +3268,13 @@ var ENGLISH_DATA = {
           "topic": "宾语从句",
           "q": "Which is correct?",
           "opts": [
-            "A. He asked what was the matter.",
-            "B. He asked what the matter was.",
-            "C. He asked what the matter is.",
-            "D. He asked what is the matter."
+            "A. He asked what happened yesterday.",
+            "B. He asked what did happen yesterday.",
+            "C. He asked what does happen yesterday.",
+            "D. He asked what happen yesterday."
           ],
-          "ans": 1,
-          "exp": "what 作主语时语序不变：what was the matter；但一般情况：what the matter was。what 作主语：What happened? → He asked what happened。"
+          "ans": 0,
+          "exp": "what 作主语时，宾语从句语序不变：what happened。其他选项错误地使用了疑问语序或时态错误。"
         },
         {
           "topic": "完形填空",
